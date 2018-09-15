@@ -9,4 +9,8 @@ app.use(parser.json());
 app.use(parser.urlencoded({extended: true}));
 app.use(express.static(path.join(__dirname, "./public/dist")));
 
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, './public/dist/index.html'));
+})
+
 app.listen(PORT, () => console.log(`Server listening on PORT ${PORT}`)); 
