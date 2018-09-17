@@ -1,0 +1,84 @@
+/* Fonts */
+
+@font-face {
+  font-family: 'cerealBold';
+  src: url('./Cereal/AirbnbCereal-Bold.ttf');
+}
+@font-face {
+  font-family: 'cerealBook';
+  src: url('./Cereal/AirbnbCereal-Book.ttf');
+}
+@font-face {
+  font-family: 'cerealLight';
+  src: url('./Cereal/AirbnbCereal-Light.ttf')
+}
+@font-face {
+  font-family: 'cerealMedium';
+  src: url('./Cereal/AirbnbCereal-Medium.ttf')
+}
+
+/* Header */
+
+:local(.header) {
+  size: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url('./images/IMG_2843.png') 50% 50% no-repeat;
+  background-size: cover;
+  color: white;
+  
+}
+:local(.position) {
+  font-family: 'cerealBold';
+}
+:local(.name) {
+  margin-top: none;
+  font-family: 'cerealBook';
+  display: flex;
+  justify-content: center;
+}
+:local(.btn) {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1%;
+}
+:local(.contact) {
+  font-family: 'cerealLight';
+  font-size: 20px;
+  background-color: transparent;
+  color: white;
+  margin-right: 2%;
+}
+:local(.resume) {
+  font-family: 'cerealLight';
+  font-size: 20px;
+  background-color: transparent;
+  color: white;
+  margin-left: 2%;
+}
+
+/* Navigation */
+
+:local(.navigation) {
+  list-style: none;
+  margin: none;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 10%;
+  justify-content: space-around;
+  border: 2px solid black;
+
+}
+:local(.navbar) {
+  font-family: 'cerealMedium';
+  font-size: 20px;
+  align-items: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-end;
+}
+

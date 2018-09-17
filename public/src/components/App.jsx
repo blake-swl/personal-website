@@ -1,19 +1,24 @@
 import React, { Component } from 'react';
+import styles from '../../dist/styles/styles.css'
 
 import Header from './Header';
 import Navigation from './Navigation';
 import About from './About';
-import Timeline from './Timeline';
+import Skills from './Skills';
+import Works from './Works';
+import Contact from './Contact';
 
 export default class App extends Component {
   render() {
     return(
-      <div>
+      <div className={styles.container}>
         App.js
         <Header />
         <Navigation />
         <About />
-        <Timeline />
+        <Skills />
+        <Works />
+        <Contact />
       </div>
     )
   }
