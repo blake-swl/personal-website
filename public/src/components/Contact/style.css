@@ -1,0 +1,85 @@
+@import '../Global/styles.css';
+
+:local(.container) {
+  height: 100vh;
+  size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: -1;
+  background-color: #eaebed;
+}
+
+/* top half */
+
+:local(.banner) {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: url('../../../dist/images/rawpixel-652547-unsplash.png') 50% 50% no-repeat;
+  background-size: cover;
+
+}
+:local(.chat) {
+  font-size: 40px;
+  font-family: 'promptBold';
+  color: white;
+  text-shadow: .5px .5px black;
+  /* border: 1px solid black; */
+}
+
+/* bottom half */
+
+:local(.contact) {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  justify-content: space-evenly;
+}
+
+/* Left */
+
+:local(.left) {
+  padding-top: 20px;
+  /* flex-direction: column; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  border: 1px solid black;
+}
+:local(.leftCon) {
+  display: flex;
+  flex-direction: column;
+}
+:local(.heading) {
+  display: flex;
+  align-items: flex-start;
+  font-family: 'promptRegular';
+  font-size: 20px;
+}
+:local(.number) {
+  margin-top: 10px;
+  font-family: 'promptRegular';
+  font-size: 14px;
+}
+:local(.mailbox) {
+  width: 100;
+  /* height: 40vh; */
+  border: 1px solid black;
+}
+
+/* Right */
+
+:local(.right) {
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  border: 1px solid black;
+}

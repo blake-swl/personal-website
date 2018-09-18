@@ -1,0 +1,55 @@
+/* Fonts */
+
+/* Noto-Serif */
+@font-face {
+  font-family: 'notoBlack';
+  src: url('../../../dist/Noto_Serif_KR/NotoSerifKR-Black.ttf');
+}
+@font-face {
+  font-family: 'notoBold';
+  src: url('../../../dist/Noto_Serif_KR/NotoSerifKR-Bold.ttf');
+}
+@font-face {
+  font-family: 'notoLight';
+  src: url('../../../dist/Noto_Serif_KR/NotoSerifKR-Light.ttf')
+}
+@font-face {
+  font-family: 'notoMedium';
+  src: url('../../../dist/Noto_Serif_KR/NotoSerifKR-Medium.ttf')
+}
+@font-face {
+  font-family: 'notoRegular';
+  src: url('../../../dist/Noto_Serif_KR/NotoSerifKR-Regular.ttf')
+}
+
+/* Prompt  */
+
+@font-face {
+  font-family: 'promptBlack';
+  src: url('../../../dist/Prompt/Prompt-Black.ttf');
+}
+@font-face {
+  font-family: 'promptBold';
+  src: url('../../../dist/Prompt/Prompt-Bold.ttf');
+}
+@font-face {
+  font-family: 'promptLight';
+  src: url('../../../dist/Prompt/Prompt-Light.ttf')
+}
+@font-face {
+  font-family: 'promptMedium';
+  src: url('../../../dist/Prompt/Prompt-Medium.ttf')
+}
+@font-face {
+  font-family: 'promptRegular';
+  src: url('../../../dist/Prompt/Prompt-Regular.ttf')
+}
+
+/* General */
+
+:local(.container) {
+  /* border: 1px solid black; */
+  margin: none;
+  padding: none;
+  size: 100%;
+}
