@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import styles from '../../dist/styles/styles.css'
+import styles from '../../dist/styles/styles.css';
+import { HashRouter, Route, NavLink } from 'react-router-dom';
 
 import Header from './Header';
 import Navigation from './Navigation';
@@ -11,15 +12,18 @@ import Contact from './Contact';
 export default class App extends Component {
   render() {
     return(
-      <div className={styles.container}>
-        App.js
-        <Header />
-        <Navigation />
-        <About />
-        <Skills />
-        <Works />
-        <Contact />
-      </div>
+      <HashRouter>
+        <div className={styles.container}>
+          <Header />
+          <Navigation />
+          <div className={styles.content}>
+            <About />
+            <Skills />
+            <Works />
+            <Contact />
+          </div>
+        </div>
+      </HashRouter>
     )
   }
 }

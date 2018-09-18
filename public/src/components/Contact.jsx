@@ -4,9 +4,9 @@ import styles from '../../dist/styles/styles.css';
 export default class Contact extends Component {
   render() {
     return(
-      <div className={styles.contact}>
+      <div className={styles.contacts}>
         Contact.jsx
-        should render???
+
       </div>
     )
   }
