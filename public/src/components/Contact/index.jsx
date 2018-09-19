@@ -19,6 +19,7 @@ export default class Contact extends Component {
     })
     console.log(this.state.message);
   }
+  // Note to self: conditionally render Typed when user scrolls to current component
 
   render() {
     return(
@@ -27,9 +28,8 @@ export default class Contact extends Component {
           <Typed className={styles.chat} strings={["^1000 LET'S HAVE A CHAT."]}
           typeSpeed={80}/>
         </div>
-        <div className={styles.contact}>
-          <div className={styles.left}>
-            <div className={styles.leftCon}>
+        <div className={styles.bottom}>
+          <div className={styles.left}>            {/* <div className={styles.leftSub}> */}
               <div className={styles.heading}>Contact Info</div>
               <span className={styles.phone}>Phone</span>
               <span className={styles.number}>(323) 482-0091</span>
@@ -43,7 +43,6 @@ export default class Contact extends Component {
                   <button type="sumbit">Send</button>
                 </form>
               </div>
-            </div>
           </div>
           <div className={styles.right}>
             address

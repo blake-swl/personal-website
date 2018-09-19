@@ -17,6 +17,7 @@
     "react-dom": "^16.5.1",
     "react-router-dom": "^4.3.1",
     "react-typed": "^1.0.9",
+    "smoothscroll": "^0.4.0",
     "style-loader": "^0.23.0",
     "ttf-loader": "^1.0.2",
     "url-loader": "^1.1.1",

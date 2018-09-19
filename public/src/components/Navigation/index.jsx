@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import styles from './style.css';
 import { HashRouter, Route, NavLink } from 'react-router-dom';
+import 'smoothscroll';
 
-// import About from './About';
-// import Skills from './Skills';
-// import Works from './Works';
-// import Contact from './Contact';
-// import Header from './Header';
+import About from '../About';
+import Skills from '../Skills';
+import Works from '../Works';
+import Contact from '../Contact';
+import Header from '../Header';
 
 export default class Navigation extends Component {
   constructor() {
