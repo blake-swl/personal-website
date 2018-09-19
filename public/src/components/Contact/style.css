@@ -55,38 +55,56 @@
   flex-direction: column;
   align-self: center;
   border: 1px solid black;
+  font-size: 20px;
+  font-family: 'promptRegular';
 }
-/* :local(.leftSub) {
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  border: 1px solid black;
-  flex-basis: 100%;
-} */
-/* :local(.heading) {
+:local(.leftSub) {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
+}
+:local(.phone) {
+  border: 1px solid black;
+  display: flex;
   font-family: 'promptRegular';
-  font-size: 20px;
-  border: 1px solid black;
-} */
-/* :local(.phone) {
-  border: 1px solid black;
-} */
-/* :local(.number) {
-  margin-top: 10px;
+  font-size: 14px;
+  margin-right: 5px;
+}
+:local(.number) {
+  display: flex;
   font-family: 'promptRegular';
   font-size: 14px;
   border: 1px solid black;
 }
+
+/* MailBox */
+
 :local(.mailbox) {
-  width: 100;
+  width: 100%;
   height: 40vh;
   border: 1px solid black;
-} */
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* flex-wrap: wrap; */
+}
+:local(.name) {
+  /* display: flex; */
+  /* flex: 1; */
+  border: 1px solid black;
+}
+:local(.email) {
+  /* display: flex; */
+  /* flex: 1; */
+  border: 1px solid black;
+}
+:local(.text) {
+  /* display: flex; */
+  /* flex: 4; */
+  border: 1px solid black;
+}
+:local(.send) {
+  border: 1px solid black;
+}
 /* Right */
 
 :local(.right) {
