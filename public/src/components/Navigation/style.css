@@ -1,4 +1,4 @@
-
+@import '../Global/styles.css';
 
 :local(.navigation) {
   overflow: hidden;
@@ -14,7 +14,7 @@
 }
 :local(.navbar) {
   list-style: none;
-  font-family: 'cerealLight';
+  font-family: 'notoMedium';
   font-size: 25px;
   display: flex;
   align-items: center;
