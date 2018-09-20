@@ -1,14 +1,22 @@
+/* @import '../Contact/style.css';
+@import '../Global/styles.css';
 
-:local(.mailbox){
-  height: 250px;
-  border: 2px solid black;
-  flex-basis: 20%;
-  margin: 20px;
-  font-family: "notoRegular";
-  font-size: 20px;
-  padding: 3%;
-  background-color: white;
-}
-/* :local(.mailbox) {
-  border: 1px solid black;
+.mailbox{
+  display: grid;
+  /* size: 50%; */
+  /* grid-template-columns: 1fr 1fr 1fr;
 } */
+
+
+/* .name {
+  font-size: 10px;
+  font-family: "notoRegular";
+}
+.email {
+  font-family: "notoRegular";
+  font-size: 10px;
+}
+.text {
+  font-family: 'notoRegular';
+  font-size: 10px; */
+  /* border: none; */

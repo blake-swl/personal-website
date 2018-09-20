@@ -18,7 +18,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]' 
+        loader: ['style-loader', 'css-loader']
       },
       { 
         test: /\.(png|woff|woff2|eot|ttf|svg)$/, 

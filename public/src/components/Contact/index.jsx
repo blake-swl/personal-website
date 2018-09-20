@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import styles from './style.css';
+import './style.css';
 import Typed from 'react-typed';
 import axios from 'axios';
 import Email from '../Email';
+import '../Email/email.css';
 
 export default class Contact extends Component {
   constructor() {
@@ -30,20 +31,24 @@ export default class Contact extends Component {
     const hover = this.state.isHovering === false;
 
     return(
-      <div className={styles.container}>
-        <div className={styles.banner}>
-          <Typed className={styles.chat} strings={["^1000 LET'S HAVE A CHAT."]}
+      <div className="container">
+        <div className="banner">
+          <Typed className="chat" strings={["^1000 LET'S HAVE A CHAT."]}
           typeSpeed={80}/>
         </div>
-        <div className={styles.bottom}>
-          <div className={styles.info}>basic contact info</div>
-          <a onMouseEnter={this.handleMouseHover}
+        <ul className="bottom">
+          <li className="info">
+            <h1>basic contact info</h1>
+          </li>
+
+          <li className="gmail" onMouseEnter={this.handleMouseHover}
             onMouseLeave={this.handleMouseHover}>
-          {hover ? <div className={styles.email}>send me an email</div> : <Email/>}
-            </a>
-          <div className={styles.map}>my location</div>
-        </div>
-        <div className={styles.footer}>
+            {hover ? <h1>send me an email</h1> : <Email className="mail"/>}
+          </li>
+          {/* <Email /> */}
+          <li className="map">my location</li>
+        </ul>
+        <div className="footer">
           Footer
         </div>
       </div>
@@ -71,3 +76,23 @@ export default class Contact extends Component {
         //   </div>
         // }
   //     </div>
+{/* <div className='parent'>
+  <ul className='chidlOfParent'>
+    <li>
+      contact
+    </li>
+
+    <li>
+      basic info 
+    </li>
+
+    <li>
+      location
+    </li>
+  </ul>
+</div>
+
+childofParent {
+  display: flex;
+  flex-direction: 
+} */}
