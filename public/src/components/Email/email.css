@@ -1,7 +1,9 @@
 
 :local(.mailbox){
+  size: inherit;
   height: 250px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
+  position: relative;
   margin: 20px;
   font-family: "notoRegular";
   font-size: 20px;
