@@ -37,10 +37,11 @@ export default class Contact extends Component {
         </div>
         <div className={styles.bottom}>
           <div className={styles.info}>basic contact info</div>
-          <a onMouseEnter={this.handleMouseHover}
+          <div className={styles.email} >send me an email</div>
+          {/* <div onMouseEnter={this.handleMouseHover}
             onMouseLeave={this.handleMouseHover}>
           {hover ? <div className={styles.email}>send me an email</div> : <Email/>}
-            </a>
+            </div> */}
           <div className={styles.map}>my location</div>
         </div>
         <div className={styles.footer}>
@@ -67,7 +68,7 @@ export default class Contact extends Component {
         // {
         //   this.state.isHovering &&
         //   <div>
-        //     Hovering right meow! 🐱
+        //     Hovering right meow! 
         //   </div>
         // }
   //     </div>
