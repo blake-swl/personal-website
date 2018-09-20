@@ -1,4 +1,5 @@
 @import '../Global/styles.css';
+@import '../Email/email.css';
 
 :local(.container) {
   height: 100vh;
@@ -30,48 +31,33 @@
 
 /* bottom half */
 
-:local(.info) {
-  /* grid-area: info; */
-  border: 2px solid black;
-  /* font-family: 'notoRegular';
-  font-size: 20px; */
-  grid-column-start: 2;
-  grid-row-start: 2;
-}
-:local(.email) {
-  /* grid-area: email; */
-  border: 2px solid black;
-  grid-column-start: 4;
-  grid-row-start: 2;
-
-}
-:local(.map) {
-  /* grid-area: location; */
-  border: 2px solid black;
-  grid-column-start: 6;
-
-  grid-row-start: 2;
-
-}
-
 :local(.bottom) {
   width: 100%;
   height: 45vh;
   display: grid;
-  /* grid-template-columns: repeat(7, 1fr);
-  grid-auto-rows: minmax(100px, auto); */
   grid-template-columns: [marginLeft] 5% [line1] 1fr [line2] 3% [line3] 1fr [line4] 3% [line5] 1fr [line6] 5% [marginRight];
   grid-template-rows: [marginTop] 15% [first] 1fr [second] 15% [marginBottom]; 
-  grid-template-areas: 
-    "......."
-    ". info . email . location ."
-    ".......";
-    /* grid-template-areas: 
-    "hd hd hd hd   hd   hd   hd   hd   hd"
-    "sd sd sd main main main main main main"
-    "ft ft ft ft   ft   ft   ft   ft   ft"; */
-
 }
+:local(.bottom) div {
+  border: 2px solid black;
+  font-family: 'notoRegular';
+  font-size: 20px;
+  background-color: white;
+  /* padding: 10%; */
+}
+:local(.info) {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+:local(.email) {
+  grid-column-start: 4;
+  grid-row-start: 2;
+}
+:local(.map) {
+  grid-column-start: 6;
+  grid-row-start: 2;
+}
+
 /* :local(.bottom) div {
   height: 250px;
   border: 2px solid black;
@@ -115,8 +101,8 @@
 
 /* Footer */ 
 
-/* :local(.footer) {
+:local(.footer) {
   border: 1px solid black;
   width: 100%;
   height: 10vh;
-} */
+}

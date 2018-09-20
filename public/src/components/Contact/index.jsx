@@ -37,12 +37,15 @@ export default class Contact extends Component {
         </div>
         <div className={styles.bottom}>
           <div className={styles.info}>basic contact info</div>
-          <div className={styles.email} >send me an email</div>
+          <div className={styles.email}>
+            <Email />
+          </div>
+          <div className={styles.map}>my location</div>
+          {/* <div className={styles.email} >send me an email</div> */}
           {/* <div onMouseEnter={this.handleMouseHover}
             onMouseLeave={this.handleMouseHover}>
           {hover ? <div className={styles.email}>send me an email</div> : <Email/>}
             </div> */}
-          <div className={styles.map}>my location</div>
         </div>
         <div className={styles.footer}>
           Footer

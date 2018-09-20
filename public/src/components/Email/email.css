@@ -2,11 +2,9 @@
 :local(.mailbox){
   height: 250px;
   border: 2px solid black;
-  flex-basis: 20%;
   margin: 20px;
   font-family: "notoRegular";
   font-size: 20px;
-  padding: 3%;
   background-color: white;
 }
 /* :local(.mailbox) {
