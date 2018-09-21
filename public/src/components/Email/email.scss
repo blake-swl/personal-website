@@ -1,0 +1,48 @@
+@import '../Contact/style.scss';
+@import '../Global/styles.css';
+
+.mailbox {
+  max-width: 300px;
+  height: 300px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+    "nudes nudes nudes"
+    "msg msg msg"
+    "msg msg msg"
+    "msg msg msg"
+    "names email email"
+    "send send send";
+  grid-gap: 1em;
+
+  textarea {
+    font-size: 14px;
+    font-family: 'notoRegular';
+    border-radius: 5% 15%;
+    // background-color: turquoise;
+    // opacity: .5;
+  }
+}
+.nudes {
+  font-size: 20px;
+  font-family: 'promptMedium';
+  color: white;
+  font-variant: small-caps;
+  text-decoration: underline;
+  grid-area: nudes;
+}
+.name {
+  grid-area: names;
+}
+.email {
+  grid-area: email;
+}
+.text {
+  grid-area: msg;
+}
+.send {
+  grid-area: send;
+}
+  /* border: none; */

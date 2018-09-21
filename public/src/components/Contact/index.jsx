@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import './style.css';
+import './style.scss';
 import Typed from 'react-typed';
 import axios from 'axios';
 import Email from '../Email';
-import '../Email/email.css';
+import '../Email/email.scss';
 
 export default class Contact extends Component {
   constructor() {
@@ -34,19 +34,26 @@ export default class Contact extends Component {
       <div className="container">
         <div className="banner">
           <Typed className="chat" strings={["^1000 LET'S HAVE A CHAT."]}
-          typeSpeed={80}/>
+          typeSpeed={60}/>
         </div>
         <ul className="bottom">
-          <li className="info">
-            <h1>basic contact info</h1>
+          <li className="cards-item info">
+            <h3>basic contact info</h3>
+            <div className="cards-hover">
+              <h2>(323) 482-0091</h2>
+              <h2>seulwoolee93@gmail.com</h2>
+            </div>
           </li>
-
-          <li className="gmail" onMouseEnter={this.handleMouseHover}
+          {/* <li className="cards-item mail">
+            <Email />
+          </li> */}
+          <li className="cards-item mail" onMouseEnter={this.handleMouseHover}
             onMouseLeave={this.handleMouseHover}>
             {hover ? <h1>send me an email</h1> : <Email className="mail"/>}
           </li>
-          {/* <Email /> */}
-          <li className="map">my location</li>
+          <li className="cards-item map">
+            <h1>my location</h1>
+          </li>
         </ul>
         <div className="footer">
           Footer
@@ -55,44 +62,3 @@ export default class Contact extends Component {
     )
   }
 };
-
-
-// onMouseEnter={this.handleMouseHover}
-//             onMouseLeave={this.handleMouseHover}>
-          // {hover ? <div className={styles.email}>send me an email</div> : <Email/>}
-  // render() {
-  //   return (
-  //     <div>
-  //       <div
-  //         onMouseEnter={this.handleMouseHover}
-  //         onMouseLeave={this.handleMouseHover}
-  //       >
-  //         Hover Me
-  //       </div>
-        // {
-        //   this.state.isHovering &&
-        //   <div>
-        //     Hovering right meow! 🐱
-        //   </div>
-        // }
-  //     </div>
-{/* <div className='parent'>
-  <ul className='chidlOfParent'>
-    <li>
-      contact
-    </li>
-
-    <li>
-      basic info 
-    </li>
-
-    <li>
-      location
-    </li>
-  </ul>
-</div>
-
-childofParent {
-  display: flex;
-  flex-direction: 
-} */}
