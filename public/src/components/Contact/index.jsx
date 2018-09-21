@@ -49,7 +49,7 @@ export default class Contact extends Component {
           </li> */}
           <li className="cards-item mail" onMouseEnter={this.handleMouseHover}
             onMouseLeave={this.handleMouseHover}>
-            {hover ? <h1>send me an email</h1> : <Email className="mail"/>}
+            {hover ? <h1>send me an email</h1> : <Email className="cards-hover"/>}
           </li>
           <li className="cards-item map">
             <h1>my location</h1>

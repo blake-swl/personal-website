@@ -73,6 +73,7 @@
     font-size: 25px;
     font-family: 'notoMedium';
   }
+  transition: all .5s ease;
 }
 .cards-item:hover {
   padding: 25px;
@@ -85,7 +86,6 @@
     rgba(0, 0, 0, 0.8),
     rgba(0, 0, 0, 0.8)
   );
-  transition: margin-bottom 2s ease-in;
   cursor: pointer;
   
   h3 {
@@ -94,6 +94,7 @@
   .cards-hover {
     visibility: visible;
   }
+  transition: all .5s ease;
 }
 .mail {
   padding: none;

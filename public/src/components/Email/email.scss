@@ -27,7 +27,7 @@
 }
 .nudes {
   font-size: 20px;
-  font-family: 'promptMedium';
+  font-family: 'notoMedium';
   color: white;
   font-variant: small-caps;
   text-decoration: underline;
@@ -44,5 +44,11 @@
 }
 .send {
   grid-area: send;
+  font-size: 20px;
+  font-family: 'notoMedium';
+  border-radius: 5% 15%;
+  border: none;
+  color: white;
+  background: none;
 }
   /* border: none; */
