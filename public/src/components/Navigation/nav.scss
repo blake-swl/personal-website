@@ -8,6 +8,8 @@
   height: 5vh;
   justify-content: space-evenly;
   background: rgba(0, 0, 0, 0.5);
+  // background: #0E4565;
+  // opacity: 0.9;
   position: relative;
   z-index: 10;
 }
@@ -28,7 +30,7 @@
   color: grey;
 }
 .navbar a:hover {
-  color: rgba(255, 255, 255, 1);
+  color: white;
 }
 .sticky {
   position: fixed;

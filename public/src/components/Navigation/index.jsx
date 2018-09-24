@@ -39,6 +39,9 @@ export default class Navigation extends Component {
             <div className="navigation" >
                 <ul className="navbar">
                   <li>
+                    <NavLink to="/home">home</NavLink>
+                  </li>
+                  <li>
                     <NavLink to="/about">about</NavLink>
                     {/* <a href="#about">about</a> */}
                   </li>

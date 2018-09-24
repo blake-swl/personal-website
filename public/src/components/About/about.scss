@@ -4,16 +4,65 @@
   border: 1px solid black;
   background-color: white;
   size: 100%;
-  height: 100vh;
+  height: 150vh;
   display: flex;
   flex-direction: column
   // padding-top: 100px;
 }
+.philosophy {
+  // background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 30vh;
+  background: #eaebed;
+  padding-left: 15%;
+  padding-right: 15%;
+  
+  p {
+    align-items: center;
+    font-family: 'montsItalic';
+    font-size: 30px;
+    line-height: 1.5;
+  }
+}
+.passion {
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+  // justify-content: space-;
+}
+.profilePic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5%;
+  // border: 1px solid black;
+  width: 40%;
+  img {
+    width: 600px;
+    height: 400px;
+  }
+}
+.myself {
+  display: flex;
+  padding-left: 5%;
+  padding-right: 5%;
+  justify-content: center;
+  flex-direction: column;
+  // border: 1px solid black;
+  width: 60%;
+  font-family: 'montsRegular';
+  font-size: 20px;
 
-.jumping {
-  // background: url('../../../dist/images/IMG_0830.jpg')  50% 50% no-repeat;
-  background-size: cover;
-  height: 40vh;
-  // width: 100%;
-
+  h3 {
+    margin-bottom: 5%;
+    font-family: 'montsItalic';
+    font-size: 30px;
+    align-items: center;
+  }
+}
+.gallery {
+  background: #edf0f7;
+  height: 60vh;
 }
