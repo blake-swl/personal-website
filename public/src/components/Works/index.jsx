@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './style.scss';
+import './works.scss';
 import airbnb from '../../../dist/images/airbnb.jpg';
 
 export default class Works extends Component {
