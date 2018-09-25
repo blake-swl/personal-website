@@ -1,6 +1,17 @@
 import React, { Component } from 'react';
 import './about.scss';
+
+// pictures
 import coding from '../../../dist/images/clement-h-544786-unsplash.jpg';
+import sf from '../../../dist/images/sf.jpg';
+import nancy from '../../../dist/images/nancy.jpg';
+import dodgers from '../../../dist/images/dodgers.jpg';
+import grad from '../../../dist/images/grad.jpg';
+import group2 from '../../../dist/images/group2.jpg';
+import beach from '../../../dist/images/beach.jpg';
+import bball from '../../../dist/images/Basketball.jpg';
+import guitar from '../../../dist/images/guitar.jpg'
+
 
 export default class About extends Component {
   render () {
@@ -16,7 +27,7 @@ export default class About extends Component {
           <div className="profilePic">
             <img src={coding} alt=""/>
           </div>
-          <div className="myself">
+          <div className="narrative">
             <h3>My passion for coding</h3>
             <p>Palette, brush, canvas. Keyboard, mouse, screen. I can never forget what it first felt like to write something in a static HTML page and with a click of a button, have it generate on screen. I can never forget what it felt like to tweak a few elements on CSS to change the entire layout and design of my page.</p>
             <br/>
@@ -27,7 +38,19 @@ export default class About extends Component {
           </div>
         </div>
         <div className="gallery">
+          <div className="personal">
 
+          </div>
+          <div className="pictures">
+            <img src={grad} className="grad"/>
+            <img src={nancy} className="nancy"/>
+            <img src={dodgers} className="dodgers"/>
+            <img src={sf} className="sf"/>
+            <img src={group2} className="group2"/>
+            <img src={beach} className="beach"/>
+            <img src={bball} className="bball"/>
+            <img src={guitar} className="guitar"/>
+          </div>
         </div>
       </div>
     )

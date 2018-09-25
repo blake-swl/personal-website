@@ -4,7 +4,7 @@
   border: 1px solid black;
   background-color: white;
   size: 100%;
-  height: 150vh;
+  height: 160vh;
   display: flex;
   flex-direction: column
   // padding-top: 100px;
@@ -44,16 +44,16 @@
     height: 400px;
   }
 }
-.myself {
+.narrative {
   display: flex;
   padding-left: 5%;
   padding-right: 5%;
   justify-content: center;
   flex-direction: column;
-  // border: 1px solid black;
   width: 60%;
   font-family: 'montsRegular';
   font-size: 20px;
+  line-height: 1.25;
 
   h3 {
     margin-bottom: 5%;
@@ -64,5 +64,63 @@
 }
 .gallery {
   background: #edf0f7;
-  height: 60vh;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+}
+// .personal {
+//   border: 1px solid black;
+// }
+
+
+/* Pictures */
+
+.pictures {
+  height: 40vh;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-areas: 
+    "grad bball group2 nancy"
+    "dodgers beach guitar sf";
+
+    img {
+      height: 200px;
+      width: 200px;
+      justify-self: stretch;
+    }
+  }
+
+
+// .pictures img:hover {
+//   height: 300px;
+//   width: 300px;
+// }
+  
+.grad {
+  grid-area: grad;
+}
+.nancy {
+  grid-area: nancy;
+}
+.dodgers {
+  grid-area: dodgers
+}
+.sf {
+  grid-area: sf;
+}
+.group2 {
+  grid-area: group2;
+}
+.beach {
+  grid-area: beach;
+}
+.bball {
+  grid-area: bball;
+}
+.guitar {
+  grid-area: guitar;
 }
