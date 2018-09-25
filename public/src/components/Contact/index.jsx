@@ -48,12 +48,16 @@ export default class Contact extends Component {
     return(
       <div className="container">
         <div className="banner">
-          <Typed className="chat" strings={["^1000 LET'S HAVE A CHAT."]}
-          typeSpeed={60}/>
+          <div className="layer">
+            <h3>Let's build something together over a cup of coffee.</h3>
+            <div className="chat">GET IN CONTACT.</div>
+          </div>
         </div>
         <ul className="bottom">
           <li className="cards-item info">
-            <h3>basic contact info</h3>
+            <h3>basic contact info.</h3>
+            <br/>
+            <p>I am open to freelance/contract positions.</p>
             <div className="cards-hover">
               <h2>(323) 482-0091</h2>
               <h2>seulwoolee93@gmail.com</h2>
@@ -61,10 +65,10 @@ export default class Contact extends Component {
           </li>
           <li className="cards-item mail" onMouseEnter={this.handleMouseHover}
             onMouseLeave={this.handleMouseHover}>
-            {hover ? <h1>send me an email</h1> : <Email className="cards-hover"/>}
+            {hover ? <h1>send me an email.</h1> : <Email className="cards-hover"/>}
           </li>
           <li className="cards-item map" id="map">
-            <h1>my location</h1>
+            <h1>my location.</h1>
           </li>
         </ul>
         <div className="footer">

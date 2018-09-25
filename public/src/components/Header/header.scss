@@ -6,7 +6,7 @@
   height: 70vh;
   display: flex;
   flex-direction: column;
-  background: url('../../../dist/images/IMG_2843.jpg') 50% 50% no-repeat;
+  background: url('../../../dist/images/IMG_2843.jpg') 50% 75% no-repeat fixed;
   background-size: cover;
   color: white;
   z-index: -1;
@@ -52,6 +52,7 @@
 :local(.btn a) {
   font-size: 20px;
   color: white;
+  font-family: 'montsRegular';
   border: 2px solid white;
   text-decoration: none;
   padding: 6px;

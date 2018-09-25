@@ -1,16 +1,14 @@
 @import '../Global/global.scss';
 
 .about {
-  border: 1px solid black;
-  background-color: white;
+  // background: url('../../../dist/images/hollywood.jpg') 50% 50% no-repeat fixed;
+  // filter: blur(5px);
   size: 100%;
   height: 160vh;
   display: flex;
-  flex-direction: column
-  // padding-top: 100px;
+  flex-direction: column;
 }
 .philosophy {
-  // background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,21 +28,21 @@
   height: 60vh;
   display: flex;
   flex-direction: row;
-  // justify-content: space-;
 }
 .profilePic {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-left: 5%;
-  // border: 1px solid black;
   width: 40%;
+  background: white;
   img {
     width: 600px;
     height: 400px;
   }
 }
 .narrative {
+  background: white;
   display: flex;
   padding-left: 5%;
   padding-right: 5%;
@@ -57,26 +55,46 @@
 
   h3 {
     margin-bottom: 5%;
-    font-family: 'montsItalic';
+    font-family: 'montsBold';
     font-size: 30px;
     align-items: center;
   }
 }
+/* Bottom half */
+
+
 .gallery {
-  background: #edf0f7;
+  background: url('../../../dist/images/hollywood.jpg') 50% 30% no-repeat fixed;
   height: 70vh;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+  position: relative;
+}
+.blur {
+  height: 70vh;
+  background: rgba(255, 255, 255, 0.5);
+  // backdrop-filter: blur(5px);
+}
+.personal {
+  font-family: 'montsRegular';
+  font-size: 20px;
+  padding: 2% 10% 2% 10%;
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
 }
-// .personal {
-//   border: 1px solid black;
-// }
-
-
-/* Pictures */
-
 .pictures {
-  height: 40vh;
   padding-top: 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -84,6 +102,7 @@
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   grid-template-areas: 
+    // "texts texts texts texts"
     "grad bball group2 nancy"
     "dodgers beach guitar sf";
 
@@ -99,7 +118,8 @@
 //   height: 300px;
 //   width: 300px;
 // }
-  
+
+
 .grad {
   grid-area: grad;
 }
