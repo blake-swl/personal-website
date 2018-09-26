@@ -19,6 +19,7 @@
     "react-css-modules": "^4.7.7",
     "react-dom": "^16.5.1",
     "react-router-dom": "^4.3.1",
+    "react-sweet-progress": "^1.1.2",
     "react-typed": "^1.0.9",
     "smoothscroll": "^0.4.0",
     "style-loader": "^0.23.0",
