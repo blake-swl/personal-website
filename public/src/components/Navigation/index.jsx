@@ -50,7 +50,7 @@ export default class Navigation extends Component {
                     {/* <a href="#skills">skills</a> */}
                   </li>
                   <li>
-                    <NavLink to="/works">works</NavLink>
+                    <NavLink to="/portfolio">portfolio</NavLink>
                     {/* <a href="#works">works</a> */}
                   </li>
                   <li>

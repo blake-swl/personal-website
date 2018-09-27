@@ -6,7 +6,7 @@ import Header from '../Header/index';
 import Navigation from '../Navigation';
 import About from '../About';
 import Skills from '../Skills';
-import Works from '../Works';
+import Portfolio from '../Works';
 import Contact from '../Contact';
 
 
@@ -19,7 +19,7 @@ export default class App extends Component {
           <Header className="first"/>
           <About className="second"/>
           <Skills className="third"/>
-          <Works className="fourth"/>
+          <Portfolio className="fourth"/>
           <Contact className="fifth"/>
         </div>
       </HashRouter>
