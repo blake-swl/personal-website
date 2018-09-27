@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import './email.css';
-import styles from './email.css';
+import './email.scss';
 
 export default class Email extends Component {
   constructor() {
@@ -23,8 +22,9 @@ export default class Email extends Component {
   }
   render() {
     return(
-      <div className={styles.mailbox}>
-        <form onSubmit={e => this.handleSend(e)}>
+      <div>
+        <form onSubmit={e => this.handleSend(e)} className="mailbox">
+          <h1 className="nudes">send nudes</h1>
           <textarea 
             className="name"
             placeholder="Name"
@@ -40,7 +40,7 @@ export default class Email extends Component {
             placeholder="Write your message here" 
             onChange={this.onChange}>
           </textarea>
-          <button className="send" type="sumbit">Send</button>
+          <button className="send" type="sumbit" className="send">Send</button>
         </form>
       </div>
     )

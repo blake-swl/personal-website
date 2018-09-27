@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from './style.css';
+import './nav.scss';
 import { HashRouter, Route, NavLink } from 'react-router-dom';
 import 'smoothscroll';
 
@@ -25,9 +25,9 @@ export default class Navigation extends Component {
     const sticky = navbar.offsetTop;
 
     if (window.pageYOffset >= sticky) {
-      navbar.classList.add(`${styles.sticky}`)
+      navbar.classList.add("sticky")
     } else {
-      navbar.classList.remove(`${styles.sticky}`);
+      navbar.classList.remove("sticky");
     }
   }
 
@@ -36,8 +36,11 @@ export default class Navigation extends Component {
       <HashRouter>
         <div>
           <div id="navbar">
-            <div className={styles.navigation} >
-                <ul className={styles.navbar}>
+            <div className="navigation" >
+                <ul className="navbar">
+                  <li>
+                    <NavLink to="/home">home</NavLink>
+                  </li>
                   <li>
                     <NavLink to="/about">about</NavLink>
                     {/* <a href="#about">about</a> */}

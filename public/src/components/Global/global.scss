@@ -1,0 +1,97 @@
+/* Fonts */
+
+/* Noto-Serif */
+@font-face {
+  font-family: 'notoBlack';
+  src: url('../../../dist/Noto_Serif_KR/NotoSerifKR-Black.ttf');
+}
+@font-face {
+  font-family: 'notoBold';
+  src: url('../../../dist/Noto_Serif_KR/NotoSerifKR-Bold.ttf');
+}
+@font-face {
+  font-family: 'notoLight';
+  src: url('../../../dist/Noto_Serif_KR/NotoSerifKR-Light.ttf')
+}
+@font-face {
+  font-family: 'notoMedium';
+  src: url('../../../dist/Noto_Serif_KR/NotoSerifKR-Medium.ttf')
+}
+@font-face {
+  font-family: 'notoRegular';
+  src: url('../../../dist/Noto_Serif_KR/NotoSerifKR-Regular.ttf')
+}
+
+/* Prompt  */
+
+@font-face {
+  font-family: 'promptBlack';
+  src: url('../../../dist/Prompt/Prompt-Black.ttf');
+}
+@font-face {
+  font-family: 'promptBold';
+  src: url('../../../dist/Prompt/Prompt-Bold.ttf');
+}
+@font-face {
+  font-family: 'promptLight';
+  src: url('../../../dist/Prompt/Prompt-Light.ttf')
+}
+@font-face {
+  font-family: 'promptMedium';
+  src: url('../../../dist/Prompt/Prompt-Medium.ttf')
+}
+@font-face {
+  font-family: 'promptRegular';
+  src: url('../../../dist/Prompt/Prompt-Regular.ttf')
+}
+
+/* Montserrat */
+
+@font-face {
+  font-family: 'montsBlack';
+  src: url('../../../dist/Montserrat/Montserrat-Black.ttf');
+}
+@font-face {
+  font-family: 'montsBold';
+  src: url('../../../dist/Montserrat/Montserrat-Bold.ttf');
+}
+@font-face {
+  font-family: 'montsLight';
+  src: url('../../../dist/Montserrat/Montserrat-Light.ttf');
+}
+@font-face {
+  font-family: 'montsMedium';
+  src: url('../../../dist/Montserrat/Montserrat-Medium.ttf');
+}
+@font-face {
+  font-family: 'montsRegular';
+  src: url('../../../dist/Montserrat/Montserrat-Regular.ttf');
+}
+@font-face {
+  font-family: 'montsItalic';
+  src: url('../../../dist/Montserrat/Montserrat-Italic.ttf');
+}
+
+/* Caveat */
+
+@font-face {
+  font-family: 'caveatRegular';
+  src: url('../../../dist/Caveat/Caveat-Regular.ttf');
+}
+@font-face {
+  font-family: 'caveatBold';
+  src: url('../../../dist/Caveat/Caveat-Bold.ttf');
+}
+/* General */
+
+body {
+  margin: none;
+  padding: none;
+  size: 100%;
+  z-index: 0;
+  // scroll-snap-type: y mandatory;
+	// overflow-y: scroll;
+}
+Header {
+  scroll-snap-align: start;
+}

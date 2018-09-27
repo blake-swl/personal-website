@@ -13,12 +13,12 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel-loader',
         options: {
-          presets: ['es2015', 'stage-0', 'react']
+          presets: ['es2015', 'env', 'stage-0', 'react']
         }
       },
       {
-        test: /\.css$/,
-        loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]' 
+        test: [/\.css$/, /\.scss$/],
+        loader: ['style-loader', 'css-loader', 'sass-loader']
       },
       { 
         test: /\.(png|woff|woff2|eot|ttf|svg)$/, 

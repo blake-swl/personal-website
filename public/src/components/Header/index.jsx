@@ -1,22 +1,27 @@
 import React from 'react';
-import styles from './style.css';
+import style from './header.scss';
 import Typed from 'react-typed';
 
 const Header = () => {
   return (
-   <div className={styles.header}>
-     <div className={styles.position}>
-       <Typed strings={['^1000 Full-Stack Developer.']}
-        typeSpeed={80} />
-     </div>
-     <div className={styles.name}>
-       <h3>Blake S Lee</h3>
-     </div>
-     <div className={styles.btn}>
-       <a className={styles.contact}>contact</a>
-       <a className={styles.resume}>resume</a>
-       <a href="https://github.com/blake-swl" className={styles.github}>github</a>       {/* <button className={styles.linkedin}>linkedin</button> */}
-       <a href="https://www.linkedin.com/in/blake-lee-4bb35b121/" className={styles.linkedin}>linkedin</a>
+   <div className={style.header}>
+     <div className={style.layer}>
+       <div className={style.tagline}>
+         <h4>Building bridges through code, design, & innovation.</h4>
+        <div className={style.position}>
+          <Typed strings={['^1000 Full-Stack Developer.']}
+            typeSpeed={80} />
+        </div>
+        <div className={style.name}>
+          <h3>Blake S Lee</h3>
+        </div>
+        <div className={style.btn}>
+          <a className={style.contact}>contact</a>
+          <a className={style.resume}>resume</a>
+          <a href="https://github.com/blake-swl" className={style.github}>github</a>       {/* <button className={style.linkedin}>linkedin</button> */}
+          <a href="https://www.linkedin.com/in/blake-lee-4bb35b121/" className={style.linkedin}>linkedin</a>
+        </div>
+       </div>
      </div>
    </div>
   )

@@ -7,6 +7,8 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "body-parser": "^1.18.3",
     "css-loader": "^1.0.0",
     "express": "^4.16.3",
@@ -17,6 +19,7 @@
     "react-css-modules": "^4.7.7",
     "react-dom": "^16.5.1",
     "react-router-dom": "^4.3.1",
+    "react-sweet-progress": "^1.1.2",
     "react-typed": "^1.0.9",
     "smoothscroll": "^0.4.0",
     "style-loader": "^0.23.0",
@@ -37,7 +40,9 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.1",
-    "nodemon": "^1.18.4"
+    "node-sass": "^4.9.3",
+    "nodemon": "^1.18.4",
+    "sass-loader": "^7.1.0"
   },
   "scripts": {
     "start": "nodemon --exec babel-node server.js",

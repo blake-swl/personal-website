@@ -1,0 +1,64 @@
+@import '../Global/global.scss';
+
+.works {
+  position: relative;
+  padding-top: 5%;
+  width: 100%;
+  height: 60vh;
+  // background: black;
+  background: #eaebed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-family: 'montsBold';
+    font-size: 50px;
+  }
+}
+.portfolio {
+  position: relative;
+  display: grid;
+  margin-top: 3%;
+  height: 400px;
+  grid-gap: 15px;
+  grid-template-columns: repeat(3, 400px);
+  grid-template-areas: "amazon airbnb homepage";
+}
+.film {
+  // z-index: 3;
+  background-color: rgb(0, 0, 0);
+  //  position: relative;
+  //  z-index: 9;
+  //  height: 400px;
+}
+.amazon {
+  // position: absolute;
+  grid-area: amazon;
+  background: url('../../../dist/images/amazon.jpg');
+  background-size: contain;
+  // z-index: 0;
+}
+.airbnb {
+  grid-area: airbnb;
+  background: url('../../../dist/images/airbnb.jpg');
+  background-size: contain;
+  // z-index: 1;
+}
+.homepage {
+  grid-area: homepage;
+  background: url('../../../dist/images/homepage.jpg');
+  background-size: contain;
+  // z-index: 1;
+}
+
+  // img {
+  //   width: 400px;
+  //   height: 400px;
+
+  // }
+  // img {
+//   background-attachment: fixed;
+//   width: 500px;
+//   height: 500px;
+// }
