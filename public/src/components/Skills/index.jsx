@@ -29,19 +29,22 @@ const Skills = () => {
         <div className="graphql">GraphQL
           <Progress percent={85} theme={{ active: {trailColor: '#535B63', color: '#E71D36'}}}/>
         </div>
+        <div className="enthusiasm">Enthusiasm
+          <Progress percent={100} status="active" theme={{ active: {symbol: '👍🏻', trailColor: '#535B63', color: '#E71D36'}}} />
+        </div>
       </div>
       <div className="title2">
         <h1>More Skills</h1>
       </div>
       <div className="moreSkills">
         <Progress className="check1"
-        type="circle" percent={100} theme={{ active: {trailColor: '#535B63', color: '#E71D36'}}} />
+        type="circle" percent={100} status="active" theme={{ active: {trailColor: '#535B63', color: '#E71D36'}}} />
         <div className="aws">AWS EC2</div>
         <Progress className="check2"
-        type="circle" percent={100} theme={{ active: {trailColor: '#535B63', color: '#E71D36'}}} />       
+        type="circle" percent={100} status="active" theme={{ active: {trailColor: '#535B63', color: '#E71D36'}}} />       
         <div className="jquery">jQuery</div>
         <Progress className="check3"
-        type="circle" percent={100} theme={{ active: {trailColor: '#535B63', color: '#E71D36'}}} />
+        type="circle" percent={100} status="active" theme={{ active: {trailColor: '#535B63', color: '#E71D36'}}} />
         <div className="git">Git Workflow</div>
       </div>
     </div>

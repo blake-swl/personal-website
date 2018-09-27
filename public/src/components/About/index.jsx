@@ -40,8 +40,8 @@ const About = () => {
         <div className="blur">
             <div className="personal">
               <h1>Get to know me more</h1>
-              <p>I’m a software engineer with a unique perspective and upbringing that is ready to give back and serve the community with my experiences, talents, and lessons.
-Born in Seoul, Korea, I grew up in Saint Petersburg, Russia from the ages of two to 12, until I moved to Los Angeles, CA where I currently reside. Having lived in such distinct cultures I bring a nuanced approach to social interactions and strong communication skills to seamlessly blend and adapt to any culture. Furthermore, coming from a family of musicians and artists, I possess a keen eye for art and design. In college, I earned my bachelors in psychology at UCSB and pursued a career in pharmacology until I dabbled in coding and it changed my life. I’m a notorious coffee enthusiast, lover of nature, Lebron James fanatic, and (hopefully) the best son to my loving parents.
+              <p>   I’m a software engineer with a unique perspective and upbringing that is ready to give back and serve the community with my experiences, talents, and lessons.
+Born in Seoul, Korea, I grew up in Saint Petersburg, Russia from the ages of two to 12, until I moved to Los Angeles, CA where I currently reside. Having lived in such distinct cultures I bring a nuanced approach to social interactions and strong communication skills to seamlessly blend and adapt to any culture. Furthermore, coming from a family of musicians and artists, I possess a keen eye for art and design. In college, I earned my bachelors in psychology at UCSB and pursued a career in pharmacology until dabbling in coding changed my life. I’m a notorious coffee enthusiast, lover of nature, Lebron James fanatic, and (hopefully) the best son to my loving parents.
 </p>
             </div>
           <div className="flex">

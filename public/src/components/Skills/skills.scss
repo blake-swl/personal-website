@@ -21,12 +21,13 @@
   width: 80%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   grid-gap: 20px;
   grid-template-areas: 
     "javascript javascript htmlcss htmlcss"
     "react react node node"
-    "graphql graphql sql sql";
+    "graphql graphql sql sql"
+    " . enthusiasm enthusiasm .";
 
     div {
       font-family: "montsRegular";
@@ -43,7 +44,6 @@
   display: grid;
   width: 40%;
   justify-items: center;
-  // align-items: center;
   padding-top: 2%;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -55,6 +55,7 @@
     font-family: 'montsRegular';
     font-size: 20px;
     align-items: start;
+    color: white;
   }
 
 }
@@ -79,6 +80,9 @@
 }
 .graphql {
   grid-area: graphql;
+}
+.enthusiasm {
+  grid-area: enthusiasm;
 }
 .check1 {
   grid-area: check1;
