@@ -15,7 +15,7 @@ import guitar from '../../../dist/images/guitar.jpg'
 
 const About = () => {
   return(
-    <div className="about">
+    <div id="about">
       <div className="philosophy">
         <p>My philosophy is to leverage technology 
           to build functional, yet simplistically elegant 

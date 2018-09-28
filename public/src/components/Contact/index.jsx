@@ -46,7 +46,7 @@ export default class Contact extends Component {
     const hover = this.state.isHovering === false;
 
     return(
-      <div className="container">
+      <div  id="contact" className="container">
         <div className="banner">
           <div className="layer">
             <h3>Let's build something together over a cup of coffee.</h3>

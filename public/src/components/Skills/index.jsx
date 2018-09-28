@@ -6,7 +6,7 @@ import "react-sweet-progress/lib/style.css";
 
 const Skills = () => {
   return(
-    <div className="skills">
+    <div id="skills">
       <div className="title">
         <h1>Skills</h1>
       </div>
