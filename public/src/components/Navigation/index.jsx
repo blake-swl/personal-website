@@ -28,24 +28,24 @@ export default class Navigation extends Component {
     return (
       <div id="navbar">
         <div className="navigation" >
-            <ul className="navbar">
-              <li>
-                <a href="#home">home</a>
-              </li>
-              <li>
-                <a href="#about">about</a>
-              </li>
-              <li>
-                <a href="#skills">skills</a>
-              </li>
-              <li>
-                <a href="#portfolio">portfolio</a>
-              </li>
-              <li>
-                <a href="#contact">contact</a>
-              </li>
-            </ul>
-          </div>
+          <ul className="navbar">
+            <li>
+              <a href="#home">home</a>
+            </li>
+            <li>
+              <a href="#about">about</a>
+            </li>
+            <li>
+              <a href="#skills">skills</a>
+            </li>
+            <li>
+              <a href="#portfolio">portfolio</a>
+            </li>
+            <li>
+              <a href="#contact">contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     )
   }

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './contact.scss';
-import Typed from 'react-typed';
 import axios from 'axios';
 import Email from '../Email';
 import '../Email/email.scss';
@@ -32,7 +31,7 @@ export default class Contact extends Component {
     };
   }
 
-  async initMap() {
+  initMap() {
     const map = new google.maps.Map(document.getElementById('map'), {
       center: {lat: 34.0749, lng: -118.3082},
       zoom: 8
@@ -71,8 +70,11 @@ export default class Contact extends Component {
             <h1>my location.</h1>
           </li>
         </ul>
+        <div className="la">
+          <div></div>
+        </div>
         <div className="footer">
-          Footer
+          Fo
         </div>
       </div>
     )

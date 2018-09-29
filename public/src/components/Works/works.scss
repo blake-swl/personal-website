@@ -1,145 +1,222 @@
 @import '../Global/global.scss';
 
-h1 {
-  font-family: 'montsMedium';
-  font-size: 50px;
-  margin-top: 3%;
-}
 #portfolio {
   height: 70vh;
   width: 100%;
-  background-size: cover;
-  background: url('../../../dist/images/bball.jpg') 20% 60% no-repeat fixed;
-}
-.background-layer {
-  height: 75vh;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.5);
+  background: #eaebed;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
 
+  h1 {
+    font-family: 'notoRegular';
+    font-size: 50px;
+    padding-top: 5%;
+  }
+}
+.btns {
+  display: flex;
+  justify-content: center;
+}
+button {
+  color: white;
+  border: 2px solid white;
+  background: none;
+  font-size: 15px;
+  margin: 10%;
+  // padding: 10%;
+  font-family: 'montsRegular';
+  cursor: pointer;
+}
 .works {
   margin-top: 3%;
   display: grid;
   grid-template-columns: repeat(3, 400px);
   grid-template-areas: 
-    "amazon airbnb homepage";
+    "amazon homepage airbnb";
   grid-gap: 25px;
   height: 400px;
   color: white;
 }
 .fade {
-  padding: 5%;
-  background-color: rgba(0, 0, 0, 0.7);
-  height: calc(400px - 10%);
+  height: 400px;
   display: flex;
   flex-direction: column;
-  text-shadow: .5px .5px black;
-  font-family: 'montsRegular';
-  color: white;
-
-  .head {
-    font-size: 30px;
-    font-family: 'montsMedium';
+  justify-content: center;
+  align-items: center;
+  h3, button {
+    visibility: hidden;
   }
-  .tech {
-    padding-top: 3%;
-    font-size: 18px;
-  }
-  .description {
-    padding: 5%;
-    font-size: 20px;
+}
+.fade:hover {
+  visibility: visible;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)
+  );
+  transition: all .5s ease-in;
+  
+  h3, button {
+    visibility: visible;
   }
 }
 .amazon {
   background: url('../../../dist/images/amazon.jpg') no-repeat;
   background-size: contain;
   grid-area: amazon;
-  transition: all .5s ease;
-}
-.amazon .fade:hover {
-  background: url('../../../dist/images/amazon.gif') 0 50% no-repeat;
-  background-size: cover;
-  .description, .tech, .head {
-    visibility: hidden;
-  }
 }
 .airbnb {
   background: url('../../../dist/images/airbnb.jpg') no-repeat;
   background-size: contain;
   grid-area: airbnb;
-  transition: all .5s ease;
-}
-.airbnb .fade:hover {
-  background: url('../../../dist/images/airbnb.gif') 50% 50% no-repeat;
-  background-size: cover;
-  .description, .tech, .head {
-    visibility: hidden;
-  }
 }
 .homepage {
   background: url('../../../dist/images/homepage.jpg') no-repeat;
   background-size: contain;
   grid-area: homepage;
-  transition: all .5s ease;
-}
-.homepage .fade:hover {
-  background: url('../../../dist/images/homepage.gif') 50% 50% no-repeat;
-  background-size: cover;
-
-  .description, .tech, .head {
-    visibility: hidden;
-  }
 }
 
 
-// .portfolio {
-//   position: relative;
-//   display: grid;
-//   margin-top: 3%;
-//   height: 400px;
-//   grid-gap: 15px;
-//   grid-template-columns: repeat(3, 400px);
-//   // grid-template-rows: repeat(2, 400px);
-//   grid-template-areas: 
-//     "amazon airbnb homepage";
-//     // "art1 art2 art3";
+
+
+
+
+
+// @import '../Global/global.scss';
+
+// h1 {
+//   font-family: 'notoRegular';
+//   font-size: 50px;
+//   margin-top: 5%;
 // }
-
-
-
-// .art {
-//   margin-top: 2%;
-//   display: grid;
-//   // background: rgba(0, 0, 0, 0.5);
-//   grid-template-columns: repeat(3, 400px);
-//   height: 300px;
-//   grid-gap: 15px;
-//   grid-template-areas: 
-//     "art1 art2 art3";
-
-//     div {
-//       // margin: 10%;
-//       background-size: contain;
-//       align-items: center;
-//     }
-// }
-// .black {
-//   background-color: rgba(0,0,0,0.5);
-//   height: inherit;
+// #portfolio {
+//   height: 70vh;
 //   width: 100%;
+//   // background-size: 100% 70vh;
+//   // background: url('../../../dist/images/work.jpg') 50% 50% no-repeat fixed;
+//   background: #eaebed;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
 // }
-// .art1 {
-//   background: url('../../../dist/images/art1.jpg') no-repeat;
-//   grid-area: art1;
+// // .background-layer {
+// //   height: 75vh;
+//   // width: 100%;
+// //   // background: rgba(0, 0, 0, 0.5);
+// //   background: rgba(255, 255, 255, 0.3);
+// // }
+
+// .fade {
+//   padding: 5%;
+//   // background-color: rgba(0, 0, 0, 0.7);
+//   height: calc(400px - 10%);
+//   display: flex;
+//   flex-direction: column;
+//   text-shadow: .5px .5px black;
+//   font-family: 'montsRegular';
+//   color: white;
+  
+//   .head {
+//     font-size: 30px;
+//     font-family: 'montsMedium';
+//     visibility: hidden;
+//   }
+//   .tech {
+//     padding-top: 3%;
+//     font-size: 18px;
+//     visibility: hidden;
+//   }
+//   .description {
+//     // text-align: justify;
+//     padding: 5%;
+//     font-size: 20px;
+//     visibility: hidden;
+//   }
 // }
-// .art2 {
-//   background: url('../../../dist/images/art2.jpg') no-repeat;
-//   grid-area: art2;
+// .amazon {
+//   background: url('../../../dist/images/amazon.jpg') no-repeat;
+//   background-size: contain;
+//   grid-area: amazon;
+//   transition: all .5s ease;
 // }
-// .art3 {
-//   background: url('../../../dist/images/art3.jpg') no-repeat;
-//   grid-area: art3;
+
+// .fade:hover {
+//   background: linear-gradient(
+//     rgba(0, 0, 0, 0.7),
+//     rgba(0, 0, 0, 0.7)
+//   );
 // }
+// // .amazon .fade:hover {
+// //   background: url('../../../dist/images/amazon.gif') 0 50% no-repeat;
+// //   background-size: cover;
+// //   .description, .tech, .head {
+// //     visibility: hidden;
+// //   }
+// // }
+
+// // .airbnb .fade:hover {
+// //   background: url('../../../dist/images/airbnb.gif') 50% 50% no-repeat;
+// //   background-size: cover;
+// //   .description, .tech, .head {
+// //     visibility: hidden;
+// //   }
+// // }
+
+// // .homepage .fade:hover {
+// //   background: url('../../../dist/images/homepage.gif') 50% 50% no-repeat;
+// //   background-size: cover;
+
+// //   .description, .tech, .head {
+// //     visibility: hidden;
+// //   }
+// // }
+
+
+// // .portfolio {
+// //   position: relative;
+// //   display: grid;
+// //   margin-top: 3%;
+// //   height: 400px;
+// //   grid-gap: 15px;
+// //   grid-template-columns: repeat(3, 400px);
+// //   // grid-template-rows: repeat(2, 400px);
+// //   grid-template-areas: 
+// //     "amazon airbnb homepage";
+// //     // "art1 art2 art3";
+// // }
+
+
+
+// // .art {
+// //   margin-top: 2%;
+// //   display: grid;
+// //   // background: rgba(0, 0, 0, 0.5);
+// //   grid-template-columns: repeat(3, 400px);
+// //   height: 300px;
+// //   grid-gap: 15px;
+// //   grid-template-areas: 
+// //     "art1 art2 art3";
+
+// //     div {
+// //       // margin: 10%;
+// //       background-size: contain;
+// //       align-items: center;
+// //     }
+// // }
+// // .black {
+// //   background-color: rgba(0,0,0,0.5);
+// //   height: inherit;
+// //   width: 100%;
+// // }
+// // .art1 {
+// //   background: url('../../../dist/images/art1.jpg') no-repeat;
+// //   grid-area: art1;
+// // }
+// // .art2 {
+// //   background: url('../../../dist/images/art2.jpg') no-repeat;
+// //   grid-area: art2;
+// // }
+// // .art3 {
+// //   background: url('../../../dist/images/art3.jpg') no-repeat;
+// //   grid-area: art3;
+// // }

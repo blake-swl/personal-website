@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './global.scss';
-import { HashRouter, Route, NavLink } from 'react-router-dom';
 
 import Header from '../Header/index';
 import Navigation from '../Navigation';
@@ -10,19 +9,16 @@ import Portfolio from '../Works';
 import Contact from '../Contact';
 
 
-export default class App extends Component {
-  render() {
-    return(
-      <HashRouter>
-        <div id="wrapper">
-          <Navigation />
-          <Header className="first"/>
-          <About className="second"/>
-          <Skills className="third"/>
-          <Portfolio className="fourth"/>
-          <Contact className="fifth"/>
-        </div>
-      </HashRouter>
-    )
-  }
+const App = () => {
+  return(
+    <div id="wrapper">
+      <Navigation />
+      <Header />
+      <About />
+      <Skills />
+      <Portfolio />
+      <Contact />
+    </div>
+  )
 };
+export default App;
