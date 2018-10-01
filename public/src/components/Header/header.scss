@@ -63,15 +63,9 @@
   color: rgba(0, 0, 0, 0.7);
   transition: .2s ease-in;
 }
-// .btn a {
-//   text-decoration: none;
-//   font-family: 'promptLight';
-//   font-size: 20px;
-//   color: white;
-//   text-shadow: .5px .5px black;
-//   border: 2px solid white;
-//   // box-shadow: 1px 1px black;
-//   margin-left: 2%;
-//   margin-right: 2%;
-//   padding: 2px;
+
+// @include media("<phone") {
+//   .header {
+//     height: 100%;
+//   }
 // }

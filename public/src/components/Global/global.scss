@@ -98,3 +98,11 @@ Header {
 h1 {
   font-family: "notoRegular";
 }
+
+/* Responsive */
+
+$breakpoints: (
+  'phone': 320px,
+  'tablet': 768px,
+  'desktop': 1024px,
+) !default;

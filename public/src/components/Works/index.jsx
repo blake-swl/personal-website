@@ -1,49 +1,89 @@
 import React, { Component } from 'react';
 import './works.scss';
+import amazon from '../../../dist/images/amazon.jpg';
+import airbnb from '../../../dist/images/airbnb.jpg';
+import homepage from '../../../dist/images/homepage.jpg';
 
 export default class Portfolio extends Component {
   constructor() {
     super();
 
+    this.state = {
+      modalIsOpen: false,
 
+    }
   }
+
   render() {
-    return (
+    return(
       <div id="portfolio">
-        <h1>My latest projects</h1>
-        <div className="works">
-          <div className="amazon">
-            <div className="fade">
-              <h3>AMAZON PRODUCT SYSTEM DESIGN</h3>
-              <div className="btns">
-                <button>ZOOM</button>
-                <button id="amazon">VIEW CODE</button>
-              </div>
-            </div>
-          </div>
-          <div className="airbnb">
-            <div className="fade">
-              <h3>AIRBNB LISTING PAGE</h3>
-              <div className="btns">
-                <button>ZOOM</button>
-                <button id="airbnb">VIEW CODE</button>
-              </div>
-            </div>
-          </div>
-          <div className="homepage">
-            <div className="fade">
-              <h3>PERSONAL WEBSITE</h3>
-              <div className="btns">
-                <button>ZOOM</button>
-                <button id="personal">VIEW CODE</button>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </div>
     )
   }
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// export default class Portfolio extends Component {
+//   constructor() {
+//     super();
+
+//   }
+//   handleModal() {
+//     console.log('button clicked');
+//   }
+//   render() {
+//     return (
+//       <div id="portfolio">
+//         <h1>My latest projects</h1>
+//         <div className="works">
+//           <div className="amazon">
+//             <img src={amazon} alt=""/>
+//             <div className="fade">
+//               <div className="btns">
+//                 <button className="zoom">ZOOM</button>
+//               </div>
+//               <div className="slideUp">
+//                 <h3>AMAZON PRODUCT SYSTEM DESIGN</h3>
+//               </div>
+//             </div>
+//           </div>
+//           <div className="airbnb">
+//             <div className="fade">
+//               <h3>AIRBNB LISTING PAGE</h3>
+//               <div className="btns">
+//                 <button className="zoom" onClick={() => this.handleModal()}>ZOOM</button>
+//                 <a className="code" href="https://github.com/HRLA23WhiteWalkers/MainPage">VIEW CODE</a>
+//               </div>
+//             </div>
+//           </div>
+//           <div className="homepage">
+//             <div className="fade">
+//               <h3>PERSONAL WEBSITE</h3>
+//               <div className="btns">
+//                 <button className="zoom">ZOOM</button>
+//                 <a  className="code" href="https://github.com/blake-swl/personal-website">VIEW CODE</a>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     )
+//   }
+// };
 
 
 

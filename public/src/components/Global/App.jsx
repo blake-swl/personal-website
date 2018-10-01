@@ -1,6 +1,7 @@
 import React from 'react';
 import './global.scss';
 
+
 import Header from '../Header/index';
 import Navigation from '../Navigation';
 import About from '../About';

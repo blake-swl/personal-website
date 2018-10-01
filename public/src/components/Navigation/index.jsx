@@ -2,11 +2,17 @@ import React, { Component } from 'react';
 import './nav.scss';
 import 'smoothscroll';
 
+import { Icon } from 'react-icons-kit';
+import {navicon} from 'react-icons-kit/fa/navicon';
+
+import DropDown from '../DropDown/DropDown';
+
 export default class Navigation extends Component {
   constructor() {
     super();
 
     this.handleScroll = this.handleScroll.bind(this);
+    this.handleDropDown = this.handleDropDown.bind(this);
   }
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
@@ -24,10 +30,20 @@ export default class Navigation extends Component {
     }
   }
 
+  handleDropDown = () => {
+    const navs = document.querySelectorAll('.navbar');
+
+
+    navs.forEach(nav => nav.classList.toggle('navbar_dropdown'));
+  }
+
   render() {
     return (
       <div id="navbar">
-        <div className="navigation" >
+        <nav className="navigation" >
+          <div className="icon" style={{ color: '#FFFFFF' }}>
+            <Icon icon={navicon} size={34} onClick={ () => this.handleDropDown()}/>
+          </div>
           <ul className="navbar">
             <li>
               <a href="#home">home</a>
@@ -45,7 +61,7 @@ export default class Navigation extends Component {
               <a href="#contact">contact</a>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
     )
   }
