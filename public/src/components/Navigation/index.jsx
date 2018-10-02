@@ -5,7 +5,6 @@ import 'smoothscroll';
 import { Icon } from 'react-icons-kit';
 import {navicon} from 'react-icons-kit/fa/navicon';
 
-import DropDown from '../DropDown/DropDown';
 
 export default class Navigation extends Component {
   constructor() {

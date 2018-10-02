@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './works.scss';
+import Modal from '../Modals/Launcher/Launcher';
 import amazon from '../../../dist/images/amazon.jpg';
 import airbnb from '../../../dist/images/airbnb.jpg';
 import homepage from '../../../dist/images/homepage.jpg';
@@ -15,9 +16,15 @@ export default class Portfolio extends Component {
   }
 
   render() {
+    // const { sheet: {classes} } = this.props;
     return(
       <div id="portfolio">
-        
+        <Modal className="airbnb">
+          <div className="textModal">
+            <h1>hello</h1>
+            <p>asdfadfadfasdfadsfadsfadskflskajflasjfdfjklsdajfkladjvkllakdsjfdjafkljdsalkfjdsalkjfldskjflkdsjfkldsajfkldsajfkljdsal;kflkalka;lfads</p>
+          </div>
+        </Modal>
       </div>
     )
   }
