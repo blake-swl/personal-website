@@ -40,6 +40,9 @@
     width: 600px;
     height: 400px;
   }
+  // @media only screen and (max-width: 425px) {
+  //   padding-left: 0;
+  // }
 }
 .narrative {
   background: white;
@@ -107,10 +110,10 @@
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
-  grid-template-areas: 
-    // "texts texts texts texts"
-    "grad bball group2 nancy"
-    "dodgers beach guitar sf";
+  // grid-template-areas: 
+  //   // "texts texts texts texts"
+  //   "grad bball group2 nancy"
+  //   "dodgers beach guitar sf";
 
     img {
       height: 200px;
@@ -126,27 +129,127 @@
 // }
 
 
-.grad {
-  grid-area: grad;
+// .grad {
+//   grid-area: grad;
+// }
+// .nancy {
+//   grid-area: nancy;
+// }
+// .dodgers {
+//   grid-area: dodgers
+// }
+// .sf {
+//   grid-area: sf;
+// }
+// .group2 {
+//   grid-area: group2;
+// }
+// .beach {
+//   grid-area: beach;
+// }
+// .bball {
+//   grid-area: bball;
+// }
+// .guitar {
+//   grid-area: guitar;
+// }
+
+/* Mid Size */
+
+@media only screen and (min-width: 460px) and (max-width: 960px) {
+  #about {
+    transform: scale(0.7);
+  }
 }
-.nancy {
-  grid-area: nancy;
-}
-.dodgers {
-  grid-area: dodgers
-}
-.sf {
-  grid-area: sf;
-}
-.group2 {
-  grid-area: group2;
-}
-.beach {
-  grid-area: beach;
-}
-.bball {
-  grid-area: bball;
-}
-.guitar {
-  grid-area: guitar;
+/* Mobile 425px */
+
+@media only screen and (max-width: 425px) {
+  #about {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+  }
+  .philosophy {
+    height: auto;
+    padding: 5%;
+    p {
+      font-size: 20px;
+    }
+  }
+  .passion {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    
+    .profilePic {
+      width: 100%;
+      padding-left: 0;
+      
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  .narrative {
+    display: flex;
+    width: 100%;
+    height: auto;
+
+    h3 {
+      padding-top: 5%;
+      align-self: center;
+      margin-bottom: 0;
+      padding-bottom: 1%;
+      border-bottom: 2px solid black;
+      // text-decoration: underline;
+    }
+
+    .scroll-x {
+      display: flex;
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+
+      .card {
+        padding: 5%;
+        flex: 0 0 auto;
+        width: 80vw;
+        text-align: justify;
+      }
+    }
+  }
+  }
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    width: 100%;
+
+    .blur {
+      width: 100%;
+    }
+
+    .personal {
+      display: none;
+    }
+    .pictures {
+      overflow-x: hidden;
+      width: 100%;
+      height: auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      justify-content: center;
+
+      img {
+        transform: scale(0.9);
+        justify-self: stretch;
+        grid-gap: 1%;
+      }
+    }
+  }
 }

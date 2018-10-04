@@ -28,12 +28,20 @@ const About = () => {
         </div>
         <div className="narrative">
           <h3>My passion for coding</h3>
-          <p>Palette, brush, canvas. Keyboard, mouse, screen. I can never forget what it first felt like to write something in a static HTML page and with a click of a button, have it render on screen. I can never forget what it felt like to tweak a few elements on CSS to change the entire layout and design of my page.</p>
-          <br/>
-          <p>I can also never forget what it felt like to spend countless hours trying to fix a bug, learn React, read through Postgres documentation, correctly route every endpoint to generate a cohesive product. But I can also never forget the addictive exhilaration I felt from the satisfaction of making progress and break through.</p>
-          <br/>
-          <p>Software engineering is my craft, and coding is my brush stroke of passion I exert on the screen that is my canvas. My passion for this craft keeps me innovating and learning new technologies to be the best software engineer I can be.
-          </p>
+          <div className="scroll-x">
+            <div className="card">
+              <p>Palette, brush, canvas. Keyboard, mouse, screen. I can never forget what it first felt like to write something in a static HTML page and with a click of a button, have it render on screen. I can never forget what it felt like to tweak a few elements on CSS to change the entire layout and design of my page.</p>
+            </div>
+            <br/>
+            <div className="card"> 
+              <p>I can also never forget what it felt like to spend countless hours trying to fix a bug, learn React, read through Postgres documentation, correctly route every endpoint to generate a cohesive product. But I can also never forget the addictive exhilaration I felt from the satisfaction of making progress and break through.</p>
+            </div>
+            <br/>
+            <div className="card">
+              <p>Software engineering is my craft, and coding is my brush stroke of passion I exert on the screen that is my canvas. My passion for this craft keeps me innovating and learning new technologies to be the best software engineer I can be.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
       <div className="gallery">

@@ -5,7 +5,7 @@
   height: 70vh;
   display: flex;
   flex-direction: column;
-  background: url('../../../dist/images/IMG_2843.jpg') 50% 75% no-repeat fixed;
+  background: url('../../../dist/images/mac.jpg') 50% 75% no-repeat fixed;
   background-size: cover;
   color: white;
   z-index: -1;
@@ -13,7 +13,7 @@
 .header-layer {
   // background-color: #C9E4CA;
   // opacity: 0.7;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.2);
   height:70vh;
   width: 100%;
 
@@ -61,6 +61,11 @@
   background-color: white;
   color: rgba(0, 0, 0, 0.7);
   transition: .2s ease-in;
+}
+@media only screen and (min-width: 460px) and (max-width: 960px) {
+  #header {
+    transform: scale(0.7);
+  }
 }
 
 @media only screen and (max-width: 425px) {
