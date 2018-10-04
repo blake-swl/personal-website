@@ -40,22 +40,26 @@
   font-family: 'montsRegular';
   font-size: 30px;
 }
+
 .moreSkills {
   display: grid;
-  width: 40%;
-  justify-items: center;
+  width: 80%;
   padding-top: 2%;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-gap: 20px;
+  justify-items: center;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 2%;
   grid-template-areas: 
-    "check1 check2 check3"
-    "aws    jquery git";
+    ". . aws jquery git . .";
   div {
+    padding: 5%;
     font-family: 'montsRegular';
     font-size: 20px;
-    align-items: start;
     color: white;
+    justify-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
 }
@@ -84,15 +88,6 @@
 .enthusiasm {
   grid-area: enthusiasm;
 }
-.check1 {
-  grid-area: check1;
-}
-.check2 {
-  grid-area: check2;
-}
-.check3 {
-  grid-area: check3;
-}
 .aws {
   grid-area: aws;
 }
@@ -101,4 +96,37 @@
 }
 .git {
   grid-area: git;
+}
+
+/* Mobile 425px */ 
+
+@media only screen and (max-width: 425px) {
+  #skills {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .mainSkills {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: 
+      "javascript"
+      "htmlcss"
+      "react"
+      "node"
+      "graphql"
+      "sql"
+      "enthusiasm";
+  }
+  .moreSkills {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "aws"    
+    "jquery" 
+    "git";
+  }
 }

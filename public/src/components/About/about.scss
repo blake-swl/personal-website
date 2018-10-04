@@ -224,12 +224,14 @@
   }
   }
   .gallery {
+    height: auto;
     display: flex;
     flex-direction: column;
-    overflow: auto;
+    // overflow: hidden;
     width: 100%;
 
     .blur {
+      height: auto;
       width: 100%;
     }
 
@@ -239,7 +241,7 @@
     .pictures {
       overflow-x: hidden;
       width: 100%;
-      height: auto;
+      // height: auto;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(4, 1fr);

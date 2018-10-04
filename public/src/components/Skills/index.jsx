@@ -37,15 +37,21 @@ const Skills = () => {
         <h1>More Skills</h1>
       </div>
       <div className="moreSkills">
-        <Progress className="check1"
-        type="circle" percent={100} status="active" theme={{ active: {trailColor: '#535B63', color: '#D05353'}}} />
-        <div className="aws">AWS EC2</div>
-        <Progress className="check2"
-        type="circle" percent={100} status="active" theme={{ active: {trailColor: '#535B63', color: '#D05353'}}} />       
-        <div className="jquery">jQuery</div>
-        <Progress className="check3"
-        type="circle" percent={100} status="active" theme={{ active: {trailColor: '#535B63', color: '#D05353'}}} />
-        <div className="git">Git Workflow</div>
+        <div className="aws">
+          <Progress className="check1"
+          type="circle" percent={100} status="active" theme={{ active: {trailColor: '#535B63', color: '#D05353'}}} />
+          AWS EC2
+        </div>
+        <div className="jquery">
+          <Progress className="check2"
+          type="circle" percent={100} status="active" theme={{ active: {trailColor: '#535B63', color: '#D05353'}}} />       
+          jQuery
+        </div>
+        <div className="git">
+          <Progress className="check3"
+          type="circle" percent={100} status="active" theme={{ active: {trailColor: '#535B63', color: '#D05353'}}} />
+          Git Workflow
+        </div>
       </div>
     </div>
   )
