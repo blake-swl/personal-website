@@ -97,12 +97,15 @@ body {
   z-index: 0;
   width: 100%;
   height: auto;
-  // scroll-snap-type: y mandatory;
-	// overflow-y: scroll;
 }
-Header {
-  scroll-snap-align: start;
+#wrapper {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  * {
+    scroll-snap-align: center;
+  }
 }
+
 h1 {
   font-family: "notoRegular";
 }

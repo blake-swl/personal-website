@@ -205,16 +205,17 @@
       margin-bottom: 0;
       padding-bottom: 1%;
       border-bottom: 2px solid black;
-      // text-decoration: underline;
     }
 
     .scroll-x {
+      scroll-snap-type: x mandatory;
       display: flex;
-      overflow-x: auto;
+      overflow-x: scroll;
       overflow-y: hidden;
       -webkit-overflow-scrolling: touch;
 
       .card {
+        scroll-snap-align: center;
         padding: 5%;
         flex: 0 0 auto;
         width: 80vw;
