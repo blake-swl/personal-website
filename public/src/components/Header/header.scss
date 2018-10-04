@@ -1,8 +1,7 @@
 @import '../Global/global.scss';
 
-:local(.header){
+#home {
   size: 100%;
-  // margin-top: 5em;
   height: 70vh;
   display: flex;
   flex-direction: column;
@@ -11,7 +10,7 @@
   color: white;
   z-index: -1;
 }
-:local(.layer) {
+.header-layer {
   // background-color: #C9E4CA;
   // opacity: 0.7;
   background-color: rgba(0, 0, 0, 0.7);
@@ -19,14 +18,14 @@
   width: 100%;
 
 }
-:local(.tagline h4) {
-  font-family: 'caveatRegular';
+.tagline h4 {
+  font-family: 'nothingRegular';
   font-size: 30px;
   display: flex;
   justify-content: center;
   margin-top: 10%;
 }
-:local(.position) {
+.position {
   display: flex;
   position: relative;
   justify-content: center;
@@ -36,20 +35,20 @@
   font-size: 80px;
   text-shadow: .5px .5px black;
 }
-:local(.name) {
+.name {
   font-family: 'montsRegular';
   display: flex;
   justify-content: center;
   font-size: 40px;
   text-shadow: .5px .5px black;
 }
-:local(.btn) {
+.btn {
   margin-top: 2%;
   display: flex;
   justify-content: center;
   margin-bottom: 1%;
 }
-:local(.btn a) {
+.btn a {
   font-size: 20px;
   color: white;
   font-family: 'montsRegular';
@@ -58,14 +57,68 @@
   padding: 6px;
   margin: 10px;
 }
-:local(.btn a:hover) {
+.btn a:hover {
   background-color: white;
   color: rgba(0, 0, 0, 0.7);
   transition: .2s ease-in;
 }
 
-// @include media("<phone") {
-//   .header {
-//     height: 100%;
+@media only screen and (max-width: 425px) {
+  // .position {
+  //   // margin-top: 5%;
+  //   margin-bottom: none;
+  // }
+
+  .position, .name {
+    font-size: 30px;
+  }
+  .tagline {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    // justify-content: center;
+
+    h4 {
+      font-size: 20px;
+    }
+    .btn {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      width: 60%;
+      // justify-items: center;
+    }
+  }
+  
+}
+// @media only screen and (max-width: 768px){
+//   #home {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-items: center;
+//   }
+//   .tagline h4 {
+//     font-size: 20px;
+//     justify-content: center;
+//     align-self: center;
+//   }
+//   .position, .name {
+//     font-size: 35px;
+//   }
+//   .btn {
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//     grid-template-rows: repeat(2, 1fr);
+//     grid-gap: 2%;
+//     margin: 10%;
+//     justify-items: center;
+    
+//     a {
+//       width: 100%;
+//       font-size:100%;
+//     }
 //   }
 // }
