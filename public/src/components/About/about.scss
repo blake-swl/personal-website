@@ -19,7 +19,7 @@
   
   p {
     align-items: center;
-    font-family: 'montsItalic';
+    font-family: 'notoRegular';
     font-size: 30px;
     line-height: 1.5;
   }
@@ -110,10 +110,6 @@
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
-  // grid-template-areas: 
-  //   // "texts texts texts texts"
-  //   "grad bball group2 nancy"
-  //   "dodgers beach guitar sf";
 
     img {
       height: 200px;
@@ -121,38 +117,6 @@
       justify-self: stretch;
     }
   }
-
-
-// .pictures img:hover {
-//   height: 300px;
-//   width: 300px;
-// }
-
-
-// .grad {
-//   grid-area: grad;
-// }
-// .nancy {
-//   grid-area: nancy;
-// }
-// .dodgers {
-//   grid-area: dodgers
-// }
-// .sf {
-//   grid-area: sf;
-// }
-// .group2 {
-//   grid-area: group2;
-// }
-// .beach {
-//   grid-area: beach;
-// }
-// .bball {
-//   grid-area: bball;
-// }
-// .guitar {
-//   grid-area: guitar;
-// }
 
 /* Mid Size */
 
@@ -240,19 +204,40 @@
       display: none;
     }
     .pictures {
-      overflow-x: hidden;
-      width: 100%;
-      // height: auto;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(4, 1fr);
-      justify-content: center;
+      scroll-snap-type: x mandatory;
+      display: flex;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      height: auto;
+      // padding: 2%;
 
-      img {
-        transform: scale(0.9);
-        justify-self: stretch;
-        grid-gap: 1%;
+      .card1 {
+        flex: 0 0 auto;
+        margin: 5%;
+        width: 80%;
+        height: 80%;
+        scroll-snap-align: center;
       }
     }
+
+    // .pictures {
+    //   overflow-x: hidden;
+    //   // overflow-y: scroll;
+    //   width: 100%;
+    //   // height: auto;
+    //   display: grid;
+    //   grid-template-columns: repeat(2, 1fr);
+    //   grid-template-rows: repeat(4, 1fr);
+    //   justify-content: center;
+
+    //   img {
+    //     transform: scale(0.9);
+    //     justify-self: stretch;
+    //     grid-gap: 1%;
+    //     // flex: 0 0 auto;
+
+    //   }
+    // }
   }
 }

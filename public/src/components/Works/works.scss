@@ -1,182 +1,118 @@
+
 @import '../Global/global.scss';
 
 #portfolio {
   height: 70vh;
-  width: 100vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: #eaebed;
-}
-#myImg {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
 
-#myImg:hover {opacity: 0.7;}
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  h1 {
+    font-family: 'notoRegular';
+    font-size: 50px;
+    padding-top: 5%;
+  }
 }
-
-/* Modal Content (Image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
+.works {
+  margin-top: 3%;
+  display: grid;
+  grid-template-columns: repeat(3, 26em);
+  grid-template-areas: 
+  "amazon airbnb homepage";
+  grid-gap: 25px;
+  height: 26em;
+  color: white;
 }
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
+.fade {
+  height: 26em;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: 
+  ". . . . ."
+  ". . . . ."
+  ". btns btns btns ."
+  ". . . . ."
+  "slideUp slideUp slideUp slideUp slideUp";
+  
+  h3, .btns, .slideUp {
+    visibility: hidden;
+  }
 }
-
-/* Add Animation - Zoom in the Modal */
-.modal-content, #caption { 
-  animation-name: zoom;
-  animation-duration: 0.6s;
+.amazon {
+  background: url('../../../dist/images/amazon.jpg') no-repeat;
+  background-size: contain;
+  grid-area: amazon;
 }
-
-@keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
+.airbnb {
+  background: url('../../../dist/images/airbnb.jpg') no-repeat;
+  background-size: contain;
+  grid-area: airbnb;
 }
-
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
+.homepage {
+  background: url('../../../dist/images/homepage.jpg') no-repeat;
+  background-size: contain;
+  grid-area: homepage;
 }
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
+.fade:hover {
+  visibility: visible;
+  background: rgba(0,0,0,0.8);
+  // transition: all .1s ease-in;
+  
+  h3, .btns, .slideUp {
+    visibility: visible;
+  }
 }
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
+.slideUp {
+  display: flex;
+  padding: 5%;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 5vh;
+  background: #D05353;
+  opacity: 0.9;
+  color: white;
+  font-size: 2em;
+  grid-area: slideUp;
+  font-family: 'montsMedium';
 }
-// @import '../Global/global.scss';
+.btns {
+  grid-area: btns;
+  display: flex;
+  flex-direction: row;
+  // width: 100%;
 
-// #portfolio {
-//   height: 70vh;
-//   width: 100%;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-
-//   h1 {
-//     font-family: 'notoRegular';
-//     font-size: 50px;
-//     padding-top: 5%;
-//   }
-// }
-// .btns {
-//   display: flex;
-//   justify-content: center;
-//   button, a {
-//     text-decoration: none;
-//     width: 150px;
-//     height: 100px;
-//     color: white;
-//     border: 2px solid white;
-//     background: none;
-//     font-size: 15px;
-//     margin: 10%;
-//     // padding: 10%;
-//     font-family: 'montsRegular';
-//     cursor: pointer;
-//   }
-// }
-// .works {
-//   margin-top: 3%;
-//   display: grid;
-//   grid-template-columns: repeat(3, 400px);
-//   grid-template-areas: 
-//     "amazon homepage airbnb";
-//   grid-gap: 25px;
-//   height: 400px;
-//   color: white;
-// }
-// .fade {
-//   height: 400px;
-//   display: grid;
-//   grid-template-columns: repeat(4, 1fr);
-//   grid-template-rows: repeat(3, 1fr);
-//   grid-template-areas: 
-//     ". .      .  ."
-//     ". zoomz code ."
-//     "slideUp slideUp slideUp slideUp";
-
-//   h3, button, a {
-//     visibility: hidden;
-//   }
-// }
-// .slideUp {
-//   width: 100%;
-//   height: 10%;
-//   background: white;
-//   color: black;
-//   font-size: 20px;
-//   grid-area: slideUp;
-// }
+  * {
+    font-size: 1em;
+    border: 2px solid white;
+    color: white;
+    background: none;
+  }
+}
+  // display: flex;
+  // justify-content: center;
+  // button, a {
+  //   text-decoration: none;
+  //   width: 150px;
+  //   height: 100px;
+  //   color: white;
+  //   border: 2px solid white;
+  //   background: none;
+  //   font-size: 15px;
+  //   margin: 10%;
+  //   // padding: 10%;
+  //   font-family: 'montsRegular';
+  //   cursor: pointer;
+  // }
 // .zoom {
-//   grid-area: zoomz;
+  //   grid-area: zoomz;
 // }
 // .code {
 //   grid-area: code;
-// }
-// .fade:hover {
-//   visibility: visible;
-//   background: linear-gradient(
-//     rgba(0, 0, 0, 0.7),
-//     rgba(0, 0, 0, 0.7)
-//   );
-//   transition: all .5s ease-in;
-  
-//   h3, button, a {
-//     visibility: visible;
-//   }
-// }
-// .amazon {
-//   background: url('../../../dist/images/amazon.jpg') no-repeat;
-//   background-size: contain;
-//   grid-area: amazon;
-// }
-// .airbnb {
-//   background: url('../../../dist/images/airbnb.jpg') no-repeat;
-//   background-size: contain;
-//   grid-area: airbnb;
-// }
-// .homepage {
-//   background: url('../../../dist/images/homepage.jpg') no-repeat;
-//   background-size: contain;
-//   grid-area: homepage;
 // }
 
 

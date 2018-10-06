@@ -13,12 +13,12 @@ import Contact from '../Contact';
 const App = () => {
   return(
     <div id="wrapper">
-      <Navigation />
-      <Header />
-      <About />
-      <Skills />
-      <Portfolio />
-      {/* <Contact /> */}
+      <Navigation className="scrollAlign"/>
+      <Header className="scrollAlign"/>
+      <About className="scrollAlign"/>
+      <Skills className="scrollAlign"/>
+      {/* <Portfolio className="scrollAlign"/> */}
+      {/* <Contact className="scrollAlign"/> */}
     </div>
   )
 };

@@ -40,7 +40,7 @@ export default class Navigation extends Component {
     return (
       <div id="navbar">
         <nav className="navigation" >
-          <div className="icon" style={{ color: '#FFFFFF' }}>
+          <div className="icon" style={{ color: 'grey' }}>
             <Icon icon={navicon} size={34} onClick={ () => this.handleDropDown()}/>
           </div>
           <ul className="navbar">

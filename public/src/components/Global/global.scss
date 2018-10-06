@@ -101,8 +101,9 @@ body {
 #wrapper {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
-  * {
-    scroll-snap-align: center;
+
+  .scrollAlign {
+    scroll-snap-align: start;
   }
 }
 

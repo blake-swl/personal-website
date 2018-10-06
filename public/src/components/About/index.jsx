@@ -10,7 +10,9 @@ import grad from '../../../dist/images/grad.jpg';
 import group2 from '../../../dist/images/group2.jpg';
 import beach from '../../../dist/images/beach.jpg';
 import bball from '../../../dist/images/Basketball.jpg';
-import guitar from '../../../dist/images/guitar.jpg'
+import guitar from '../../../dist/images/guitar.jpg';
+import family from '../../../dist/images/family.jpg';
+import linda from '../../../dist/images/linda.jpg';
 
 
 const About = () => {
@@ -54,14 +56,14 @@ Born in Seoul, Korea, I grew up in Saint Petersburg, Russia from the ages of two
             </div>
           <div className="flex">
             <div className="pictures">
-              <img src={grad} className="grad"/>
-              <img src={nancy} className="nancy"/>
-              <img src={dodgers} className="dodgers"/>
-              <img src={sf} className="sf"/>
-              <img src={group2} className="group2"/>
-              <img src={beach} className="beach"/>
-              <img src={bball} className="bball"/>
-              <img src={guitar} className="guitar"/>
+              <img src={grad} className="card1"/>
+              <img src={linda} className="card1"/>
+              <img src={family} className="card1"/>
+              <img src={dodgers} className="card1"/>
+              <img src={sf} className="card1"/>
+              <img src={guitar} className="card1"/>
+              <img src={group2} className="card1"/>
+              <img src={beach} className="card1"/>
             </div>
           </div>
         </div>

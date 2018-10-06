@@ -7,7 +7,8 @@
   width: 100%;
   height: 5vh;
   justify-content: space-evenly;
-  background: rgba(0, 0, 0, 1);
+  background: white;
+  border-bottom: 1px double grey;
   position: relative;
   z-index: 10;
 }
@@ -25,15 +26,16 @@
 }
 .navbar a {
   text-decoration: none;
-  color: white;
+  color: black;
   margin: 6px;
   transition: .2s ease-in;
 }
 .navbar:hover a {
-  color: #6f6f6f;
+  color: #F3D8C7;
+  // color: #6f6f6f;
 }
 .navbar a:hover {
-  color: white;
+  color: black;
 }
 .sticky {
   position: fixed;
@@ -41,36 +43,6 @@
   top: 0;
   width: 100%;
 }
-
-/* Small Screen */
-// @media only screen and (max-width: 650px) {
-//   .navigation {
-
-//     flex-direction: column;
-//     height: 10vh;
-
-//     // .nav-logo {
-//     //   img {
-//     //     flex-direction: column;
-//     //     margin-top: 7px;
-//     //   }
-//     // }
-
-//     .navbar {
-//       flex-direction: row;
-
-//       li:last-child a {
-//         margin-right: 0;
-//         margin-bottom: 10px;
-//       }
-//     }
-//   }
-
-//   .sticky {
-//     top: auto;
-//     position: relative;
-//   }
-// }
 
 /* Dropdown for smaller screens */
 
