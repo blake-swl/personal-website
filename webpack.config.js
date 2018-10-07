@@ -25,7 +25,7 @@ module.exports = {
         loader: 'url-loader?limit=100000' 
       },
       {
-        test: /\.(gif|png|jpe?g|svg)$/i,
+        test: /\.(gif|png|jpe?g|svg|pdf)$/i,
         use: [
           'file-loader',
           {

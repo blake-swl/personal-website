@@ -120,11 +120,11 @@
 
 /* Mid Size */
 
-@media only screen and (min-width: 460px) and (max-width: 960px) {
-  #about {
-    transform: scale(0.7);
-  }
-}
+// @media only screen and (min-width: 460px) and (max-width: 960px) {
+//   #about {
+//     transform: scale(0.7);
+//   }
+// }
 /* Mobile 425px */
 
 @media only screen and (max-width: 425px) {
@@ -192,9 +192,8 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    // overflow: hidden;
     width: 100%;
-
+    
     .blur {
       height: auto;
       width: 100%;
@@ -210,7 +209,8 @@
       overflow-y: hidden;
       -webkit-overflow-scrolling: touch;
       height: auto;
-      // padding: 2%;
+      // margin: 2%;
+      // margin-right: 5%;
 
       .card1 {
         flex: 0 0 auto;
@@ -220,24 +220,5 @@
         scroll-snap-align: center;
       }
     }
-
-    // .pictures {
-    //   overflow-x: hidden;
-    //   // overflow-y: scroll;
-    //   width: 100%;
-    //   // height: auto;
-    //   display: grid;
-    //   grid-template-columns: repeat(2, 1fr);
-    //   grid-template-rows: repeat(4, 1fr);
-    //   justify-content: center;
-
-    //   img {
-    //     transform: scale(0.9);
-    //     justify-self: stretch;
-    //     grid-gap: 1%;
-    //     // flex: 0 0 auto;
-
-    //   }
-    // }
   }
 }

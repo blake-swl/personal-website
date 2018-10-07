@@ -97,15 +97,19 @@ body {
   z-index: 0;
   width: 100%;
   height: auto;
-}
-#wrapper {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
+  div {
+    scroll-snap-align: center;
 
-  .scrollAlign {
-    scroll-snap-align: start;
   }
+
 }
+// #wrapper {
+
+//   .scrollAlign {
+//   }
+// }
 
 h1 {
   font-family: "notoRegular";

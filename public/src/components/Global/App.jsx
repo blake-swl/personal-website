@@ -17,7 +17,7 @@ const App = () => {
       <Header className="scrollAlign"/>
       <About className="scrollAlign"/>
       <Skills className="scrollAlign"/>
-      {/* <Portfolio className="scrollAlign"/> */}
+      <Portfolio className="scrollAlign"/>
       {/* <Contact className="scrollAlign"/> */}
     </div>
   )

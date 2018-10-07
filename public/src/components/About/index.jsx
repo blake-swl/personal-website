@@ -4,15 +4,13 @@ import './about.scss';
 // pictures
 import coding from '../../../dist/images/clement-h-544786-unsplash.jpg';
 import sf from '../../../dist/images/sf.jpg';
-import nancy from '../../../dist/images/nancy.jpg';
 import dodgers from '../../../dist/images/dodgers.jpg';
 import grad from '../../../dist/images/grad.jpg';
 import group2 from '../../../dist/images/group2.jpg';
 import beach from '../../../dist/images/beach.jpg';
-import bball from '../../../dist/images/Basketball.jpg';
 import guitar from '../../../dist/images/guitar.jpg';
 import family from '../../../dist/images/family.jpg';
-import linda from '../../../dist/images/linda.jpg';
+import friends from '../../../dist/images/friends1.jpg';
 
 
 const About = () => {
@@ -57,7 +55,7 @@ Born in Seoul, Korea, I grew up in Saint Petersburg, Russia from the ages of two
           <div className="flex">
             <div className="pictures">
               <img src={grad} className="card1"/>
-              <img src={linda} className="card1"/>
+              <img src={friends} className="card1"/>
               <img src={family} className="card1"/>
               <img src={dodgers} className="card1"/>
               <img src={sf} className="card1"/>

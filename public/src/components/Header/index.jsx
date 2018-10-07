@@ -1,6 +1,7 @@
 import React from 'react';
 import './header.scss';
 import Typed from 'react-typed';
+import Resume from '../../../dist/Resume/blakeresume.pdf';
 
 const Header = () => {
   return (
@@ -16,8 +17,8 @@ const Header = () => {
           <h3>Blake S Lee</h3>
         </div>
         <div className="btn">
-          <a className="contact">contact</a>
-          <a className="resume">resume</a>
+          <a href="#contact" className="contact">contact</a>
+          <a href={Resume} target="_blank" className="resume">resume</a>
           <a href="https://github.com/blake-swl" className="github">github</a>       {/* <button className={style.linkedin}>linkedin</button> */}
           <a href="https://www.linkedin.com/in/blake-lee-4bb35b121/" className="linkedin">linkedin</a>
         </div>

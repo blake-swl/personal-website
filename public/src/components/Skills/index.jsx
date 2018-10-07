@@ -2,6 +2,10 @@ import React from 'react';
 import './skills.scss';
 import { Progress } from 'react-sweet-progress';
 import "react-sweet-progress/lib/style.css";
+// import { Icon } from 'react-icons-kit';
+// import {check} from 'react-icons-kit/fa/check';
+import check from '../../../dist/images/redcheck.jpg';
+
 
 
 const Skills = () => {
@@ -39,17 +43,17 @@ const Skills = () => {
       <div className="moreSkills">
         <div className="aws">
           <Progress className="check1"
-          type="circle" percent={100} status="active" theme={{ active: {trailColor: '#535B63', color: '#D05353'}}} />
+          type="circle" percent={100} status="active" theme={{ active: {symbol: <img src={check} style={{width: "50%"}}/> , trailColor: '#535B63', color: '#D05353'}}} />
           AWS EC2
         </div>
         <div className="jquery">
           <Progress className="check2"
-          type="circle" percent={100} status="active" theme={{ active: {trailColor: '#535B63', color: '#D05353'}}} />       
+          type="circle" percent={100} status="active" theme={{ active: {symbol: <img src={check} style={{width: "50%"}}/>, trailColor: '#535B63', color: '#D05353'}}} />       
           jQuery
         </div>
         <div className="git">
           <Progress className="check3"
-          type="circle" percent={100} status="active" theme={{ active: {trailColor: '#535B63', color: '#D05353'}}} />
+          type="circle" percent={100} status="active" theme={{ active: {symbol: <img src={check} style={{width: "50%"}}/>, trailColor: '#535B63', color: '#D05353'}}} />
           Git Workflow
         </div>
       </div>
