@@ -1,27 +1,47 @@
 import React, { Component } from 'react';
 import './works.scss';
-import Modal from '../Modals';
-import amazon from '../../../dist/images/amazon.jpg';
-import airbnb from '../../../dist/images/airbnb.jpg';
+import ZoomModal from '../Modals';
+import amazon from '../../../dist/images/amazon.gif';
+import airbnb from '../../../dist/images/airbnb.gif';
 import homepage from '../../../dist/images/homepage.jpg';
+
+// Icons
+import { Icon } from 'react-icons-kit';
+import {ic_zoom_in} from 'react-icons-kit/md/ic_zoom_in';
+import {github} from 'react-icons-kit/icomoon/github'
 
 
 export default class Portfolio extends Component {
-  constructor() {
-    super();
-
-  }
   render() {
+    const AmDesc = <ul className="description">
+      <li>- Designed a scalable system architecture to handle minimum of 10M data points.</li>
+      <li>- Identified slow query speeds and leveraged indexing to optimize queries by 1,320,000%.</li>
+      <li>- Observed 12% error rate with Loader.io when handling 500 ops in stress-testing and introduced NGINX to reduce error rate to 0.8%.</li>
+    </ul>;
+    const AirDesc =  <ul className="description"> 
+      <li>- Designed a functional mockup of Airbnb's listing main page.</li>
+      <li>- Developed main page header & layout with modular components.</li>
+      <li>- Built proxy servers to integrate teammates' modules into single, cohesive listing replica.</li>
+      <li>- Utilized Docker to deploy final build on AWS EC2.</li>
+    </ul>;
+    const pwDesc =  <ul className="description">
+      <li>- Designed this current website from ground up using modular components.</li>
+      <li>- Dynamically responsive to different viewing formats.</li>
+      <li>- Integrated Google Maps API to present my current living location.</li>
+      <li>- Leveraged SMTP server to send emails directly from React component.</li>
+    </ul>
     return (
       <div id="portfolio">
-        {/* <Modal /> */}
         <h1>My latest projects</h1>
         <div className="works">
           <div className="amazon">
             <div className="fade">
               <div className="btns">
-                <Modal />
-                <a className="code" href="https://github.com/HRLA23WhiteWalkers/MainPage">VIEW CODE</a>
+                <ZoomModal content={amazon} 
+                subtitle={AmDesc}/>
+                <a className="code" href="https://github.com/HRLA23WhiteWalkers/MainPage">
+                  <Icon icon={github} size={30}/>
+                </a>
               </div>
               <div className="slideUp">
                 <h3>AMAZON PRODUCT SYSTEM DESIGN</h3>
@@ -31,8 +51,11 @@ export default class Portfolio extends Component {
           <div className="airbnb">
             <div className="fade">
               <div className="btns">
-                <Modal />
-                <a className="code" href="https://github.com/HRLA23WhiteWalkers/MainPage">VIEW CODE</a>
+                <ZoomModal content={airbnb} 
+                subtitle={AirDesc}/>
+                <a className="code" href="https://github.com/HRLA23WhiteWalkers/MainPage">
+                  <Icon icon={github} size={30}/>
+                </a>
               </div>
               <div className="slideUp">
                 <h3>AIRBNB LISTING PAGE</h3>
@@ -42,8 +65,10 @@ export default class Portfolio extends Component {
           <div className="homepage">
             <div className="fade">
               <div className="btns">
-                <Modal />
-                <a className="code" href="https://github.com/blake-swl/personal-website">VIEW CODE</a>
+                <ZoomModal subtitle={pwDesc}/>
+                <a className="code" href="https://github.com/blake-swl/personal-website">
+                 <Icon icon={github} size={30}/>
+                </a>
               </div>
               <div className="slideUp">
                 <h3>CURRENTLY VIEWING</h3>
@@ -55,70 +80,3 @@ export default class Portfolio extends Component {
     )
   }
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import React from 'react';
-// import './works.scss';
-
-
-// const Portfolio = () => {
-//   return (
-//     <div id="portfolio">
-//       {/* <div className="background-layer"> */}
-//         <h1>My latest projects</h1>
-//         <div className="works">
-//           <div className="amazon">
-//             <div></div>
-//             {/* <div className="fade">
-//               <h3 className="head">Amazon Product System Design</h3>
-//               <h4 className="tech">[ React | Node | Postgres | AWS EC2 ]</h4>
-//               <ul className="description">
-//                 <li>- Designed a scalable system architecture to handle minimum of 10M data points.</li>
-//                 <li>- Identified slow query speeds and leveraged indexing to optimize queries by 1,320,000%.</li>
-//                 <li>- Observed 12% error rate with Loader.io when handling 500 ops in stress-testing and introduced NGINX to reduce error rate to 0.8%.</li>
-//               </ul>
-//             </div> */}
-//           </div>
-//           <div className="airbnb">
-//             {/* <div className="fade">
-//               <h3 className="head">Airbnb Listing Page</h3>
-//               <h4 className="tech">[ React | Node | CSS modules | MongoDB ]</h4>
-//               <ul className="description"> 
-//                 <li>- Designed a functional mockup of Airbnb's listing main page.</li>
-//                 <li>- Developed main page header & layout with modular components.</li>
-//                 <li>- Built proxy servers to integrate teammates' modules into single, cohesive listing replica.</li>
-//                 <li>- Utilized Docker to deploy final build on AWS EC2.</li>
-//               </ul>
-//             </div> */}
-//           </div>
-//           <div className="homepage">
-//             {/* <div className="fade">
-//               <h3 className="head">Personal Website</h3>
-//               <h4 className="tech">[ React | SASS | Node | AWS EC2 ]</h4>
-//               <ul className="description">
-//                 <li>- Designed this current website from ground up using modular components.</li>
-//                 <li>- Dynamically responsive to different viewing formats.</li>
-//                 <li>- Integrated Google Maps API to present my current living location.</li>
-//                 <li>- Leveraged SMTP server to send emails directly from React component.</li>
-//               </ul>
-//             </div> */}
-//           </div>
-//         </div>
-//       {/* </div> */}
-//     </div>
-//   )
-// };
-// export default Portfolio;
-

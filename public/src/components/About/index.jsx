@@ -55,10 +55,10 @@ Born in Seoul, Korea, I grew up in Saint Petersburg, Russia from the ages of two
           <div className="flex">
             <div className="pictures">
               <img src={grad} className="card1"/>
-              <img src={friends} className="card1"/>
               <img src={family} className="card1"/>
               <img src={dodgers} className="card1"/>
               <img src={sf} className="card1"/>
+              <img src={friends} className="card1"/>
               <img src={guitar} className="card1"/>
               <img src={group2} className="card1"/>
               <img src={beach} className="card1"/>

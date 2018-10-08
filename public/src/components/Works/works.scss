@@ -88,16 +88,50 @@
   justify-content: center;
   align-items: center;
   
-  * {
-    border: 2px solid white;
+  .code {
+    border: 2px solid #D05353;
     font-size: 1em;
     margin: 2%;
     padding: 2%;
     font-family: 'montsMedium';
     text-decoration: none;
-    color: white;
+    color: #D05353;
     background: none;
+    cursor: pointer;
   }
+}
+
+@media only screen and (max-width: 425px) {
+  
+  #portfolio {
+    display: flex;
+    width: 100%;
+    height: auto;
+
+    h1 {
+      font-size: 30px;
+    }
+  }
+  .works {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: auto;
+    // border: 3px solid white;
+    padding: 0;
+    margin: 5%;
+    
+    .fade {
+      width: 100%;
+      height: 100%;
+      
+      .slideUp {
+        font-size: 20px;
+      }
+    }
+  }
+
 }
   // display: flex;
   // justify-content: center;
@@ -125,143 +159,3 @@
 
 
 
-
-
-// // @import '../Global/global.scss';
-
-// // h1 {
-// //   font-family: 'notoRegular';
-// //   font-size: 50px;
-// //   margin-top: 5%;
-// // }
-// // #portfolio {
-// //   height: 70vh;
-// //   width: 100%;
-// //   // background-size: 100% 70vh;
-// //   // background: url('../../../dist/images/work.jpg') 50% 50% no-repeat fixed;
-// //   background: #eaebed;
-// //   display: flex;
-// //   flex-direction: column;
-// //   align-items: center;
-// // }
-// // // .background-layer {
-// // //   height: 75vh;
-// //   // width: 100%;
-// // //   // background: rgba(0, 0, 0, 0.5);
-// // //   background: rgba(255, 255, 255, 0.3);
-// // // }
-
-// // .fade {
-// //   padding: 5%;
-// //   // background-color: rgba(0, 0, 0, 0.7);
-// //   height: calc(400px - 10%);
-// //   display: flex;
-// //   flex-direction: column;
-// //   text-shadow: .5px .5px black;
-// //   font-family: 'montsRegular';
-// //   color: white;
-  
-// //   .head {
-// //     font-size: 30px;
-// //     font-family: 'montsMedium';
-// //     visibility: hidden;
-// //   }
-// //   .tech {
-// //     padding-top: 3%;
-// //     font-size: 18px;
-// //     visibility: hidden;
-// //   }
-// //   .description {
-// //     // text-align: justify;
-// //     padding: 5%;
-// //     font-size: 20px;
-// //     visibility: hidden;
-// //   }
-// // }
-// // .amazon {
-// //   background: url('../../../dist/images/amazon.jpg') no-repeat;
-// //   background-size: contain;
-// //   grid-area: amazon;
-// //   transition: all .5s ease;
-// // }
-
-// // .fade:hover {
-// //   background: linear-gradient(
-// //     rgba(0, 0, 0, 0.7),
-// //     rgba(0, 0, 0, 0.7)
-// //   );
-// // }
-// // // .amazon .fade:hover {
-// // //   background: url('../../../dist/images/amazon.gif') 0 50% no-repeat;
-// // //   background-size: cover;
-// // //   .description, .tech, .head {
-// // //     visibility: hidden;
-// // //   }
-// // // }
-
-// // // .airbnb .fade:hover {
-// // //   background: url('../../../dist/images/airbnb.gif') 50% 50% no-repeat;
-// // //   background-size: cover;
-// // //   .description, .tech, .head {
-// // //     visibility: hidden;
-// // //   }
-// // // }
-
-// // // .homepage .fade:hover {
-// // //   background: url('../../../dist/images/homepage.gif') 50% 50% no-repeat;
-// // //   background-size: cover;
-
-// // //   .description, .tech, .head {
-// // //     visibility: hidden;
-// // //   }
-// // // }
-
-
-// // // .portfolio {
-// // //   position: relative;
-// // //   display: grid;
-// // //   margin-top: 3%;
-// // //   height: 400px;
-// // //   grid-gap: 15px;
-// // //   grid-template-columns: repeat(3, 400px);
-// // //   // grid-template-rows: repeat(2, 400px);
-// // //   grid-template-areas: 
-// // //     "amazon airbnb homepage";
-// // //     // "art1 art2 art3";
-// // // }
-
-
-
-// // // .art {
-// // //   margin-top: 2%;
-// // //   display: grid;
-// // //   // background: rgba(0, 0, 0, 0.5);
-// // //   grid-template-columns: repeat(3, 400px);
-// // //   height: 300px;
-// // //   grid-gap: 15px;
-// // //   grid-template-areas: 
-// // //     "art1 art2 art3";
-
-// // //     div {
-// // //       // margin: 10%;
-// // //       background-size: contain;
-// // //       align-items: center;
-// // //     }
-// // // }
-// // // .black {
-// // //   background-color: rgba(0,0,0,0.5);
-// // //   height: inherit;
-// // //   width: 100%;
-// // // }
-// // // .art1 {
-// // //   background: url('../../../dist/images/art1.jpg') no-repeat;
-// // //   grid-area: art1;
-// // // }
-// // // .art2 {
-// // //   background: url('../../../dist/images/art2.jpg') no-repeat;
-// // //   grid-area: art2;
-// // // }
-// // // .art3 {
-// // //   background: url('../../../dist/images/art3.jpg') no-repeat;
-// // //   grid-area: art3;
-// // // }
