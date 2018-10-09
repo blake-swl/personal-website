@@ -97,12 +97,12 @@ body {
   z-index: 0;
   width: 100%;
   height: auto;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  div {
-    scroll-snap-align: center;
+  // scroll-snap-type: y mandatory;
+  // overflow-y: scroll;
+  // div {
+  //   scroll-snap-align: start;
 
-  }
+  // }
 
 }
 // #wrapper {

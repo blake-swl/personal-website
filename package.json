@@ -6,6 +6,7 @@
   "author": "blake-swl <seulwoolee93@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "aos": "^2.3.4",
     "axios": "^0.18.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
