@@ -10,48 +10,48 @@ import check from '../../../dist/images/redcheck.jpg';
 
 const Skills = () => {
   return(
-    <div id="skills">
-      <div className="title">
+    <div id="skills" >
+      <div className="title" data-aos="fade-up">
         <h1>Skills</h1>
       </div>
-      <div className="mainSkills">
-        <div className="javascript">JavaScript 
+      <div className="mainSkills" data-aos="fade-up">
+        <div className="javascript" data-aos="fade-up">JavaScript 
           <Progress percent={95} theme={{ active: {trailColor: '#535B63', color: '#D05353'}}}/>
         </div>
-        <div className="react">React
+        <div className="react" data-aos="fade-up">React
           <Progress percent={90} theme={{ active: {trailColor: '#535B63', color: '#D05353'}}}/>
         </div>
-        <div className="node">Node
+        <div className="node" data-aos="fade-up">Node
           <Progress percent={85} theme={{ active: {trailColor: '#535B63', color: '#D05353'}}}/>
         </div>
-        <div className="htmlcss">HTML5/CSS3
+        <div className="htmlcss" data-aos="fade-up">HTML5/CSS3
           <Progress percent={92} theme={{ active: {trailColor: '#535B63', color: '#D05353'}}}/>
         </div>
-        <div className="sql">SQL/NoSQL
+        <div className="sql" data-aos="fade-up">SQL/NoSQL
           <Progress percent={90} theme={{ active: {trailColor: '#535B63', color: '#D05353'}}}/>
         </div>
-        <div className="graphql">GraphQL
+        <div className="graphql" data-aos="fade-up">GraphQL
           <Progress percent={85} theme={{ active: {trailColor: '#535B63', color: '#D05353'}}}/>
         </div>
-        <div className="enthusiasm">Enthusiasm
+        <div className="enthusiasm" data-aos="fade-up">Enthusiasm
           <Progress percent={100} status="active" theme={{ active: {symbol: '👍🏻', trailColor: '#535B63', color: '#D05353'}}} />
         </div>
       </div>
-      <div className="title2">
+      <div className="title2" data-aos="fade-up">
         <h1>More Skills</h1>
       </div>
       <div className="moreSkills">
-        <div className="aws">
+        <div className="aws" data-aos="fade-up">
           <Progress className="check1"
           type="circle" percent={100} status="active" theme={{ active: {symbol: <img src={check} style={{width: "50%"}}/> , trailColor: '#535B63', color: '#D05353'}}} />
           AWS EC2
         </div>
-        <div className="jquery">
+        <div className="jquery" data-aos="fade-up">
           <Progress className="check2"
           type="circle" percent={100} status="active" theme={{ active: {symbol: <img src={check} style={{width: "50%"}}/>, trailColor: '#535B63', color: '#D05353'}}} />       
           jQuery
         </div>
-        <div className="git">
+        <div className="git" data-aos="fade-up">
           <Progress className="check3"
           type="circle" percent={100} status="active" theme={{ active: {symbol: <img src={check} style={{width: "50%"}}/>, trailColor: '#535B63', color: '#D05353'}}} />
           Git Workflow

@@ -2,7 +2,8 @@ import React from 'react';
 import './about.scss';
 
 // pictures
-import coding from '../../../dist/images/clement-h-544786-unsplash.jpg';
+import jumping from '../../../dist/images/jumping.jpg';
+import typing from '../../../dist/images/typing.jpg';
 import sf from '../../../dist/images/sf.jpg';
 import dodgers from '../../../dist/images/dodgers.jpg';
 import grad from '../../../dist/images/grad.jpg';
@@ -12,21 +13,22 @@ import guitar from '../../../dist/images/guitar.jpg';
 import family from '../../../dist/images/family.jpg';
 import friends from '../../../dist/images/friends1.jpg';
 
+        {/* <p>My philosophy is to leverage technology 
+          to build functional, yet simplistically elegant 
+          applications that integrate cutting edge technology 
+          with traditional design principles. </p> */}
 
 const About = () => {
   return(
     <div id="about">
-      <div className="philosophy">
-        <p>My philosophy is to leverage technology 
-          to build functional, yet simplistically elegant 
-          applications that integrate cutting edge technology 
-          with traditional design principles. </p>
+      <div className="philosophy" data-aos="fade-up">
+        <p>I'm a full-stack engineer that is passionate about developing real world applications with clean, maintainable code, with an emphasis in front-end development.</p>
       </div>
-      <div className="passion">
+      <div className="passion" data-aos="fade-up">
         <div className="profilePic">
-          <img src={coding} alt=""/>
+          <img src={typing} alt=""/>
         </div>
-        <div className="narrative">
+        <div className="narrative" data-aos="fade-up">
           <h3>My passion for coding</h3>
           <div className="scroll-x">
             <div className="card">
@@ -44,25 +46,37 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="gallery">
+      <div className="gallery" data-aos="fade-up">
         <div className="blur">
             <div className="personal">
-              <h1>Get to know me more</h1>
-              <p>   I’m a software engineer with a unique perspective and upbringing that is ready to give back and serve the community with my experiences, talents, and lessons.
+              <h1 data-aos="fade-up">Get to know me more</h1>
+              <p data-aos="fade-up">   I’m a software engineer with a unique perspective and upbringing that is ready to give back and serve the community with my experiences, talents, and lessons.
 Born in Seoul, Korea, I grew up in Saint Petersburg, Russia from the ages of two to 12, until I moved to Los Angeles, CA where I currently reside. Having lived in such distinct cultures I bring a nuanced approach to social interactions and strong communication skills to seamlessly blend and adapt to any culture. Furthermore, coming from a family of musicians and artists, I possess a keen eye for art and design. At UCSB, I earned my bachelors in psychology and later pursued a career in pharmaceutical science until dabbling in coding changed my life. I’m a notorious coffee enthusiast, lover of nature, Lebron James fanatic, and (hopefully) the best son to my loving parents.
 </p>
             </div>
           <div className="flex">
-            <div className="pictures">
-              <img src={grad} className="card1"/>
-              <img src={family} className="card1"/>
-              <img src={dodgers} className="card1"/>
-              <img src={sf} className="card1"/>
-              <img src={friends} className="card1"/>
-              <img src={guitar} className="card1"/>
-              <img src={group2} className="card1"/>
-              <img src={beach} className="card1"/>
-            </div>
+            <ul className="pictures" data-aos="fade-up">
+              <img src={grad} id="grad" className="card1"/>
+              <img src={family} id="family" className="card1"/>
+              <img src={dodgers} id="dodgers" className="card1"/>
+              <img src={sf} id="sf" className="card1"/>
+              <img src={friends} id="friends" className="card1"/>
+              <img src={guitar} id="guitar" className="card1"/>
+              <img src={group2} id="group2" className="card1"/>
+              <img src={beach} id="beach" className="card1"/>
+            </ul>
+          </div>
+          <div className="dotstyle dotstyle-fillup">
+            <ul>
+              <li className="current"><a href="#grad"></a></li>
+              <li><a href="#family"></a></li>
+              <li><a href="#dodgers"></a></li>
+              <li><a href="#sf"></a></li>
+              <li><a href="#friends"></a></li>
+              <li><a href="#guitar"></a></li>
+              <li><a href="#group2"></a></li>
+              <li><a href="#beach"></a></li>
+            </ul>
           </div>
         </div>
       </div>

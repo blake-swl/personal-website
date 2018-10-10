@@ -20,12 +20,12 @@ const Contact = () => {
   return (
     <div id="contact">
       <div className="banner">
-        <h3>Let's have a chat over a cup of coffee.</h3>
-        <div className="chat">GET IN CONTACT.</div>
+        <h3 data-aos="fade-up">Let's have a chat over a cup of coffee.</h3>
+        <div className="chat" data-aos="fade-up">GET IN CONTACT.</div>
       </div>
       <div className="bottom">
         <div className="cards-scroll">
-          <div className="cards-item">
+          <div className="cards-item" data-aos="fade-up">
             <h3>basic contact info.</h3>
             <div className="info-icons">
               <div className="info-column">
@@ -42,7 +42,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="cards-item">
+          <div className="cards-item" data-aos="fade-up">
             <h3>send me an email.</h3>
             <div className="cards-email">
               <EmailModal className="cards-button" open="WRITE EMAIL"/>

@@ -8,8 +8,6 @@ import {send} from 'react-icons-kit/fa/send';
 import {close} from 'react-icons-kit/fa/close';
 
 
-
-
 Modal.setAppElement('#root');
 
 export default class EmailModal extends Component {
@@ -24,7 +22,6 @@ export default class EmailModal extends Component {
     }
 
     this.openModal = this.openModal.bind(this);
-    // this.afterOpenModal = this.afterOpenModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
     this.onChange = this.onChange.bind(this);
   };
@@ -33,10 +30,6 @@ export default class EmailModal extends Component {
     this.setState({ modalIsOpen: true });
   };
 
-  // afterOpenModal() {
-    // references are now sync'd and can be accessed.
-    // this.subtitle.style.color = 'black';
-  // };
   onChange(e) {
     e.preventDefault();
     this.setState({

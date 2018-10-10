@@ -6,21 +6,19 @@
   display: flex;
   flex-direction: column;
   background: url('../../../dist/images/mac.jpg') 50% 75% no-repeat fixed;
+  // background: url('../../../dist/images/phones.jpg') 50% 50% no-repeat fixed;
   background-size: cover;
   color: white;
   z-index: -1;
 }
 .header-layer {
-  // background-color: #C9E4CA;
-  // opacity: 0.7;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
   height:70vh;
   width: 100%;
 
 }
 .tagline h4 {
   font-family: 'nothingRegular';
-  // text-shadow: .5px .5px black;
   font-size: 30px;
   display: flex;
   justify-content: center;
@@ -32,6 +30,7 @@
   justify-content: center;
   margin-top: 5%;
   margin-bottom: 100px;
+  // font-family: 'fasterOne';
   font-family: 'montsRegular';
   font-size: 80px;
   text-shadow: .5px .5px black;
@@ -50,6 +49,7 @@
   margin-bottom: 1%;
 }
 .btn a {
+  // text-shadow: .5px .5px black;
   font-size: 20px;
   color: white;
   font-family: 'montsRegular';
@@ -75,8 +75,8 @@
   //   margin-bottom: none;
   // }
   #home {
-    background: url('../../../dist/images/mac.jpg') no-repeat fixed;
-    background-size: stretch;
+    background: url('../../../dist/images/mac.jpg') 80% 50% no-repeat fixed;
+    background-size: cover;
   }
 
   .position, .name {
