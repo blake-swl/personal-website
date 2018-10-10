@@ -9,7 +9,7 @@ import Resume from '../../../dist/Resume/blakeresume.pdf';
 import { Icon } from 'react-icons-kit';
 import {location} from 'react-icons-kit/icomoon/location';
 import {phone} from 'react-icons-kit/icomoon/phone';
-import {mail2} from 'react-icons-kit/icomoon/mail2';
+import {ic_mail_outline} from 'react-icons-kit/md/ic_mail_outline';
 import {facebookSquare} from 'react-icons-kit/fa/facebookSquare';
 import {linkedinSquare} from 'react-icons-kit/fa/linkedinSquare';
 import {rebel} from 'react-icons-kit/fa/rebel';
@@ -24,20 +24,28 @@ const Contact = () => {
         <div className="chat">GET IN CONTACT.</div>
       </div>
       <div className="bottom">
-        <div className="cards-item info">
+        <div className="cards-item">
           <h3>basic contact info.</h3>
           <div className="info-icons">
-            <Icon icon={phone} size={40} />
-            <h2>(323) 482-0091</h2>
-            <Icon icon={mail2} size={40} />
-            <h2>seulwoolee93@gmail.com</h2>
-            <Icon icon={location} size={40} />
-            <h2>Los Angeles, CA</h2>
+            <div className="info-column">
+              <Icon icon={phone} size={40} />
+              <h2>(323) 482-0091</h2>
+            </div>
+            <div className="info-column">
+              <Icon icon={ic_mail_outline} size={40} />
+              <h2>seulwoolee93@gmail.com</h2>
+            </div>
+            <div className="info-column">
+              <Icon icon={location} size={40} />
+              <h2>Los Angeles, CA</h2>
+            </div>
           </div>
         </div>
-        <div className="cards-item mail">
+        <div className="cards-item">
           <h3>send me an email.</h3>
-          <EmailModal className='info-icons' open="WRITE EMAIL"/>
+          <div className="cards-email">
+            <EmailModal className="cards-button" open="WRITE EMAIL"/>
+          </div>
         </div>
       </div>
       <div className="la"></div>

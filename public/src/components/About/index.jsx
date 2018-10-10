@@ -12,15 +12,15 @@ import guitar from '../../../dist/images/guitar.jpg';
 import family from '../../../dist/images/family.jpg';
 import friends from '../../../dist/images/friends1.jpg';
 
-
+        {/* <p>My philosophy is to leverage technology 
+          to build functional, yet simplistically elegant 
+          applications that integrate cutting edge technology 
+          with traditional design principles. </p> */}
 const About = () => {
   return(
     <div id="about">
       <div className="philosophy">
-        <p>My philosophy is to leverage technology 
-          to build functional, yet simplistically elegant 
-          applications that integrate cutting edge technology 
-          with traditional design principles. </p>
+        <p>I'm a full-stack engineer that is passionate about developing real world applications with clean, maintainable code, with an emphasis in front-end development.</p>
       </div>
       <div className="passion">
         <div className="profilePic">
