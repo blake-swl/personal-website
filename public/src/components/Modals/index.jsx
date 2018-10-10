@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import Modal from 'react-modal';
 import './modal.scss';
 
-// Icons
-import { Icon } from 'react-icons-kit';
-import {ic_zoom_in} from 'react-icons-kit/md/ic_zoom_in';
 
 Modal.setAppElement('#root');
 
@@ -28,6 +25,7 @@ export default class ModalComponent extends Component {
 
     this.state = {
       modalIsOpen: false,
+      component: '',
     }
 
     this.openModal = this.openModal.bind(this);
@@ -51,7 +49,7 @@ export default class ModalComponent extends Component {
     return (
       <div id="modal">
         <div className="icons">
-          <Icon onClick={this.openModal} icon={ic_zoom_in} size={40}/>
+          <div onClick={this.openModal}>{this.props.buttons}</div>
         </div>
         <Modal
           isOpen={this.state.modalIsOpen}
@@ -63,7 +61,8 @@ export default class ModalComponent extends Component {
           overlayClassName="Overlay"
         >
           <button className="close" onClick={this.closeModal}>close</button>
-          <img src={this.props.content} style={{width: '40vw', height: 'auto'}}/>
+          <img src={this.props.images} style={{width: '40vw', height: 'auto'}}/>
+          <div className="components">{this.props.components}</div>
           <h2 className="subtitle" ref={subtitle => this.subtitle = subtitle}>{this.props.subtitle}</h2>
 
           {/* <div>I am a modal</div>

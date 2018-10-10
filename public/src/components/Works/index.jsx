@@ -37,7 +37,8 @@ export default class Portfolio extends Component {
           <div className="amazon">
             <div className="fade">
               <div className="btns">
-                <ZoomModal content={amazon} 
+                <ZoomModal images={amazon} className="icons"
+                buttons={<Icon icon={ic_zoom_in} size={38}/>}
                 subtitle={AmDesc}/>
                 <a className="code" href="https://github.com/HRLA23WhiteWalkers/MainPage">
                   <Icon icon={github} size={30}/>
@@ -51,7 +52,8 @@ export default class Portfolio extends Component {
           <div className="airbnb">
             <div className="fade">
               <div className="btns">
-                <ZoomModal content={airbnb} 
+                <ZoomModal images={airbnb} className="icons"
+                buttons={<Icon icon={ic_zoom_in} size={38}/>}
                 subtitle={AirDesc}/>
                 <a className="code" href="https://github.com/HRLA23WhiteWalkers/MainPage">
                   <Icon icon={github} size={30}/>
@@ -65,7 +67,9 @@ export default class Portfolio extends Component {
           <div className="homepage">
             <div className="fade">
               <div className="btns">
-                <ZoomModal subtitle={pwDesc}/>
+                <ZoomModal subtitle={pwDesc} className="icons"
+                buttons={<Icon icon={ic_zoom_in} size={38}/>}
+                />
                 <a className="code" href="https://github.com/blake-swl/personal-website">
                  <Icon icon={github} size={30}/>
                 </a>

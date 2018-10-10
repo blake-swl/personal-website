@@ -3,7 +3,7 @@
 #contact {
   background: url('../../../dist/images/rawpixel-652547-unsplash.jpg') 50% 50% no-repeat fixed;
   background-size: cover;
-  height: 110vh;
+  height: 100vh;
   flex-direction: column;
   align-items: center;
   z-index: -1;
@@ -29,6 +29,7 @@
     font-family: 'nothingRegular';
     font-size: 30px;
     color: white;
+    text-shadow: .5px .5px black;
   }
 }
 .chat {
@@ -36,6 +37,7 @@
   font-family: 'montsRegular';
   color: white;
   margin-top: 5%;
+  text-shadow: .5px .5px black;
 }
 // .footer {
 //   width: 100%;
@@ -49,7 +51,7 @@
 .bottom {
   background: white;
   width: 100%;
-  height: 40vh;
+  height: 35vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -60,21 +62,29 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  border: 3px solid black;
-  margin: 25px;
-  padding: 25px;
-  width: 300px;
-  height: 300px;
+  border: 3px solid #423d3d;
+  margin: 1%;
+  padding: 1%;
+  width: 15em;
+  height: 15em;
   color: #423d3d;
 
   h1, h3 {
     font-family: 'notoMedium';
-    font-size: 35px;
+    font-size: 25px;
   }
   .info-icons {
     margin-top: 5%;
     display: inline-block;
   }
+}
+.cards-item:hover {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8)
+  );
+  color: white;
+
 }
     // .cards-hover {
     //   display: flex;
@@ -87,35 +97,31 @@
     //   font-family: 'notoMedium';
     //   transition: all .5s ease;
     // }
-.cards-item:hover {
-  padding: 25px;
-  width: 300px;
-  height: 300px;
-  visibility: visible;
-  opacity: 1;
-  color: white;
-  // background: #D05353;
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.8),
-    rgba(0, 0, 0, 0.8)
-  );
-  cursor: pointer;
+// .cards-item:hover {
+//   padding: 25px;
+//   width: 300px;
+//   height: 300px;
+//   visibility: visible;
+//   opacity: 1;
+//   color: white;
+//   // background: #D05353;
+//   // cursor: pointer;
   
-  h3 {
-    visibility: hidden;
-  }
-  .cards-hover {
-    visibility: visible;
-  }
-  transition: all .5s ease;
-}
-.mail {
-  padding: none;
-}
+//   // h3 {
+//   //   // visibility: hidden;
+//   // }
+//   .cards-hover {
+//     visibility: visible;
+//   }
+//   transition: all .5s ease;
+// }
+// .mail {
+//   padding: none;
+// }
 .la {
   background: url('../../../dist/images/map.jpg') 0 55% no-repeat;
   background-size: cover;
-  height: 20vh;
+  height: 15vh;
   width: 100%;
 }
 .footer {
@@ -149,26 +155,26 @@
     }
   }
 
-  .bottom {
-    width: 100%;
-    height: auto;
-    scroll-snap-type: x mandatory;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
+  // .bottom {
+  //   width: 100%;
+  //   height: auto;
+  //   scroll-snap-type: x mandatory;
+  //   display: flex;
+  //   flex-direction: row;
+  //   justify-content: center;
+  //   align-items: center;
+  //   overflow-x: scroll;
+  //   overflow-y: hidden;
+  //   -webkit-overflow-scrolling: touch;
 
-    .cards-item {
-      scroll-snap-align: center;
-      // padding: 5%;
-      flex: 0 0 auto;
-      // width: 80vw;
-      text-align: justify;
-      width: 80%;
-      height: 80%;
-    }
-  }
+  //   .cards-item {
+  //     scroll-snap-align: center;
+  //     // padding: 5%;
+  //     flex: 0 0 auto;
+  //     // width: 80vw;
+  //     text-align: justify;
+  //     width: 80%;
+  //     height: 80%;
+  //   }
+  // }
 }
