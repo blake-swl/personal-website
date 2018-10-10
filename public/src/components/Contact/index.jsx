@@ -9,7 +9,7 @@ import Resume from '../../../dist/Resume/blakeresume.pdf';
 import { Icon } from 'react-icons-kit';
 import {location} from 'react-icons-kit/icomoon/location';
 import {phone} from 'react-icons-kit/icomoon/phone';
-import {mail2} from 'react-icons-kit/icomoon/mail2';
+import {ic_mail_outline} from 'react-icons-kit/md/ic_mail_outline';
 import {facebookSquare} from 'react-icons-kit/fa/facebookSquare';
 import {linkedinSquare} from 'react-icons-kit/fa/linkedinSquare';
 import {rebel} from 'react-icons-kit/fa/rebel';
@@ -24,7 +24,7 @@ const Contact = () => {
         <div className="chat">GET IN CONTACT.</div>
       </div>
       <div className="bottom">
-        {/* <div className="cards-scroll"> */}
+        <div className="cards-scroll">
           <div className="cards-item">
             <h3>basic contact info.</h3>
             <div className="info-icons">
@@ -48,7 +48,7 @@ const Contact = () => {
               <EmailModal className="cards-button" open="WRITE EMAIL"/>
             </div>
           </div>
-        {/* </div> */}
+        </div>
       </div>
       <div className="la"></div>
       <div className="footer">
