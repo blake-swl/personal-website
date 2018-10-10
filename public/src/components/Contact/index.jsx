@@ -9,7 +9,7 @@ import Resume from '../../../dist/Resume/blakeresume.pdf';
 import { Icon } from 'react-icons-kit';
 import {location} from 'react-icons-kit/icomoon/location';
 import {phone} from 'react-icons-kit/icomoon/phone';
-import {ic_mail_outline} from 'react-icons-kit/md/ic_mail_outline';
+import {mail2} from 'react-icons-kit/icomoon/mail2';
 import {facebookSquare} from 'react-icons-kit/fa/facebookSquare';
 import {linkedinSquare} from 'react-icons-kit/fa/linkedinSquare';
 import {rebel} from 'react-icons-kit/fa/rebel';

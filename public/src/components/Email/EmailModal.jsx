@@ -12,6 +12,20 @@ import {close} from 'react-icons-kit/fa/close';
 
 Modal.setAppElement('#root');
 
+const customStyles = {
+  content: {
+    top: '50%',
+    left: '50%',
+    width: '20%',
+    height: '50vh',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+    borderRadius: '3%',
+  }
+};
+
 export default class EmailModal extends Component {
   constructor() {
     super();
@@ -32,6 +46,11 @@ export default class EmailModal extends Component {
   openModal() {
     this.setState({ modalIsOpen: true });
   };
+
+  // afterOpenModal() {
+    // references are now sync'd and can be accessed.
+    // this.subtitle.style.color = 'black';
+  // };
   onChange(e) {
     e.preventDefault();
     this.setState({
@@ -45,11 +64,12 @@ export default class EmailModal extends Component {
   render() {
     return (
       <div id="modal">
-        <div className="email-button" onClick={this.openModal}>{this.props.open}</div>
+        <div onClick={this.openModal}>{this.props.open}</div>
         <Modal
           isOpen={this.state.modalIsOpen}
           onAfterOpen={this.afterOpenModal}
           onRequestClose={this.closeModal}
+          style={customStyles}
           contentLabel="Modal"
           className="EmailModal"
           overlayClassName="EmailOverlay"
