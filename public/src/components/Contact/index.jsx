@@ -24,29 +24,31 @@ const Contact = () => {
         <div className="chat">GET IN CONTACT.</div>
       </div>
       <div className="bottom">
-        <div className="cards-item">
-          <h3>basic contact info.</h3>
-          <div className="info-icons">
-            <div className="info-column">
-              <Icon icon={phone} size={40} />
-              <h2>(323) 482-0091</h2>
-            </div>
-            <div className="info-column">
-              <Icon icon={ic_mail_outline} size={40} />
-              <h2>seulwoolee93@gmail.com</h2>
-            </div>
-            <div className="info-column">
-              <Icon icon={location} size={40} />
-              <h2>Los Angeles, CA</h2>
+        {/* <div className="cards-scroll"> */}
+          <div className="cards-item">
+            <h3>basic contact info.</h3>
+            <div className="info-icons">
+              <div className="info-column">
+                <Icon icon={phone} size={40} />
+                <h2>(323) 482-0091</h2>
+              </div>
+              <div className="info-column">
+                <Icon icon={ic_mail_outline} size={40} />
+                <h2>seulwoolee93@gmail.com</h2>
+              </div>
+              <div className="info-column">
+                <Icon icon={location} size={40} />
+                <h2>Los Angeles, CA</h2>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="cards-item">
-          <h3>send me an email.</h3>
-          <div className="cards-email">
-            <EmailModal className="cards-button" open="WRITE EMAIL"/>
+          <div className="cards-item">
+            <h3>send me an email.</h3>
+            <div className="cards-email">
+              <EmailModal className="cards-button" open="WRITE EMAIL"/>
+            </div>
           </div>
-        </div>
+        {/* </div> */}
       </div>
       <div className="la"></div>
       <div className="footer">
