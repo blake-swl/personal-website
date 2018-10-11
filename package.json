@@ -48,6 +48,7 @@
   },
   "scripts": {
     "start": "nodemon --exec babel-node server.js",
-    "webpack": "webpack -w"
+    "webpack": "webpack -w",
+    "build": "webpack --mode production"
   }
 }
