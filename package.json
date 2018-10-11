@@ -49,8 +49,7 @@
     "sass-loader": "^7.1.0"
   },
   "scripts": {
-    "start": "nodemon --exec babel-node server.js",
-    "webpack": "webpack -w",
-    "build": "webpack --mode production"
+   "start": "babel-node server.js",
+    "build": "webpack -p"
   }
 }
