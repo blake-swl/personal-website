@@ -2,64 +2,69 @@
 @import '../Global/global.scss';
 
 #portfolio {
-  height: 70vh;
+  // height: 70vh;
+  height: auto;
+  padding-bottom: 5%;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: #eaebed;
-
-
-  h1 {
-    font-family: 'montsMedium';
-    font-size: 50px;
-    padding-top: 5%;
-    color: #2E5060;
-  }
+}
+.works-title {
+  font-family: 'montsMedium';
+  font-size: 50px;
+  padding-top: 5%;
+  color: #2E5060;
 }
 .works {
-  margin-top: 3%;
-  display: grid;
-  grid-template-columns: repeat(3, 26em);
-  grid-template-areas: 
-  "amazon airbnb homepage";
-  grid-gap: 25px;
-  height: 26em;
-  color: white;
+  padding-top: 3%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.work-item {
+  margin: 1%;
+}
+.amazon {
+  width: 300px;
+  height: 300px;
+  background: url('../../../dist/images/amazon.jpg') no-repeat;
+  background-size: cover;
+  grid-area: amazon;
+}
+.airbnb {
+  width: 300px;
+  height: 300px;
+  background: url('../../../dist/images/airbnb.jpg') no-repeat;
+  background-size: cover;
+  grid-area: airbnb;
+}
+.homepage {
+  width: 300px;
+  height: 300px;
+  background: url('../../../dist/images/homepage.jpg') no-repeat;
+  background-size: cover;
+  grid-area: homepage;
 }
 .fade {
-  height: 26em;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-template-areas: 
-  ". . . . ."
-  ". . . . ."
-  ". btns btns btns ."
-  ". . . . ."
-  "slideUp slideUp slideUp slideUp slideUp";
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
   
   h3, .btns, .slideUp {
     visibility: hidden;
   }
 }
-.amazon {
-  background: url('../../../dist/images/amazon.jpg') no-repeat;
-  background-size: contain;
-  grid-area: amazon;
-}
-.airbnb {
-  background: url('../../../dist/images/airbnb.jpg') no-repeat;
-  background-size: contain;
-  grid-area: airbnb;
-}
-.homepage {
-  background: url('../../../dist/images/homepage.jpg') no-repeat;
-  background-size: contain;
-  grid-area: homepage;
-}
 .fade:hover {
   visibility: visible;
+  background-size: cover;
   background: rgba(0,0,0,0.8);
   
   h3, .btns, .slideUp {
@@ -72,30 +77,27 @@
   justify-content: center;
   align-items: center;
   width: 90%;
-  height: 5vh;
+  height: auto;
   background: #D05353;
   opacity: 0.8;
   color: white;
-  font-size: 2em;
+  font-size: 20px;
   grid-area: slideUp;
   font-family: 'montsMedium';
 }
 .btns {
-  grid-area: btns;
+  padding-bottom: 30%;
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
   
   .code, .icons {
     border: 2px solid #D05353;
     font-size: 1em;
-    margin: 2%;
     padding: 2%;
-    font-family: 'montsMedium';
-    text-decoration: none;
     color: #D05353;
-    background: none;
     cursor: pointer;
   }
 }
@@ -104,13 +106,11 @@
 @media only screen and (max-width: 425px) {
   
   #portfolio {
+    padding-top: 5%;
+    padding-bottom: 5%;
     display: flex;
     width: 100%;
     height: auto;
-
-    h1 {
-      font-size: 30px;
-    }
   }
   .works {
     padding: 5%;
@@ -118,16 +118,23 @@
     flex-direction: column;
     width: 70vw;
     height: auto;
-    padding: 0;
     margin: 5%;
-    
-    .fade {
-      width: 100%;
-      height: 20%;
-      
-      .slideUp {
-        font-size: 20px;
-      }
-    }
   }
+}
+@media only screen and (min-width: 426px) and (max-width: 1024px) {
+  // #portfolio {
+  //   height: auto;
+  //   max-width: 100%;
+  // }
+  // .works {
+  //   width: 90%;
+
+  //   .fade {
+  //     height: 10%;
+  //   }
+  // }
+  // .slideUp {
+  //   // height: auto;
+  //   font-size: 20px;
+  // }
 }

@@ -1,10 +1,8 @@
 @import '../Global/global.scss';
 
 #about {
-  // background: url('../../../dist/images/hollywood.jpg') 50% 50% no-repeat fixed;
-  // filter: blur(5px);
-  size: 100%;
-  height: 170vh;
+  // height: 170vh;
+  height: auto;
   display: flex;
   flex-direction: column;
 }
@@ -12,10 +10,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 30vh;
+  // height: 30vh;
+  height: auto;
   background: #eaebed;
   padding-left: 15%;
   padding-right: 15%;
+  padding-bottom: 5%;
+  padding-top: 5%;
   
   p {
     align-items: center;
@@ -25,7 +26,8 @@
   }
 }
 .passion {
-  height: 60vh;
+  // height: 60vh;
+  height: auto;
   display: flex;
   flex-direction: row;
 }
@@ -47,8 +49,7 @@
 .narrative {
   background: white;
   display: flex;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 5%;
   justify-content: center;
   flex-direction: column;
   width: 60%;
@@ -69,13 +70,16 @@
 
 .gallery {
   background: url('../../../dist/images/hollywood.jpg') 50% 30% no-repeat fixed;
-  height: 80vh;
+  // height: 80vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .blur {
-  height: 80vh;
+  // height: 80vh;
+  height: auto;
+  padding-bottom: 5%;
   // background: rgba(255, 255, 255, 0.5);
   background: rgba(0, 0, 0, 0.2);
   // backdrop-filter: blur(5px);
@@ -123,13 +127,6 @@
   }
 }
 
-/* Mid Size */
-
-// @media only screen and (min-width: 460px) and (max-width: 960px) {
-//   #about {
-//     transform: scale(0.7);
-//   }
-// }
 /* Mobile 425px */
 
 @media only screen and (max-width: 425px) {
@@ -200,6 +197,7 @@
     width: 100%;
     
     .blur {
+      padding-top:5%;
       height: auto;
       width: 100%;
     }
@@ -223,6 +221,51 @@
         width: 80%;
         height: 80%;
         scroll-snap-align: center;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 1024px) {
+  #about {
+    height: auto;
+  }
+  .philosophy {
+    p {
+      font-size: 20px;
+    }
+  }
+  .passion {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img {
+      transform: scale(0.8);
+    }
+    .narrative {
+      width: 80%;
+      padding-bottom: 5%;
+    }
+  }
+  .gallery {
+    width: 100%;
+    height: auto;
+
+    .blur {
+      height: auto;
+      // width: 90%;
+
+      .flex {
+        height: auto;
+        
+        .pictures {
+          height: auto;
+          width: 100%;
+          margin-bottom: 2%;
+
+      
+        }
       }
     }
   }

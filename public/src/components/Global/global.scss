@@ -130,17 +130,21 @@
   border-color: #423d3d transparent transparent transparent;
 }
 @media only screen and (max-width: 425px) {
+  body {
+    overflow-x: hidden;
+  }
   .tooltiptext {
     display: none;
   }
 }
 
-body {
+html, body {
   margin: none;
   padding: none;
   z-index: 0;
-  width: 100%;
+  max-width: 100%;
   height: auto;
+  overflow-x: hidden;
 }
 
 /* Responsive */
