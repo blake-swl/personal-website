@@ -2,7 +2,6 @@ import React from 'react';
 import './about.scss';
 
 // pictures
-import jumping from '../../../dist/images/jumping.jpg';
 import typing from '../../../dist/images/typing.jpg';
 import sf from '../../../dist/images/sf.jpg';
 import dodgers from '../../../dist/images/dodgers.jpg';
@@ -66,7 +65,7 @@ Born in Seoul, Korea, I grew up in Saint Petersburg, Russia from the ages of two
               <img src={beach} id="beach" className="card1"/>
             </ul>
           </div>
-          <div className="dotstyle dotstyle-fillup">
+          {/* <div className="dotstyle dotstyle-fillup">
             <ul>
               <li className="current"><a href="#grad"></a></li>
               <li><a href="#family"></a></li>
@@ -77,7 +76,7 @@ Born in Seoul, Korea, I grew up in Saint Petersburg, Russia from the ages of two
               <li><a href="#group2"></a></li>
               <li><a href="#beach"></a></li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

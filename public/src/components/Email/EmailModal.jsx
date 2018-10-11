@@ -43,7 +43,10 @@ export default class EmailModal extends Component {
   render() {
     return (
       <div id="modal">
-        <div onClick={this.openModal}>{this.props.open}</div>
+        <div className="writeMail tooltip" onClick={this.openModal}>
+          <span className="tooltiptext">Compose</span>
+          {this.props.open}
+        </div>
         <Modal
           isOpen={this.state.modalIsOpen}
           onAfterOpen={this.afterOpenModal}
@@ -55,11 +58,11 @@ export default class EmailModal extends Component {
           <form className="mailbox">
             <div className="icon-action">
               <div className="close tooltip" onClick={this.closeModal} alt="close">
-                <span class="tooltiptext">Close</span>
+                <span className="tooltiptext">Close</span>
                 <Icon icon={close} size={20}/>
               </div>
               <div className="send tooltip">
-                <span class="tooltiptext">Send</span>
+                <span className="tooltiptext">Send</span>
                 <Icon icon={send} size={20} />
               </div>
             </div>

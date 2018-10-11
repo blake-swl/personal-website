@@ -45,7 +45,7 @@ const Contact = () => {
           <div className="cards-item" data-aos="fade-up">
             <h3>send me an email.</h3>
             <div className="cards-email">
-              <EmailModal className="cards-button" open="WRITE EMAIL"/>
+              <EmailModal open="WRITE NOW"/>
             </div>
           </div>
         </div>
@@ -58,7 +58,8 @@ const Contact = () => {
         <a href="https://github.com/blake-swl">
           <Icon icon={github} size={50} />
         </a>
-        <a href={Resume}>
+        <a href={Resume} className="tooltip">
+          <span className="tooltiptext">View resume</span>
           <Icon icon={rebel} size={50} />
         </a>
         <a href="https://www.linkedin.com/in/blake-lee-4bb35b121/">

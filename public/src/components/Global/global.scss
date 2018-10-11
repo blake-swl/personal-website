@@ -129,6 +129,11 @@
   border-style: solid;
   border-color: #423d3d transparent transparent transparent;
 }
+@media only screen and (max-width: 425px) {
+  .tooltiptext {
+    display: none;
+  }
+}
 
 body {
   margin: none;

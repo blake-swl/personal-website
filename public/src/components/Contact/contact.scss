@@ -40,8 +40,6 @@
   text-shadow: .5px .5px black;
 }
 
-
-
 // /* bottom half */
 
 .bottom {
@@ -58,20 +56,18 @@
   flex-direction: row;
   width: 100%;
   justify-content: center;
-
 }
 .cards-item {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  // justify-content: center;
+  align-items: center;
   border: 3px solid #423d3d;
   margin: 1%;
   padding: 1%;
   width: 15em;
   height: 15em;
   color: #423d3d;
-
 
   h1, h3 {
     font-family: 'notoMedium';
@@ -81,6 +77,9 @@
     margin-top: 5%;
     display: inline-block;
   }
+  .info-column {
+    width: 100%;
+  }
 }
 .cards-item:hover {
   background: linear-gradient(
@@ -88,6 +87,14 @@
     rgba(0, 0, 0, 0.8)
   );
   color: white;
+}
+.cards-email {
+  width: 80%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
 .la {
   background: url('../../../dist/images/map.jpg') 0 55% no-repeat;
@@ -124,51 +131,28 @@
         font-size: 30px;
       }
     }
-    .bottom {
+  }
+  .bottom {
+    display: flex;
+    width: 90%;
+    padding: 5%;
+    
+    .cards-scroll {
+      width: auto;
+      scroll-snap-type: x mandatory;
       display: flex;
-      width: 90%;
-      padding: 5%;
-      
-      .cards-scroll {
-        width: auto;
-        scroll-snap-type: x mandatory;
-        display: flex;
-        justify-content: flex-start;
-        overflow-x: scroll;
-        overflow-y: hidden;
-        -webkit-overflow-scrolling: touch;
+      justify-content: flex-start;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
 
-        .cards-item {
-          scroll-snap-align: center;
-          // padding: 0;
-          margin: 5%;
-          width: 80%;
-          flex: 0 0 auto;
-        }
+      .cards-item {
+        scroll-snap-align: center;
+        // padding: 0;
+        margin: 5%;
+        width: 80%;
+        flex: 0 0 auto;
       }
     }
   }
-
-  // .bottom {
-  //   width: 100%;
-  //   height: auto;
-  //   scroll-snap-type: x mandatory;
-  //   display: flex;
-  //   flex-direction: row;
-  //   justify-content: center;
-  //   align-items: center;
-  //   overflow-x: scroll;
-  //   overflow-y: hidden;
-  //   -webkit-overflow-scrolling: touch;
-
-  //   .cards-item {
-  //     scroll-snap-align: center;
-  //     // padding: 5%;
-  //     flex: 0 0 auto;
-  //     // width: 80vw;
-  //     text-align: justify;
-  //     width: 80%;
-  //     height: 80%;
-  //   }
-  // }
 }

@@ -41,7 +41,7 @@ export default class Portfolio extends Component {
                 buttons={<Icon icon={ic_zoom_in} size={38}/>}
                 subtitle={AmDesc}/>
                 <a className="code tooltip" href="https://github.com/HRLA23WhiteWalkers/MainPage">
-                  <span class="tooltiptext">View code</span>
+                  <span className="tooltiptext">View code</span>
                   <Icon icon={github} size={30}/>
                 </a>
               </div>
@@ -57,7 +57,7 @@ export default class Portfolio extends Component {
                 buttons={<Icon icon={ic_zoom_in} size={38}/>}
                 subtitle={AirDesc}/>
                 <a className="code tooltip" href="https://github.com/HRLA23WhiteWalkers/MainPage">
-                  <span class="tooltiptext">View code</span>
+                  <span className="tooltiptext">View code</span>
                   <Icon icon={github} size={30}/>
                 </a>
               </div>
@@ -73,7 +73,7 @@ export default class Portfolio extends Component {
                 buttons={<Icon icon={ic_zoom_in} size={38}/>}
                 />
                 <a className="code tooltip" href="https://github.com/blake-swl/personal-website">
-                  <span class="tooltiptext">View code</span>
+                  <span className="tooltiptext">View code</span>
                  <Icon icon={github} size={30}/>
                 </a>
               </div>

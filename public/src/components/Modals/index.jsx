@@ -47,7 +47,7 @@ export default class ModalComponent extends Component {
       <div id="modal">
         <div className="icons">
           <div className="tooltip" onClick={this.openModal}>
-            <span class="tooltiptext">Zoom</span>
+            <span className="tooltiptext">Zoom</span>
             {this.props.buttons}
           </div>
         </div>
