@@ -15,6 +15,7 @@ export default class Navigation extends Component {
   }
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
+    document.querySelector('.icon').addEventListener('click', this.handleDropDown);
   }
   
   handleScroll = () => {  
@@ -31,36 +32,36 @@ export default class Navigation extends Component {
 
   handleDropDown = () => {
     const navs = document.querySelectorAll('.navbar');
-
-
     navs.forEach(nav => nav.classList.toggle('navbar_dropdown'));
   }
 
   render() {
     return (
       <div id="navbar">
-        <nav className="navigation" >
-          <div className="icon" style={{ color: 'grey' }}>
-            <Icon icon={navicon} size={34}/>
+        <div className="navigation" >
+          <div className="icon" style={{ color: 'black' }}>
+            <Icon icon={navicon} size={25}/>
           </div>
-          <ul className="navbar">
-            <li>
-              <a href="#home">home</a>
-            </li>
-            <li>
-              <a href="#about">about</a>
-            </li>
-            <li>
-              <a href="#skills">skills</a>
-            </li>
-            <li>
-              <a href="#portfolio">portfolio</a>
-            </li>
-            <li>
-              <a href="#contact">contact</a>
-            </li>
-          </ul>
-        </nav>
+          <div className="nav-drop">
+            <ul className="navbar">
+                <li className="nav-item">
+                  <a href="#home">home</a>
+                </li>
+                <li className="nav-item">
+                  <a href="#about">about</a>
+                </li>
+                <li className="nav-item">
+                  <a href="#skills">skills</a>
+                </li>
+                <li className="nav-item">
+                  <a href="#portfolio">portfolio</a>
+                </li>
+                <li className="nav-item">
+                  <a href="#contact">contact</a>
+                </li>
+            </ul>
+          </div>
+        </div>
       </div>
     )
   }
