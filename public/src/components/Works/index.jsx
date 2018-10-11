@@ -3,7 +3,7 @@ import './works.scss';
 import ZoomModal from '../Modals';
 import amazon from '../../../dist/images/amazon.gif';
 import airbnb from '../../../dist/images/airbnb.gif';
-import homepage from '../../../dist/images/homepage.jpg';
+import homepage from '../../../dist/images/homepage.gif';
 
 // Icons
 import { Icon } from 'react-icons-kit';
@@ -70,6 +70,7 @@ export default class Portfolio extends Component {
             <div className="fade">
               <div className="btns">
                 <ZoomModal subtitle={pwDesc} className="icons"
+                images={homepage}
                 buttons={<Icon icon={ic_zoom_in} size={38}/>}
                 />
                 <a className="code tooltip" href="https://github.com/blake-swl/personal-website">
