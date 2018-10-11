@@ -15,8 +15,6 @@ export default class Navigation extends Component {
   }
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
-    document.querySelector('.icon')
-    .addEventListener('click', this.handleDropDown);
   }
   
   handleScroll = () => {  
@@ -34,37 +32,35 @@ export default class Navigation extends Component {
   handleDropDown = () => {
     const navs = document.querySelectorAll('.navbar');
 
-    navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+
+    navs.forEach(nav => nav.classList.toggle('navbar_dropdown'));
   }
 
   render() {
     return (
-      <div id="navbar" className="navigation">
-        <div className="nav-container">
-          <div className="Navbar__Link Navbar__Link-brand">
-
+      <div id="navbar">
+        <nav className="navigation" >
+          <div className="icon" style={{ color: 'grey' }}>
+            <Icon icon={navicon} size={34}/>
           </div>
-          <div className="Navbar__Link icon" style={{ color: 'grey' }}>
-            <Icon icon={navicon} size={34} />
-          </div>
-          <nav className="navbar" >
-            <div className="Navbar__Link">
+          <ul className="navbar">
+            <li>
               <a href="#home">home</a>
-            </div>
-            <div className="Navbar__Link">
+            </li>
+            <li>
               <a href="#about">about</a>
-            </div>
-            <div className="Navbar__Link">
+            </li>
+            <li>
               <a href="#skills">skills</a>
-            </div>
-            <div className="Navbar__Link">
+            </li>
+            <li>
               <a href="#portfolio">portfolio</a>
-            </div>
-            <div className="Navbar__Link">
+            </li>
+            <li>
               <a href="#contact">contact</a>
-            </div>
-          </nav>
-        </div>
+            </li>
+          </ul>
+        </nav>
       </div>
     )
   }

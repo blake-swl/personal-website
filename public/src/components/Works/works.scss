@@ -15,8 +15,6 @@
     font-size: 50px;
     padding-top: 5%;
     color: #2E5060;
-    // margin-left: -5%;
-    // border-bottom: 2px solid #20273D;
   }
 }
 .works {
@@ -63,7 +61,6 @@
 .fade:hover {
   visibility: visible;
   background: rgba(0,0,0,0.8);
-  transition: all .1s ease;
   
   h3, .btns, .slideUp {
     visibility: visible;
@@ -121,6 +118,7 @@
     flex-direction: column;
     width: 90vw;
     height: auto;
+    // border: 3px solid white;
     padding: 0;
     margin: 5%;
     
@@ -133,31 +131,4 @@
       }
     }
   }
-
 }
-  // display: flex;
-  // justify-content: center;
-  // button, a {
-  //   text-decoration: none;
-  //   width: 150px;
-  //   height: 100px;
-  //   color: white;
-  //   border: 2px solid white;
-  //   background: none;
-  //   font-size: 15px;
-  //   margin: 10%;
-  //   // padding: 10%;
-  //   font-family: 'montsRegular';
-  //   cursor: pointer;
-  // }
-// .zoom {
-  //   grid-area: zoomz;
-// }
-// .code {
-//   grid-area: code;
-// }
-
-
-
-
-

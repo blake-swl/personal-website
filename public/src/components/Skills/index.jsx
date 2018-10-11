@@ -2,8 +2,6 @@ import React from 'react';
 import './skills.scss';
 import { Progress } from 'react-sweet-progress';
 import "react-sweet-progress/lib/style.css";
-// import { Icon } from 'react-icons-kit';
-// import {check} from 'react-icons-kit/fa/check';
 import check from '../../../dist/images/redcheck.jpg';
 
 
@@ -60,7 +58,4 @@ const Skills = () => {
     </div>
   )
 };
-
 export default Skills;
-          // #D05353
-          // #535B63
