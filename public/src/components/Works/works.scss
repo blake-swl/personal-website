@@ -116,15 +116,14 @@
     padding: 5%;
     display: flex;
     flex-direction: column;
-    width: 90vw;
+    width: 70vw;
     height: auto;
-    // border: 3px solid white;
     padding: 0;
     margin: 5%;
     
     .fade {
       width: 100%;
-      height: 100%;
+      height: 20%;
       
       .slideUp {
         font-size: 20px;

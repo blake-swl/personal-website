@@ -20,7 +20,7 @@ import friends from '../../../dist/images/friends1.jpg';
 const About = () => {
   return(
     <div id="about">
-      <div className="philosophy" data-aos="fade-up">
+      <div className="philosophy" >
         <p>I'm a full-stack engineer that is passionate about developing real world applications with clean, maintainable code, with an emphasis in front-end development.</p>
       </div>
       <div className="passion" data-aos="fade-up">

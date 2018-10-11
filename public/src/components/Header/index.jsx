@@ -9,9 +9,9 @@ const Header = () => {
      <div className="header-layer">
        <div className="tagline">
          <h4>Connecting through code, design, & innovation.</h4>
-        <div className="position">
-          <Typed strings={['^1000 Full-Stack Developer.']}
-            typeSpeed={80} />
+        <div className="position">Full-Stack Developer.
+          {/* <Typed strings={['^1000 Full-Stack Developer.']}
+            typeSpeed={80} /> */}
         </div>
         <div className="name">
           <h3>Blake S Lee</h3>

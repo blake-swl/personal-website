@@ -118,6 +118,8 @@
 
 @media only screen and (max-width: 425px) {
   #contact {
+    background: url('../../../dist/images/rawpixel-652547-unsplash.jpg') 50% 20% no-repeat;
+    background-size: cover;
     height: auto;
     width: 100vw;
     display: flex;

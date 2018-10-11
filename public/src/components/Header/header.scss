@@ -73,11 +73,15 @@
   //   margin-bottom: none;
   // }
   #home {
-    background: url('../../../dist/images/mac.jpg') 80% 50% no-repeat fixed;
+    background: url('../../../dist/images/mac.jpg') 80% 50% no-repeat;
     background-size: cover;
   }
 
-  .position, .name {
+  .position {
+    font-size: 30px;
+  }
+  
+  .name {
     font-size: 30px;
   }
   .tagline {
