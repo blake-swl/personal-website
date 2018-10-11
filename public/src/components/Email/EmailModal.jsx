@@ -54,8 +54,14 @@ export default class EmailModal extends Component {
         >
           <form className="mailbox">
             <div className="icon-action">
-              <div className="close" onClick={this.closeModal} alt="close"><Icon icon={close} size={20}/></div>
-              <div className="send"><Icon icon={send} size={20} /></div>
+              <div className="close tooltip" onClick={this.closeModal} alt="close">
+                <span class="tooltiptext">Close</span>
+                <Icon icon={close} size={20}/>
+              </div>
+              <div className="send tooltip">
+                <span class="tooltiptext">Send</span>
+                <Icon icon={send} size={20} />
+              </div>
             </div>
             <textarea 
               className="names"

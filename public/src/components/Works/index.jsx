@@ -40,7 +40,8 @@ export default class Portfolio extends Component {
                 <ZoomModal images={amazon} className="icons"
                 buttons={<Icon icon={ic_zoom_in} size={38}/>}
                 subtitle={AmDesc}/>
-                <a className="code" href="https://github.com/HRLA23WhiteWalkers/MainPage">
+                <a className="code tooltip" href="https://github.com/HRLA23WhiteWalkers/MainPage">
+                  <span class="tooltiptext">View code</span>
                   <Icon icon={github} size={30}/>
                 </a>
               </div>
@@ -55,7 +56,8 @@ export default class Portfolio extends Component {
                 <ZoomModal images={airbnb} className="icons"
                 buttons={<Icon icon={ic_zoom_in} size={38}/>}
                 subtitle={AirDesc}/>
-                <a className="code" href="https://github.com/HRLA23WhiteWalkers/MainPage">
+                <a className="code tooltip" href="https://github.com/HRLA23WhiteWalkers/MainPage">
+                  <span class="tooltiptext">View code</span>
                   <Icon icon={github} size={30}/>
                 </a>
               </div>
@@ -70,7 +72,8 @@ export default class Portfolio extends Component {
                 <ZoomModal subtitle={pwDesc} className="icons"
                 buttons={<Icon icon={ic_zoom_in} size={38}/>}
                 />
-                <a className="code" href="https://github.com/blake-swl/personal-website">
+                <a className="code tooltip" href="https://github.com/blake-swl/personal-website">
+                  <span class="tooltiptext">View code</span>
                  <Icon icon={github} size={30}/>
                 </a>
               </div>

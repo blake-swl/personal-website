@@ -10,9 +10,6 @@ const customStyles = {
     top: '50%',
     left: '50%',
     right: 'auto',
-    // background: 'rgba(0,0,0,0.8)',
-    // width: '60vw',
-    // height: '50vh',
     bottom: 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)'
@@ -49,7 +46,10 @@ export default class ModalComponent extends Component {
     return (
       <div id="modal">
         <div className="icons">
-          <div onClick={this.openModal}>{this.props.buttons}</div>
+          <div className="tooltip" onClick={this.openModal}>
+            <span class="tooltiptext">Zoom</span>
+            {this.props.buttons}
+          </div>
         </div>
         <Modal
           isOpen={this.state.modalIsOpen}
