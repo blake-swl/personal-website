@@ -32,7 +32,7 @@ export default class Portfolio extends Component {
     </ul>
     return (
       <div id="portfolio">
-        <h1 data-aos="fade-up">My latest projects</h1>
+        <h1 data-aos="fade-up">-Portfolio-</h1>
         <div className="works" data-aos="fade-up">
           <div className="amazon">
             <div className="fade">

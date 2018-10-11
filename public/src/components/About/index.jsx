@@ -65,18 +65,6 @@ Born in Seoul, Korea, I grew up in Saint Petersburg, Russia from the ages of two
               <img src={beach} id="beach" className="card1"/>
             </ul>
           </div>
-          {/* <div className="dotstyle dotstyle-fillup">
-            <ul>
-              <li className="current"><a href="#grad"></a></li>
-              <li><a href="#family"></a></li>
-              <li><a href="#dodgers"></a></li>
-              <li><a href="#sf"></a></li>
-              <li><a href="#friends"></a></li>
-              <li><a href="#guitar"></a></li>
-              <li><a href="#group2"></a></li>
-              <li><a href="#beach"></a></li>
-            </ul>
-          </div> */}
         </div>
       </div>
     </div>

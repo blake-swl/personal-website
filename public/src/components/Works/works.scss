@@ -11,9 +11,12 @@
 
 
   h1 {
-    font-family: 'notoRegular';
+    font-family: 'montsMedium';
     font-size: 50px;
     padding-top: 5%;
+    color: #2E5060;
+    // margin-left: -5%;
+    // border-bottom: 2px solid #20273D;
   }
 }
 .works {
@@ -60,7 +63,7 @@
 .fade:hover {
   visibility: visible;
   background: rgba(0,0,0,0.8);
-  // transition: all .1s ease-in;
+  transition: all .1s ease;
   
   h3, .btns, .slideUp {
     visibility: visible;
@@ -74,7 +77,6 @@
   width: 90%;
   height: 5vh;
   background: #D05353;
-  // background: #B10F2E;
   opacity: 0.8;
   color: white;
   font-size: 2em;
@@ -119,7 +121,6 @@
     flex-direction: column;
     width: 90vw;
     height: auto;
-    // border: 3px solid white;
     padding: 0;
     margin: 5%;
     

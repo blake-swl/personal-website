@@ -12,7 +12,7 @@ const Skills = () => {
   return(
     <div id="skills" >
       <div className="title" data-aos="fade-up">
-        <h1>Skills</h1>
+        <h1>-Skills-</h1>
       </div>
       <div className="mainSkills" data-aos="fade-up">
         <div className="javascript" data-aos="fade-up">JavaScript 
@@ -38,7 +38,7 @@ const Skills = () => {
         </div>
       </div>
       <div className="title2" data-aos="fade-up">
-        <h1>More Skills</h1>
+        <h1>-More Skills-</h1>
       </div>
       <div className="moreSkills">
         <div className="aws" data-aos="fade-up">

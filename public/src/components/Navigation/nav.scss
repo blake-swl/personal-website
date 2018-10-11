@@ -1,17 +1,23 @@
 @import '../Global/global.scss';
 
 .navigation {
-  overflow: hidden;
+  border-bottom: 1px double grey;
+  height: 5vh;
   margin: none;
   display: flex;
-  width: 100%;
-  height: 5vh;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
   background: white;
-  border-bottom: 1px double grey;
   position: relative;
   z-index: 10;
 }
+// .nav-container {
+//   width: 77vw;
+//   display: flex;
+//   justify-content: flex-end;
+//   padding-right: 3vw;
+// }
+
 .icon {
   display: flex;
   justify-content: center;
@@ -32,7 +38,6 @@
 }
 .navbar:hover a {
   color: #B10F2E;
-  // color: #6f6f6f;
 }
 .navbar a:hover {
   color: black;
@@ -43,29 +48,64 @@
   top: 0;
   width: 100%;
 }
-
-/* Dropdown for smaller screens */
-
+.icon {
+  display: none;
+}
 @media only screen and (max-width: 768px) {
+  // .navigation,
+  // .navbar {
+  // //   flex-direction: column;
+  // //   min-height: 8vh;
+  // //   justify-content: center;
+  // }
+  .navbar {
+    display:none;
+  }
   .navigation {
     flex-direction: column;
     height: 8vh;
     justify-content: center;
   }
-  .navbar {
-    display: none;
+  .Navbar__ToggleShow {
+    display: flex;
   }
   .icon {
     align-self: flex-end;
+    justify-content: center;
     display: initial;
     position: absolute;
     cursor: pointer;
-    padding-right: 5%;
-  }
-  .navbar_dropdown {
-    display: flex;
-    flex-direction: column;
-    transition: 1s ease-in;
-    height: 100%;
-  }
+  } 
 }
+
+
+
+// /* Dropdown for smaller screens */
+
+// @media only screen and (max-width: 768px) {
+//   .navbar, #navbar {
+//     flex-direction: column;
+//   }
+//   .navbar {
+//     display: none;
+//   }
+//   // .navigation {
+//   //   flex-direction: column;
+//   //   height: 8vh;
+//   //   justify-content: center;
+//   // }
+//   .navbar_dropdown {
+//     display: flex;
+//   }
+//   .icon {
+//     align-self: flex-end;
+//     display: initial;
+//     position: absolute;
+//     cursor: pointer;
+//     padding-right: 5%;
+//     // align-self: flex-end;
+//     // display: initial;
+//     // position: absolute;
+//     // cursor: pointer;
+//   }
+// }

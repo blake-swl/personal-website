@@ -40,7 +40,7 @@ const App = () => {
     <div id="wrapper">
       <Navigation className="scrollAlign"/>
       <Header className="scrollAlign"/>
-      <About data-aos="fade-up" className="scrollAlign"/>
+      <About className="scrollAlign"/>
       <Skills className="scrollAlign"/>
       <Portfolio className="scrollAlign"/>
       <Contact className="scrollAlign"/>
