@@ -122,3 +122,27 @@
     margin: 5%;
   }
 }
+@media only screen and (min-width: 426px) and (max-width: 1024px) {
+  #portfolio {
+    // padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+    justify-content: center;
+  }
+  .works {
+    width: 80%;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    justify-content: flex-start;
+    align-items: center;
+
+    .work-item, .fade {
+      flex: 0 0 auto;
+      scroll-snap-align: center;
+    }
+  }
+}
