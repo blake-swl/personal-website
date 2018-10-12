@@ -1,6 +1,13 @@
 import React from 'react';
 import './about.scss';
 
+// Icons
+import { Icon } from 'react-icons-kit';
+import {ic_keyboard_arrow_right} from 'react-icons-kit/md/ic_keyboard_arrow_right';
+import {ic_code} from 'react-icons-kit/md/ic_code';
+import {ic_keyboard_arrow_left} from 'react-icons-kit/md/ic_keyboard_arrow_left';
+import {ic_expand_less} from 'react-icons-kit/md/ic_expand_less';
+
 // pictures
 import typing from '../../../dist/images/typing.jpg';
 import sf from '../../../dist/images/sf.jpg';
@@ -29,18 +36,27 @@ const About = () => {
         </div>
         <div className="narrative" data-aos="fade-up">
           <h3>My passion for coding</h3>
-          <div className="scroll-x" data-aos="fade-left">
+          <div className="scroll-x">
             <div className="card">
               <p>Palette, brush, canvas. Keyboard, mouse, screen. I can never forget what it first felt like to write something in a static HTML page and with a click of a button, have it render on screen. I can never forget what it felt like to tweak a few elements on CSS to change the entire layout and design of my page.</p>
+              <div style={{color: '#D05353'}}>
+                <Icon icon={ic_keyboard_arrow_right} className="cues" size={40}/>
+              </div>
             </div>
             <br/>
             <div className="card"> 
               <p>I can also never forget what it felt like to spend countless hours trying to fix a bug, learn React, read through Postgres documentation, correctly route every endpoint to generate a cohesive product. But I can also never forget the addictive exhilaration I felt from the satisfaction of making progress and break through.</p>
+              <div style={{color: '#D05353'}}>
+                <Icon icon={ic_code} className="cues" size={40}/>
+              </div>
             </div>
             <br/>
             <div className="card">
               <p>Software engineering is my craft, and coding is my brush stroke of passion I exert on the screen that is my canvas. My passion for this craft keeps me innovating and learning new technologies to be the best software engineer I can be.
               </p>
+              <div style={{color: '#D05353'}}>
+                <Icon icon={ic_keyboard_arrow_left} className="cues" size={40}/>
+              </div>
             </div>
           </div>
         </div>

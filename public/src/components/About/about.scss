@@ -58,13 +58,9 @@
     font-size: 30px;
     align-items: center;
   }
-  // .scroll-x {
-  //   visibility: hidden;
-
-  // }
-  // .card {
-  //   visibility: visible;
-  // }
+  .cues {
+    visibility: hidden;
+  }
 }
 /* Bottom half */
 
@@ -183,6 +179,10 @@
         width: 80vw;
         text-align: justify;
       }
+      .cues {
+        visibility: visible;
+        height: auto;
+      }
     }
   }
   }
@@ -252,7 +252,7 @@
     }
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 426px) and (max-width: 768px) {
   .flex {
     width: 100%;
     height: auto;
