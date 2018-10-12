@@ -7,6 +7,9 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
+    // plugin: [
+    //   envVariables
+    // ],
     rules: [
       {
         test: /\.js[x]?$/,

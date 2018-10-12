@@ -27,9 +27,12 @@ export default class Portfolio extends Component {
     const pwDesc =  <ul className="description">
       <li>- Designed this current website from ground up using modular components.</li>
       <li>- Dynamically responsive to different viewing formats.</li>
-      <li>- Integrated Google Maps API to present my current living location.</li>
+      <li>- Designed viewport UI that is highly intuitive.</li>
       <li>- Leveraged SMTP server to send emails directly from React component.</li>
     </ul>
+    const AmStack = <div>STACK: [Node, Postgres, Nginx, AWS]</div>;
+    const AirStack = <div>STACK: [React, Node, CSS modules, Mongo]</div>;
+    const HoStack = <div>STACK: [React, Node, SASS, AWS]</div>;
     return (
       <div id="portfolio">
         <h1 className="works-title" data-aos="fade-up">-Portfolio-</h1>
@@ -39,6 +42,7 @@ export default class Portfolio extends Component {
               <div className="btns">
                 <ZoomModal images={amazon} className="icons"
                 buttons={<Icon icon={ic_zoom_in} size={40}/>}
+                components={AmStack}
                 subtitle={AmDesc}/>
                 <a className="code tooltip" href="https://github.com/HRLA23WhiteWalkers/MainPage">
                   <span className="tooltiptext">View code</span>
@@ -55,6 +59,7 @@ export default class Portfolio extends Component {
               <div className="btns">
                 <ZoomModal images={airbnb} className="icons"
                 buttons={<Icon icon={ic_zoom_in} size={40}/>}
+                components={AirStack}
                 subtitle={AirDesc}/>
                 <a className="code tooltip" href="https://github.com/HRLA23WhiteWalkers/MainPage">
                   <span className="tooltiptext">View code</span>
@@ -71,6 +76,7 @@ export default class Portfolio extends Component {
               <div className="btns">
                 <ZoomModal subtitle={pwDesc} className="icons"
                 images={homepage}
+                components={HoStack}
                 buttons={<Icon icon={ic_zoom_in} size={40}/>}
                 />
                 <a className="code tooltip" href="https://github.com/blake-swl/personal-website">

@@ -60,6 +60,7 @@
   }
   .cues {
     visibility: hidden;
+    display: none !important;
   }
 }
 /* Bottom half */
@@ -180,6 +181,7 @@
         text-align: justify;
       }
       .cues {
+        display: block !important;
         visibility: visible;
         height: auto;
       }
