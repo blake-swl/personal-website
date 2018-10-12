@@ -29,7 +29,7 @@ const About = () => {
         </div>
         <div className="narrative" data-aos="fade-up">
           <h3>My passion for coding</h3>
-          <div className="scroll-x">
+          <div className="scroll-x" data-aos="fade-left">
             <div className="card">
               <p>Palette, brush, canvas. Keyboard, mouse, screen. I can never forget what it first felt like to write something in a static HTML page and with a click of a button, have it render on screen. I can never forget what it felt like to tweak a few elements on CSS to change the entire layout and design of my page.</p>
             </div>
@@ -55,14 +55,19 @@ Born in Seoul, Korea, I grew up in Saint Petersburg, Russia from the ages of two
             </div>
           <div className="flex">
             <ul className="pictures" data-aos="fade-up">
-              <img src={grad} id="grad" className="card1"/>
-              <img src={family} id="family" className="card1"/>
-              <img src={dodgers} id="dodgers" className="card1"/>
-              <img src={sf} id="sf" className="card1"/>
-              <img src={friends} id="friends" className="card1"/>
-              <img src={guitar} id="guitar" className="card1"/>
-              <img src={group2} id="group2" className="card1"/>
-              <img src={beach} id="beach" className="card1"/>
+              <img src={grad} id="grad" className="card1 tablet1"/>
+              <img src={family} id="family" className="card1 tablet1"/>
+              <img src={dodgers} id="dodgers" className="card1 tablet1"/>
+              <img src={sf} id="sf" className="card1 tablet1"/>
+              <img src={friends} id="friends" className="card1 tablet2"/>
+              <img src={guitar} id="guitar" className="card1 tablet2"/>
+              <img src={group2} id="group2" className="card1 tablet2"/>
+              <img src={beach} id="beach" className="card1 tablet2"/>
+              {/* <div className="tablet"> */}
+
+              {/* </div>
+              <div className="tablet"> */}
+              {/* </div> */}
             </ul>
           </div>
         </div>

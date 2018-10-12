@@ -1,7 +1,6 @@
 @import '../Global/global.scss';
 
 #about {
-  // height: 170vh;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -10,7 +9,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  // height: 30vh;
   height: auto;
   background: #eaebed;
   padding-left: 15%;
@@ -26,7 +24,6 @@
   }
 }
 .passion {
-  // height: 60vh;
   height: auto;
   display: flex;
   flex-direction: row;
@@ -42,9 +39,6 @@
     width: 600px;
     height: 400px;
   }
-  // @media only screen and (max-width: 425px) {
-  //   padding-left: 0;
-  // }
 }
 .narrative {
   background: white;
@@ -64,25 +58,28 @@
     font-size: 30px;
     align-items: center;
   }
+  // .scroll-x {
+  //   visibility: hidden;
+
+  // }
+  // .card {
+  //   visibility: visible;
+  // }
 }
 /* Bottom half */
 
 
 .gallery {
   background: url('../../../dist/images/hollywood.jpg') 50% 30% no-repeat fixed;
-  // height: 80vh;
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .blur {
-  // height: 80vh;
   height: auto;
   padding-bottom: 5%;
-  // background: rgba(255, 255, 255, 0.5);
   background: rgba(0, 0, 0, 0.2);
-  // backdrop-filter: blur(5px);
 }
 .personal {
   font-family: 'montsMedium';
@@ -109,7 +106,6 @@
   justify-content: center;
 }
 .pictures {
-  // padding-top: 10px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -122,7 +118,7 @@
 
   img {
     height: 200px;
-    width: 200px;
+    width: auto;
     justify-self: stretch;
   }
 }
@@ -212,14 +208,12 @@
       overflow-y: hidden;
       -webkit-overflow-scrolling: touch;
       height: auto;
-      li {
-        display: show;
-      }
+     
       .card1 {
         flex: 0 0 auto;
         margin: 5%;
-        width: 80%;
-        height: 80%;
+        width: auto;
+        height: 300px;
         scroll-snap-align: center;
       }
     }
@@ -255,18 +249,32 @@
 
     .blur {
       height: auto;
-      // width: 90%;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .flex {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-left: 25%;
+    
+    .pictures {
+      overflow-x: scroll;
+      overflow-y: hidden;
+      width: 50%;
+      display: grid;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      padding-left: 10px;
+      padding-right: 10px;
 
-      .flex {
-        height: auto;
-        
-        .pictures {
-          height: auto;
-          width: 100%;
-          margin-bottom: 2%;
+      .card1 {
+        height: 200px;
+        width: auto;
+        scroll-snap-align: center;
 
-      
-        }
       }
     }
   }

@@ -2,7 +2,6 @@
 @import '../Global/global.scss';
 
 #portfolio {
-  // height: 70vh;
   height: auto;
   padding-bottom: 5%;
   width: 100%;
@@ -120,21 +119,4 @@
     height: auto;
     margin: 5%;
   }
-}
-@media only screen and (min-width: 426px) and (max-width: 1024px) {
-  // #portfolio {
-  //   height: auto;
-  //   max-width: 100%;
-  // }
-  // .works {
-  //   width: 90%;
-
-  //   .fade {
-  //     height: 10%;
-  //   }
-  // }
-  // .slideUp {
-  //   // height: auto;
-  //   font-size: 20px;
-  // }
 }
