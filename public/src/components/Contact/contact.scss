@@ -118,6 +118,25 @@
   }
 }
 
+/* Back To Top */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #D05353;
+  color: white;
+  cursor: pointer;
+  padding: 3px;
+}
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
 @media only screen and (max-width: 425px) {
   #contact {
     background: url('../../../dist/images/rawpixel-652547-unsplash.jpg') 50% 20% no-repeat;

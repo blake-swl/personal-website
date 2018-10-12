@@ -51,7 +51,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="la"></div>
-      <div className="footer">
+      <footer className="footer">
         <a href="https://www.facebook.com/blakeswlee">
           <Icon icon={facebookSquare} size={50} />
         </a>
@@ -68,7 +68,7 @@ const Contact = () => {
         <a href="https://www.instagram.com/blake.swl/">
           <Icon icon={instagram} size={50} />
         </a>
-      </div>
+      </footer>
     </div>
   )
 };

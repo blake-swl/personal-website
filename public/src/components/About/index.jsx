@@ -6,7 +6,6 @@ import { Icon } from 'react-icons-kit';
 import {ic_keyboard_arrow_right} from 'react-icons-kit/md/ic_keyboard_arrow_right';
 import {ic_code} from 'react-icons-kit/md/ic_code';
 import {ic_keyboard_arrow_left} from 'react-icons-kit/md/ic_keyboard_arrow_left';
-import {ic_expand_less} from 'react-icons-kit/md/ic_expand_less';
 
 // pictures
 import typing from '../../../dist/images/typing.jpg';
@@ -79,11 +78,6 @@ Born in Seoul, Korea, I grew up in Saint Petersburg, Russia from the ages of two
               <img src={guitar} id="guitar" className="card1 tablet2"/>
               <img src={group2} id="group2" className="card1 tablet2"/>
               <img src={beach} id="beach" className="card1 tablet2"/>
-              {/* <div className="tablet"> */}
-
-              {/* </div>
-              <div className="tablet"> */}
-              {/* </div> */}
             </ul>
           </div>
         </div>

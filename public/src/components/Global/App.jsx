@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './global.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import 'smoothscroll';
+
+
 AOS.init();
 AOS.init({
   // Global settings:
@@ -26,6 +29,9 @@ AOS.init({
 
 });
 
+// Icons
+import { Icon } from 'react-icons-kit';
+import {ic_expand_less} from 'react-icons-kit/md/ic_expand_less';
 
 import Header from '../Header/index';
 import Navigation from '../Navigation';
@@ -34,17 +40,43 @@ import Skills from '../Skills';
 import Portfolio from '../Works';
 import Contact from '../Contact';
 
+export default class App extends Component  {
+  constructor() {
+    super();
 
-const App = () => {
-  return(
-    <div id="wrapper">
-      <Navigation className="scrollAlign"/>
-      <Header className="scrollAlign"/>
-      <About className="scrollAlign"/>
-      <Skills className="scrollAlign"/>
-      <Portfolio className="scrollAlign"/>
-      <Contact className="scrollAlign"/>
-    </div>
-  )
+    this.scrollFunction = this.scrollFunction.bind(this);
+    this.topFunction = this.topFunction.bind(this);
+  }
+  componentDidMount() {
+    window.onscroll = () => this.scrollFunction();
+  }
+
+  // Back to Top
+  scrollFunction = () => {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+  }
+  topFunction = () => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+  render() {
+    return(
+      <div id="wrapper">
+        <button onClick={this.topFunction} id="myBtn" title="Go to top">
+          <Icon icon={ic_expand_less} size={30}/>
+        </button>
+        <Navigation className="scrollAlign"/>
+        <Header className="scrollAlign"/>
+        <About className="scrollAlign"/>
+        <Skills className="scrollAlign"/>
+        <Portfolio className="scrollAlign"/>
+        <Contact className="scrollAlign"/>
+      </div>
+    )
+  }
 };
-export default App;
+

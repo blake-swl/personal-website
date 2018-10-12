@@ -6,6 +6,7 @@ import { Icon } from 'react-icons-kit';
 import {navicon} from 'react-icons-kit/fa/navicon';
 
 
+
 export default class Navigation extends Component {
   constructor() {
     super();
@@ -18,6 +19,7 @@ export default class Navigation extends Component {
     document.querySelector('.icon').addEventListener('click', this.handleDropDown);
   }
   
+  // Sticky Nav
   handleScroll = () => {  
     const navbar = document.getElementById("navbar");
 
@@ -29,11 +31,12 @@ export default class Navigation extends Component {
       navbar.classList.remove("sticky");
     }
   }
-
+  // DropDown
   handleDropDown = () => {
     const navs = document.querySelectorAll('.navbar');
     navs.forEach(nav => nav.classList.toggle('navbar_dropdown'));
   }
+
 
   render() {
     return (
@@ -44,21 +47,21 @@ export default class Navigation extends Component {
           </div>
           <div className="nav-drop">
             <ul className="navbar">
-                <li className="nav-item">
-                  <a href="#home">home</a>
-                </li>
-                <li className="nav-item">
-                  <a href="#about">about</a>
-                </li>
-                <li className="nav-item">
-                  <a href="#skills">skills</a>
-                </li>
-                <li className="nav-item">
-                  <a href="#portfolio">portfolio</a>
-                </li>
-                <li className="nav-item">
-                  <a href="#contact">contact</a>
-                </li>
+              <li className="nav-item">
+                <a href="#home">home</a>
+              </li>
+              <li className="nav-item">
+                <a href="#about">about</a>
+              </li>
+              <li className="nav-item">
+                <a href="#skills">skills</a>
+              </li>
+              <li className="nav-item">
+                <a href="#portfolio">portfolio</a>
+              </li>
+              <li className="nav-item">
+                <a href="#contact">contact</a>
+              </li>
             </ul>
           </div>
         </div>
