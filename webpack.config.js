@@ -1,15 +1,13 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: path.resolve('./public/src'),
   output: {
-    path: path.resolve('./public/dist'),
+    path: path.resolve('./build'),
     filename: 'bundle.js'
   },
   module: {
-    // plugin: [
-    //   envVariables
-    // ],
     rules: [
       {
         test: /\.js[x]?$/,
@@ -65,5 +63,14 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx']
   },
-  mode: 'development'
+  mode: 'production',
+  plugins: [
+ 
+    new HtmlWebpackPlugin({
+      // injects bundle.js to our new index.html
+      inject: true,
+      // copys the content of the existing index.html to the new /build index.html
+      template:  path.resolve('./public/dist/index.html'),
+    }),
+  ]
 }
