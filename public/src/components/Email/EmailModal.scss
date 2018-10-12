@@ -52,7 +52,7 @@
 
   textarea {
     font-size: 14px;
-    font-family: 'montsRegular';
+    font-family: $montserrat;
     width: 90%;
     border: none;
     border-bottom: 1px solid #E5E4E2;
@@ -69,7 +69,8 @@
   border: 2px solid;
   padding: 5%;
   width: 100%;
-  font-family: 'montsMedium';
+  font-family: $montserrat;
+  font-weight: 500;
   font-size: 14px;
   display: flex;
   justify-content: center;

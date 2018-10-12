@@ -17,7 +17,8 @@
 }
 .navbar {
   list-style: none;
-  font-family: 'montsMedium';
+  font-family: $montserrat;
+  font-weight: 500;
   font-size: 20px;
   display: flex;
 }

@@ -60,7 +60,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="gallery" data-aos="fade-up">
+      <div className="gallery">
         <div className="blur">
             <div className="personal">
               <h1 data-aos="fade-up">Get to know me more</h1>

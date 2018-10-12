@@ -13,7 +13,7 @@ const Header = () => {
             typeSpeed={80} /> */}
         </div>
         <div className="name">
-          <h3>Full-Stack Developer.</h3>
+          <h3>Software Engineer</h3>
         </div>
         <div className="btn">
           <a href="#contact" className="contact">contact</a>

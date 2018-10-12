@@ -27,7 +27,7 @@ export default class Portfolio extends Component {
     const pwDesc =  <ul className="description">
       <li>- Designed this current website from ground up using modular components.</li>
       <li>- Dynamically responsive to different viewing formats.</li>
-      <li>- Designed viewport UI that is highly intuitive.</li>
+      <li>- Designed UI that is user friendly and highly intuitive, desktop or mobile.</li>
       <li>- Leveraged SMTP server to send emails directly from React component.</li>
     </ul>
     const AmStack = <div>STACK: [Node, Postgres, Nginx, AWS]</div>;
@@ -37,7 +37,7 @@ export default class Portfolio extends Component {
       <div id="portfolio">
         <h1 className="works-title" data-aos="fade-up">-Portfolio-</h1>
         <div className="works" data-aos="fade-up">
-          <div className="work-item amazon">
+          <div className="work-item amazon" data-aos="fade-up">
             <div className="fade">
               <div className="btns">
                 <ZoomModal images={amazon} className="icons"
@@ -54,7 +54,7 @@ export default class Portfolio extends Component {
               </div>
             </div>
           </div>
-          <div className="work-item airbnb">
+          <div className="work-item airbnb" data-aos="fade-up">
             <div className="fade">
               <div className="btns">
                 <ZoomModal images={airbnb} className="icons"
@@ -71,7 +71,7 @@ export default class Portfolio extends Component {
               </div>
             </div>
           </div>
-          <div className="work-item homepage">
+          <div className="work-item homepage" data-aos="fade-up">
             <div className="fade">
               <div className="btns">
                 <ZoomModal subtitle={pwDesc} className="icons"
