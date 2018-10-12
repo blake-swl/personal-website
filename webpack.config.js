@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -65,6 +66,7 @@ module.exports = {
   },
   mode: 'production',
   plugins: [
+   
  
     new HtmlWebpackPlugin({
       // injects bundle.js to our new index.html
@@ -72,5 +74,8 @@ module.exports = {
       // copys the content of the existing index.html to the new /build index.html
       template:  path.resolve('./public/dist/index.html'),
     }),
-  ]
+  ],
+  optimization: {
+    minimize: true
+  }
 }
