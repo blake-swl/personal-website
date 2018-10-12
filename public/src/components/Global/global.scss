@@ -140,15 +140,6 @@
   .tooltiptext {
     display: none;
   }
-  #wrapper {
-    scroll-snap-type: y proximity;
-    -webkit-overflow-scrolling: touch;
-    overflow-y: scroll;
-
-    * {
-      scroll-snap-align: start;
-    }
-  }
 }
 
 html, body {
