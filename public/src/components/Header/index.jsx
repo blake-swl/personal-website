@@ -1,6 +1,5 @@
 import React from 'react';
 import './header.scss';
-import Typed from 'react-typed';
 import Resume from '../../../dist/Resume/blakeresume.pdf';
 
 const Header = () => {
@@ -9,12 +8,12 @@ const Header = () => {
      <div className="header-layer">
        <div className="tagline">
          <h4>Connecting through code, design, & innovation.</h4>
-        <div className="position">Full-Stack Developer.
+        <div className="position">Blake S Lee
           {/* <Typed strings={['^1000 Full-Stack Developer.']}
             typeSpeed={80} /> */}
         </div>
         <div className="name">
-          <h3>Blake S Lee</h3>
+          <h3>Full-Stack Developer.</h3>
         </div>
         <div className="btn">
           <a href="#contact" className="contact">contact</a>

@@ -4,6 +4,20 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 'smoothscroll';
 
+// Icons
+import { Icon } from 'react-icons-kit';
+import {ic_expand_less} from 'react-icons-kit/md/ic_expand_less';
+
+import Header from '../Header/index';
+import Navigation from '../Navigation';
+import About from '../About';
+import Skills from '../Skills';
+import Portfolio from '../Works';
+import Contact from '../Contact';
+
+// Preload image
+import preload from '../../../dist/images/laptop.jpg';
+
 
 AOS.init();
 AOS.init({
@@ -29,16 +43,6 @@ AOS.init({
 
 });
 
-// Icons
-import { Icon } from 'react-icons-kit';
-import {ic_expand_less} from 'react-icons-kit/md/ic_expand_less';
-
-import Header from '../Header/index';
-import Navigation from '../Navigation';
-import About from '../About';
-import Skills from '../Skills';
-import Portfolio from '../Works';
-import Contact from '../Contact';
 
 export default class App extends Component  {
   constructor() {
@@ -66,6 +70,7 @@ export default class App extends Component  {
   render() {
     return(
       <div id="wrapper">
+        {/* ...Loading */}
         <button onClick={this.topFunction} id="myBtn" title="Go to top">
           <Icon icon={ic_expand_less} size={30}/>
         </button>
