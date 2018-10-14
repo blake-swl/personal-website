@@ -76,6 +76,7 @@
   font-variant: small-caps;
   font-family: $montserrat;
   font-weight: 550;
+  word-break: keep-all;
 }
 .contact-info:hover {
   font-size: 30px;
