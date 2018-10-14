@@ -120,39 +120,12 @@
       }
     }
   }
-  .bottom {
-    width: 90%;
-
-    .contact-info {
-      font-size: 20px;
-    }
-    .contact-info:hover {
-      font-size: 25px;
-    }
+  .contact-info {
+    font-size: 20px;
   }
-  // .bottom {
-  //   display: flex;
-  //   height: auto;
-  //   width: 90%;
-  //   padding: 5%;
-    
-  //   .cards-scroll {
-  //     width: auto;
-  //     scroll-snap-type: x mandatory;
-  //     display: flex;
-  //     justify-content: flex-start;
-  //     overflow-x: scroll;
-  //     overflow-y: hidden;
-  //     -webkit-overflow-scrolling: touch;
-
-  //     .cards-item {
-  //       scroll-snap-align: center;
-  //       margin: 5%;
-  //       width: 80%;
-  //       flex: 0 0 auto;
-  //     }
-  //   }
-  // }
+  .contact-info:hover {
+    font-size: 25px;
+  }
   .footer {
     a {
       width: 90%;
