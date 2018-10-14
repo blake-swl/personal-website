@@ -21,8 +21,9 @@
   background-size: cover;
   height: auto;
   width: 100%;
-  // background-color: rgba(46,80,96, 0.5);
   .banner-layer {
+    // background: rgba(208,83,83, 0.5);
+    // background-color: rgba(46,80,96, 0.5);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,7 +32,7 @@
     padding-bottom: 10%;
     width: 100%;
     height: auto;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
   }
  
   h3 {
@@ -44,6 +45,7 @@
 .chat {
   font-size: 60px;
   font-family: $montserrat;
+  font-weight: 700;
   color: white;
   margin-top: 5%;
   text-shadow: .5px .5px black;
@@ -67,16 +69,18 @@
   padding: 10px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   color: rgb(46,80,96);
-  font-size: 30px;
+  font-size: 25px;
   font-variant: small-caps;
   font-family: $montserrat;
   font-weight: 550;
-  transition: .2s ease;
+  // transition: .2s ease;
 }
 .contact-info:hover {
-  font-size: 35px;
-  transition: .2s ease;
+  font-size: 30px;
+  transition: .2s ease-in;
 }
 .la {
   background: url('../../../dist/images/map.jpg') 0 55% no-repeat;
@@ -102,25 +106,26 @@
 
 
 @media only screen and (max-width: 425px) {
-  #contact {
-    background: url('../../../dist/images/rawpixel-652547-unsplash.jpg') 50% 20% no-repeat;
-    background-size: cover;
-    height: auto;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
+  // #contact {
+  //   background: url('../../../dist/images/rawpixel-652547-unsplash.jpg') 50% 20% no-repeat;
+  //   background-size: cover;
+  //   height: auto;
+  //   width: 100vw;
+  //   display: flex;
+  //   flex-direction: column;
     
-    .banner {
-      h3 {
-        padding: 5%;
-        font-size: 20px;
-      }
-      .chat {
-        font-size: 30px;
-      }
-    }
-  }
+  //   .banner {
+  //     h3 {
+  //       padding: 5%;
+  //       font-size: 20px;
+  //     }
+  //     .chat {
+  //       font-size: 30px;
+  //     }
+  //   }
+  // }
   .contact-info {
+    width: 100%;
     font-size: 20px;
   }
   .contact-info:hover {

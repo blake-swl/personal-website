@@ -21,24 +21,25 @@ const Contact = () => {
     <div id="contact">
       <div className="banner">
         <div className="banner-layer" >
-          <h3 data-aos="fade-up">Let's have a chat over a cup of coffee.</h3>
+          <h3 data-aos="fade-up">Let's have a chat over coffee.</h3>
           <div className="chat" data-aos="fade-up">GET IN CONTACT.</div>
         </div>
       </div>
       <div className="bottom">
         <div className="contact-info" data-aos="fade-up">
           <Icon icon={phone} size={40} />
-          <h2>(323) 482-0091</h2>
+          <div>(323) 482-0091</div>
         </div>
         <div className="contact-info" data-aos="fade-up">
           <Icon icon={ic_mail_outline} size={40} />
-          <h2>seulwoolee93@gmail.com</h2>
+          <div>seulwoolee93@gmail.com</div>
         </div>
         <div className="contact-info" data-aos="fade-up">
           <Icon icon={location} size={40} />
-          <h2>Los Angeles, CA</h2>
+          <div>Los Angeles, CA</div>
         </div>
-        <EmailModal open="WRITE NOW"/>
+          <br/>
+          <EmailModal open="WRITE EMAIL NOW"/>
       </div>
       <div className="la"></div>
       <footer className="footer">

@@ -76,6 +76,10 @@
   justify-content: center;
   align-items: center;
 }
+.writeMail:hover {
+  color: white;
+  background: rgb(46,80,96);
+}
 
 @media only screen and (max-width: 425px) {
   .EmailModal {
