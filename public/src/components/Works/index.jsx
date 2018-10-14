@@ -8,7 +8,8 @@ import homepage from '../../../dist/images/homepage.gif';
 // Icons
 import { Icon } from 'react-icons-kit';
 import {ic_zoom_in} from 'react-icons-kit/md/ic_zoom_in';
-import {github} from 'react-icons-kit/icomoon/github'
+import {github} from 'react-icons-kit/icomoon/github';
+import {ic_code} from 'react-icons-kit/md/ic_code';
 
 
 export default class Portfolio extends Component {
@@ -89,6 +90,9 @@ export default class Portfolio extends Component {
               </div>
             </div>
           </div>
+        </div>
+        <div style={{color: "#D05353"}}>
+          <Icon icon={ic_code} size={40} className="works-arrow"/>
         </div>
       </div>
     )

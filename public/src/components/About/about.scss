@@ -204,9 +204,9 @@
       width: 100%;
     }
 
-    // .personal {
-    //   display: none;
-    // }
+    .personal {
+      display: none;
+    }
     .pictures {
       scroll-snap-type: x mandatory;
       display: flex;

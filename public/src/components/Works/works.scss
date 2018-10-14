@@ -9,6 +9,9 @@
   flex-direction: column;
   align-items: center;
   background: #eaebed;
+  .works-arrow {
+    display: none !important;
+  }
 }
 .works-title {
   font-family: $montserrat;
@@ -124,23 +127,27 @@
 }
 @media only screen and (min-width: 426px) and (max-width: 1024px) {
   #portfolio {
-    // padding-left: 10%;
     padding-right: 10%;
     width: 100%;
     justify-content: center;
+
+  .works-arrow {
+    display: flex !important;
+    visibility: visible;
+   } 
   }
   .works {
     width: 80%;
     scroll-snap-type: x mandatory;
     display: flex;
-    flex-direction: row;
-    overflow-x: scroll;
+    overflow-x: auto;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     justify-content: flex-start;
-    align-items: center;
+ 
+    flex-wrap: nowrap;
 
-    .work-item, .fade {
+    .work-item  {
       flex: 0 0 auto;
       scroll-snap-align: center;
     }

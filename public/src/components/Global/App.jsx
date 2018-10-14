@@ -16,7 +16,6 @@ import Portfolio from '../Works';
 import Contact from '../Contact';
 
 // Preload image
-import preload from '../../../dist/images/laptop.jpg';
 
 
 AOS.init();
