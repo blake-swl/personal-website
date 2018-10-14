@@ -1,7 +1,7 @@
 @import '../Global/global.scss';
 
 #contact {
-  background: url('../../../dist/images/rawpixel-652547-unsplash.jpg') 50% 50% no-repeat fixed;
+  background: black;
   background-size: cover;
   height: auto;
   flex-direction: column;
@@ -17,15 +17,22 @@
 // /* top half */
 
 .banner {
-  padding-top: 10%;
-  padding-bottom: 10%;
+  background: url('../../../dist/images/rawpixel-652547-unsplash.jpg') 50% 50% no-repeat fixed;
+  background-size: cover;
   height: auto;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  // background-color: rgba(46,80,96, 0.5);
+  .banner-layer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
  
   h3 {
     font-family: 'nothingRegular';
@@ -51,54 +58,25 @@
   width: 100%;
   height: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.cards-scroll {
+.contact-info {
+  height: auto;
+  padding: 10px;
   display: flex;
   flex-direction: row;
-  width: 100%;
-  justify-content: center;
+  color: rgb(46,80,96);
+  font-size: 30px;
+  font-variant: small-caps;
+  font-family: $montserrat;
+  font-weight: 550;
+  transition: .2s ease;
 }
-.cards-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 3px solid #423d3d;
-  margin: 1%;
-  padding: 1%;
-  width: 15em;
-  height: 15em;
-  color: #423d3d;
-
-  h1, h3 {
-    font-family: $montserrat;
-    font-weight: 500;
-    font-size: 25px;
-  }
-  .info-icons {
-    margin-top: 5%;
-    display: inline-block;
-  }
-  .info-column {
-    width: 100%;
-  }
-}
-.cards-item:hover {
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.8),
-    rgba(0, 0, 0, 0.8)
-  );
-  color: white;
-}
-.cards-email {
-  width: 80%;
-  height: 75%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
+.contact-info:hover {
+  font-size: 35px;
+  transition: .2s ease;
 }
 .la {
   background: url('../../../dist/images/map.jpg') 0 55% no-repeat;
@@ -107,11 +85,14 @@
   width: 100%;
 }
 .footer {
-  height: auto;
   display: flex;
+  background: black;
+  background-size: cover;
   flex-direction: row;
   justify-content: center;
+  height: auto;
   align-items: center;
+  padding: none;
   
   a {
     color: rgb(218, 204, 204);
@@ -119,24 +100,6 @@
   }
 }
 
-/* Back To Top */
-
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: #D05353;
-  color: white;
-  cursor: pointer;
-  padding: 3px;
-}
-#myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
-}
 
 @media only screen and (max-width: 425px) {
   #contact {

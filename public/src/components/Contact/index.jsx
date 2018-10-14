@@ -20,35 +20,27 @@ const Contact = () => {
   return (
     <div id="contact">
       <div className="banner">
-        <h3 data-aos="fade-up">Let's have a chat over a cup of coffee.</h3>
-        <div className="chat" data-aos="fade-up">GET IN CONTACT.</div>
+        <div className="banner-layer" data-aos="fade-up">
+          <h3 data-aos="fade-up">Let's have a chat over a cup of coffee.</h3>
+          <div className="chat" data-aos="fade-up">GET IN CONTACT.</div>
+        </div>
       </div>
       <div className="bottom">
-        <div className="cards-scroll">
-          <div className="cards-item" data-aos="fade-up">
-            <h3>basic contact info.</h3>
-            <div className="info-icons">
-              <div className="info-column">
-                <Icon icon={phone} size={40} />
-                <h2>(323) 482-0091</h2>
-              </div>
-              <div className="info-column">
-                <Icon icon={ic_mail_outline} size={40} />
-                <h2>seulwoolee93@gmail.com</h2>
-              </div>
-              <div className="info-column">
-                <Icon icon={location} size={40} />
-                <h2>Los Angeles, CA</h2>
-              </div>
-            </div>
-          </div>
-          <div className="cards-item" data-aos="fade-up">
-            <h3>send me an email.</h3>
-            <div className="cards-email">
-              <EmailModal open="WRITE NOW"/>
-            </div>
-          </div>
+        <div className="contact-info" data-aos="fade-up">
+          <Icon icon={phone} size={40} />
+          <h2>(323) 482-0091</h2>
         </div>
+        <div className="contact-info" data-aos="fade-up">
+          <Icon icon={ic_mail_outline} size={40} />
+          <h2>seulwoolee93@gmail.com</h2>
+        </div>
+        <div className="contact-info" data-aos="fade-up">
+          <Icon icon={location} size={40} />
+          <h2>Los Angeles, CA</h2>
+        </div>
+        <EmailModal open="WRITE NOW"/>
+        {/* <div className="contact-info">
+        </div> */}
       </div>
       <div className="la"></div>
       <footer className="footer">

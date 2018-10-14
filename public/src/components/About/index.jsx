@@ -3,8 +3,8 @@ import './about.scss';
 
 // Icons
 import { Icon } from 'react-icons-kit';
-import {ic_keyboard_arrow_right} from 'react-icons-kit/md/ic_keyboard_arrow_right';
 import {ic_code} from 'react-icons-kit/md/ic_code';
+import {ic_keyboard_arrow_right} from 'react-icons-kit/md/ic_keyboard_arrow_right';
 import {ic_keyboard_arrow_left} from 'react-icons-kit/md/ic_keyboard_arrow_left';
 
 // pictures
@@ -34,17 +34,20 @@ const About = () => {
           <img src={typing} alt=""/>
         </div>
         <div className="narrative" data-aos="fade-up">
-          <h3>My passion for coding</h3>
+          <h3>About Me</h3>
           <div className="scroll-x">
             <div className="card">
-              <p>This part is under construction! Please visit me again very soon :)</p>
+              <h4>Objective</h4>
+              {/* <p>This part is under construction! Please visit me again very soon :)</p> */}
               {/* <p>Palette, brush, canvas. Keyboard, mouse, screen. I can never forget what it first felt like to write something in a static HTML page and with a click of a button, have it render on screen. I can never forget what it felt like to tweak a few elements on CSS to change the entire layout and design of my page.</p> */}
+              <p></p>
               <div style={{color: '#D05353'}}>
                 <Icon icon={ic_keyboard_arrow_right} className="cues" size={40}/>
               </div>
             </div>
             <br/>
             <div className="card"> 
+              <h4>What I do</h4>
               {/* <p>I can also never forget what it felt like to spend countless hours trying to fix a bug, learn React, read through Postgres documentation, correctly route every endpoint to generate a cohesive product. But I can also never forget the addictive exhilaration I felt from the satisfaction of making progress and break through.</p> */}
               <div style={{color: '#D05353'}}>
                 <Icon icon={ic_code} className="cues" size={40}/>
@@ -52,8 +55,9 @@ const About = () => {
             </div>
             <br/>
             <div className="card">
-              {/* <p>Software engineering is my craft, and coding is my brush stroke of passion I exert on the screen that is my canvas. My passion for this craft keeps me innovating and learning new technologies to be the best software engineer I can be. */}
-              {/* </p> */}
+              <h4>My Philosophy</h4>
+              {/* <p>Software engineering is my craft, and coding is my brush stroke of passion I exert on the screen that is my canvas. My passion for this craft keeps me innovating and learning new technologies to be the best software engineer I can be.
+              </p> */}
               <div style={{color: '#D05353'}}>
                 <Icon icon={ic_keyboard_arrow_left} className="cues" size={40}/>
               </div>
@@ -65,9 +69,7 @@ const About = () => {
         <div className="blur">
             <div className="personal">
               <h1 data-aos="fade-up">Get to know me more</h1>
-              {/* <p data-aos="fade-up">   I’m a software engineer with a unique perspective and upbringing that is ready to give back and serve the community with my experiences, talents, and lessons.
-Born in Seoul, Korea, I grew up in Saint Petersburg, Russia from the ages of two to 12, until I moved to Los Angeles, CA where I currently reside. Having lived in such distinct cultures I bring a nuanced approach to social interactions and strong communication skills to seamlessly blend and adapt to any culture. Furthermore, coming from a family of musicians and artists, I possess a keen eye for art and design. At UCSB, I earned my bachelors in psychology and later pursued a career in pharmaceutical science until dabbling in coding changed my life. I’m a notorious coffee enthusiast, lover of nature, Lebron James fanatic, and (hopefully) the best son to my loving parents.
-</p> */}
+              <p data-aos="fade-up">Notorious coffee enthusiast, lover of nature, and LeBron James fanatic. I was born Seoul, South Korea but grew up as a curious kid wandering the picturesque streets of Saint Petersburg, Russia. Moving to Los Angeles, CA, I earned my bachelors at UCSB in psychology, wanting to pursue a career in pharmacy until dabbling in coding changed my life. </p>
             </div>
           <div className="flex">
             <ul className="pictures" data-aos="fade-up">

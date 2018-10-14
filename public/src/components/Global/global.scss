@@ -56,6 +56,23 @@ $montserrat: 'Montserrat', sans-serif;
 
 /* Back To Top */
 
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #D05353;
+  color: white;
+  cursor: pointer;
+  padding: 3px;
+}
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
 
 @media only screen and (max-width: 425px) {
   body {
