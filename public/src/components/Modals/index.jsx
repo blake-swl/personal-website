@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import Modal from 'react-modal';
 import './modal.scss';
 
+// Icons
+import { Icon } from 'react-icons-kit';
+import {close} from 'react-icons-kit/fa/close';
+
 
 Modal.setAppElement('#root');
 
@@ -47,7 +51,10 @@ export default class ModalComponent extends Component {
           className="Modal"
           overlayClassName="Overlay"
         >
-          <button className="close" onClick={this.closeModal}>close</button>
+          <div className="close tooltip" onClick={this.closeModal} style={{color: 'grey'}}>
+            <span className="tooltiptext">Close</span>
+            <Icon icon={close} size={20}/>
+          </div>          
           <img src={this.props.images}/>
           <div className="components">{this.props.components}</div>
           <h2 className="subtitle" ref={subtitle => this.subtitle = subtitle}>{this.props.subtitle}</h2>

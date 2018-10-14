@@ -73,12 +73,12 @@ export default class App extends Component  {
         <button onClick={this.topFunction} id="myBtn" title="Go to top">
           <Icon icon={ic_expand_less} size={30}/>
         </button>
-        <Navigation className="scrollAlign"/>
-        <Header className="scrollAlign"/>
-        <About className="scrollAlign"/>
-        <Skills className="scrollAlign"/>
-        <Portfolio className="scrollAlign"/>
-        <Contact className="scrollAlign"/>
+        <Navigation />
+        <Header />
+        <About />
+        <Portfolio />
+        <Skills />
+        <Contact />
       </div>
     )
   }

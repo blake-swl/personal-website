@@ -54,10 +54,10 @@ export default class Navigation extends Component {
                 <a href="#about">about</a>
               </li>
               <li className="nav-item">
-                <a href="#skills">skills</a>
+                <a href="#portfolio">portfolio</a>
               </li>
               <li className="nav-item">
-                <a href="#portfolio">portfolio</a>
+                <a href="#skills">skills</a>
               </li>
               <li className="nav-item">
                 <a href="#contact">contact</a>

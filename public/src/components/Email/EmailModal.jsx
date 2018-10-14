@@ -4,8 +4,8 @@ import './EmailModal.scss';
 
 // Icons
 import { Icon } from 'react-icons-kit';
-import {send} from 'react-icons-kit/fa/send';
 import {close} from 'react-icons-kit/fa/close';
+import {send} from 'react-icons-kit/fa/send';
 
 
 Modal.setAppElement('#root');

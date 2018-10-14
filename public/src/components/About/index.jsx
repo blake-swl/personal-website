@@ -26,7 +26,7 @@ import friends from '../../../dist/images/friends1.jpg';
 const About = () => {
   return(
     <div id="about">
-      <div className="philosophy" >
+      <div className="tag" >
         <p data-aos="fade-up">I'm a full-stack engineer that is passionate about developing real world applications with clean, maintainable code, with an emphasis in front-end development.</p>
       </div>
       <div className="passion" data-aos="fade-up">
@@ -36,28 +36,25 @@ const About = () => {
         <div className="narrative" data-aos="fade-up">
           <h3>About Me</h3>
           <div className="scroll-x">
-            <div className="card">
+            <div className="card objective">
               <h4>Objective</h4>
-              {/* <p>This part is under construction! Please visit me again very soon :)</p> */}
-              {/* <p>Palette, brush, canvas. Keyboard, mouse, screen. I can never forget what it first felt like to write something in a static HTML page and with a click of a button, have it render on screen. I can never forget what it felt like to tweak a few elements on CSS to change the entire layout and design of my page.</p> */}
-              <p></p>
+              <p>Creative and agile problem solver, always seeking opportunities to join a group of engineers to develop practical applications on a forefront of technical innovation and user-centric design. Always seeking improvement, I embrace challenges that push me to think outside the box. Currently expanding both breath and depth of web development knowledge by increasing React expertise and learning server side languages such as GoLang. I bring positive energy and sharp communication skills to develop highly scalable React and Node full stack applications.</p>
               <div style={{color: '#D05353'}}>
                 <Icon icon={ic_keyboard_arrow_right} className="cues" size={40}/>
               </div>
             </div>
             <br/>
-            <div className="card"> 
+            <div className="card whatIdo"> 
               <h4>What I do</h4>
-              {/* <p>I can also never forget what it felt like to spend countless hours trying to fix a bug, learn React, read through Postgres documentation, correctly route every endpoint to generate a cohesive product. But I can also never forget the addictive exhilaration I felt from the satisfaction of making progress and break through.</p> */}
+              <p>Full stack engineer specializing in front-end development, I leverage technologies such as React and Node to build highly responsive yet simplistically elegant applications that blend functionality with traditional design principles. Foundationally strong in JavaScript, RESTful API design, and database schemas, I swiftly adapt to new interfaces and challenges.</p>
               <div style={{color: '#D05353'}}>
                 <Icon icon={ic_code} className="cues" size={40}/>
               </div>
             </div>
             <br/>
-            <div className="card">
+            <div className="card philosophy">
               <h4>My Philosophy</h4>
-              {/* <p>Software engineering is my craft, and coding is my brush stroke of passion I exert on the screen that is my canvas. My passion for this craft keeps me innovating and learning new technologies to be the best software engineer I can be. */}
-              {/* </p> */}
+              <p>Detail oriented, I get excited about brainstorming ideas of user centric UI/UX design that naturally intuits them. Obsessively disciplined, I get delighted in cracking coding challenges and refactoring for optimization. Always seeking to get better, I look to challenge others by upholding high standards of quality while also seeking to be challenged in expanding the scope of my own thought processes. Software engineering is a craft of mine that keeps me innovating and learning new technologies to be the best software engineer I can be.</p>
               <div style={{color: '#D05353'}}>
                 <Icon icon={ic_keyboard_arrow_left} className="cues" size={40}/>
               </div>
