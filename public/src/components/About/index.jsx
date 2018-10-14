@@ -33,37 +33,37 @@ const About = () => {
         <div className="profilePic">
           <img src={typing} alt=""/>
         </div>
-        <div className="narrative" data-aos="fade-up">
+        {/* <div className="narrative" data-aos="fade-up">
           <h3>About Me</h3>
           <div className="scroll-x">
             <div className="card">
-              <h4>Objective</h4>
+              <h4>Objective</h4> */}
               {/* <p>This part is under construction! Please visit me again very soon :)</p> */}
               {/* <p>Palette, brush, canvas. Keyboard, mouse, screen. I can never forget what it first felt like to write something in a static HTML page and with a click of a button, have it render on screen. I can never forget what it felt like to tweak a few elements on CSS to change the entire layout and design of my page.</p> */}
-              <p></p>
+              {/* <p></p>
               <div style={{color: '#D05353'}}>
                 <Icon icon={ic_keyboard_arrow_right} className="cues" size={40}/>
               </div>
             </div>
             <br/>
             <div className="card"> 
-              <h4>What I do</h4>
+              <h4>What I do</h4> */}
               {/* <p>I can also never forget what it felt like to spend countless hours trying to fix a bug, learn React, read through Postgres documentation, correctly route every endpoint to generate a cohesive product. But I can also never forget the addictive exhilaration I felt from the satisfaction of making progress and break through.</p> */}
-              <div style={{color: '#D05353'}}>
+              {/* <div style={{color: '#D05353'}}>
                 <Icon icon={ic_code} className="cues" size={40}/>
               </div>
             </div>
             <br/>
             <div className="card">
-              <h4>My Philosophy</h4>
+              <h4>My Philosophy</h4> */}
               {/* <p>Software engineering is my craft, and coding is my brush stroke of passion I exert on the screen that is my canvas. My passion for this craft keeps me innovating and learning new technologies to be the best software engineer I can be.
               </p> */}
-              <div style={{color: '#D05353'}}>
+              {/* <div style={{color: '#D05353'}}>
                 <Icon icon={ic_keyboard_arrow_left} className="cues" size={40}/>
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="gallery">
         <div className="blur">
