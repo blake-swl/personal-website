@@ -20,7 +20,7 @@ const Contact = () => {
   return (
     <div id="contact">
       <div className="banner">
-        <div className="banner-layer" data-aos="fade-up">
+        <div className="banner-layer" >
           <h3 data-aos="fade-up">Let's have a chat over a cup of coffee.</h3>
           <div className="chat" data-aos="fade-up">GET IN CONTACT.</div>
         </div>
@@ -39,8 +39,6 @@ const Contact = () => {
           <h2>Los Angeles, CA</h2>
         </div>
         <EmailModal open="WRITE NOW"/>
-        {/* <div className="contact-info">
-        </div> */}
       </div>
       <div className="la"></div>
       <footer className="footer">
