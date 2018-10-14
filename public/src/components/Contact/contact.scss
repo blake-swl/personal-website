@@ -76,7 +76,6 @@
   font-variant: small-caps;
   font-family: $montserrat;
   font-weight: 550;
-  // transition: .2s ease;
 }
 .contact-info:hover {
   font-size: 30px;
@@ -106,16 +105,12 @@
 
 
 @media only screen and (max-width: 425px) {
-  #contact {
-    background: url('../../../dist/images/rawpixel-652547-unsplash.jpg') 50% 20% no-repeat;
-    background-size: cover;    
+  .banner {
+    background-size: contain;    
+    background: url('../../../dist/images/rawpixel-652547-unsplash.jpg') 50% 35% no-repeat;
   }
   .contact-info {
-    width: 100%;
-    font-size: 20px;
-  }
-  .contact-info:hover {
-    font-size: 25px;
+    font-size: 15px;
   }
   .footer {
     a {
