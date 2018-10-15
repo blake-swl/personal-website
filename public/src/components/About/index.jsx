@@ -33,10 +33,10 @@ const About = () => {
         <div className="profilePic">
           <img src={typing} alt=""/>
         </div>
-        <div className="narrative" data-aos="fade-up">
+        <div className="narrative" >
           <h3>About Me</h3>
           <div className="scroll-x">
-            <div className="card objective">
+            <div className="card objective" data-aos="fade-up">
               <h4>Objective</h4>
               <p>Creative and agile problem solver, always seeking opportunities to join a group of engineers to develop practical applications on a forefront of technical innovation and user-centric design. Always seeking improvement, I embrace challenges that push me to think outside the box. Currently expanding both breath and depth of web development knowledge by increasing React expertise and learning server side languages such as GoLang. I bring positive energy and sharp communication skills to develop highly scalable React and Node full stack applications.</p>
               <div style={{color: '#D05353'}}>
@@ -44,7 +44,7 @@ const About = () => {
               </div>
             </div>
             <br/>
-            <div className="card whatIdo"> 
+            <div className="card whatIdo" data-aos="fade-up"> 
               <h4>What I do</h4>
               <p>Full stack engineer specializing in front-end development, I leverage technologies such as React and Node to build highly responsive yet simplistically elegant applications that blend functionality with traditional design principles. Foundationally strong in JavaScript, RESTful API design, and database schemas, I swiftly adapt to new interfaces and challenges.</p>
               <div style={{color: '#D05353'}}>
@@ -52,7 +52,7 @@ const About = () => {
               </div>
             </div>
             <br/>
-            <div className="card philosophy">
+            <div className="card philosophy" data-aos="fade-up">
               <h4>My Philosophy</h4>
               <p>Detail oriented, I get excited about brainstorming ideas of user centric UI/UX design that naturally intuits them. Obsessively disciplined, I get delighted in cracking coding challenges and refactoring for optimization. Always seeking to get better, I look to challenge others by upholding high standards of quality while also seeking to be challenged in expanding the scope of my own thought processes. Software engineering is a craft of mine that keeps me innovating and learning new technologies to be the best software engineer I can be.</p>
               <div style={{color: '#D05353'}}>
