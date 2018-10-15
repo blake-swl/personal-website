@@ -8,15 +8,15 @@ import {ic_keyboard_arrow_right} from 'react-icons-kit/md/ic_keyboard_arrow_righ
 import {ic_keyboard_arrow_left} from 'react-icons-kit/md/ic_keyboard_arrow_left';
 
 // pictures
-import typing from '../../../dist/images/typing.jpg';
-import sf from '../../../dist/images/sftrip.jpg';
-import dodgers from '../../../dist/images/dodgers.jpg';
-import grad from '../../../dist/images/grad.jpg';
-import group2 from '../../../dist/images/group2.jpg';
-import beach from '../../../dist/images/beach1.jpg';
-import guitar from '../../../dist/images/guitar.jpg';
-import family from '../../../dist/images/family.jpg';
-import friends from '../../../dist/images/friends1.jpg';
+// import typing from '../../../dist/images/typing.jpg';
+// import sf from '../../../dist/images/sftrip.jpg';
+// import dodgers from '../../../dist/images/dodgers.jpg';
+// import grad from '../../../dist/images/grad.jpg';
+// import group2 from '../../../dist/images/group2.jpg';
+// import beach from '../../../dist/images/beach1.jpg';
+// import guitar from '../../../dist/images/guitar.jpg';
+// import family from '../../../dist/images/family.jpg';
+// import friends from '../../../dist/images/friends1.jpg';
 
         {/* <p>My philosophy is to leverage technology 
           to build functional, yet simplistically elegant 
