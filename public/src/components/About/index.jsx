@@ -65,8 +65,8 @@ const About = () => {
       <div className="gallery">
         <div className="blur">
             <div className="personal">
-              <h1 data-aos="fade-up">Get to know me more</h1>
-              <p data-aos="fade-up">Notorious coffee enthusiast, lover of nature, and LeBron James fanatic. I was born Seoul, South Korea but grew up as a curious kid wandering the picturesque streets of Saint Petersburg, Russia. Moving to Los Angeles, CA, I earned my bachelors at UCSB in psychology, wanting to pursue a career in pharmacy until dabbling in coding changed my life. </p>
+              {/* <h1 data-aos="fade-up">Get to know me more</h1>
+              <p data-aos="fade-up">Notorious coffee enthusiast, lover of nature, and LeBron James fanatic. I was born Seoul, South Korea but grew up as a curious kid wandering the picturesque streets of Saint Petersburg, Russia. Moving to Los Angeles, CA, I earned my bachelors at UCSB in psychology, wanting to pursue a career in pharmacy until dabbling in coding changed my life. </p> */}
             </div>
           <div className="flex">
             <ul className="pictures" data-aos="fade-up">
