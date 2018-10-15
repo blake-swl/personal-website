@@ -59,6 +59,7 @@
     }
     p {
       font-size: 14px;
+      line-height: 1.5;
     }
   }
   h3 {
@@ -71,6 +72,9 @@
   .cues {
     visibility: hidden;
     display: none !important;
+  }
+  .philosophy {
+    display: none;
   }
 }
 /* Bottom half */
@@ -101,9 +105,6 @@
     font-size: 30px;
     justify-content: center;
     margin-bottom: 20px;
-  }
-  p {
-    // text-indent: 25px;
   }
 }
 
@@ -197,8 +198,11 @@
         height: auto;
       }
     }
+    .philosophy {
+      display: block;
+    }
   }
-  }
+}
   .gallery {
     height: auto;
     display: flex;
