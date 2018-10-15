@@ -38,7 +38,7 @@ module.exports = {
               disable: false, // webpack@2.x and newer
               mozjpeg: {
                 progressive: true,
-                quality: 65
+                quality: 50
               },
               // optipng.enabled: false will disable optipng
               optipng: {
