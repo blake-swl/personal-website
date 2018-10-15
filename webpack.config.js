@@ -34,7 +34,7 @@ module.exports = {
           {
             loader: 'image-webpack-loader',
             options: {
-              bypassOnDebug: true, // webpack@1.x
+              bypassOnDebug: false, // webpack@1.x
               disable: false, // webpack@2.x and newer
               mozjpeg: {
                 progressive: true,
@@ -49,7 +49,8 @@ module.exports = {
                 speed: 4
               },
               gifsicle: {
-                interlaced: false,
+                interlaced: true,
+                optimizationLevel: 3,
               },
               // the webp option will enable WEBP
               webp: {
