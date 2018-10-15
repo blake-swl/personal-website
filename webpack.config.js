@@ -34,8 +34,8 @@ module.exports = {
           {
             loader: 'image-webpack-loader',
             options: {
-              bypassOnDebug: false, // webpack@1.x
-              disable: false, // webpack@2.x and newer
+              bypassOnDebug: true, // webpack@1.x
+              disable: true, // webpack@2.x and newer
               mozjpeg: {
                 progressive: true,
                 quality: 50
