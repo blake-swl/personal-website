@@ -35,10 +35,10 @@ module.exports = {
             loader: 'image-webpack-loader',
             options: {
               bypassOnDebug: true, // webpack@1.x
-              disable: true, // webpack@2.x and newer
+              disable: false, // webpack@2.x and newer
               mozjpeg: {
                 progressive: true,
-                quality: 60
+                quality: 100
               },
               // optipng.enabled: false will disable optipng
               optipng: {
@@ -64,7 +64,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx']
   },
-  mode: 'development',
+  mode: 'production',
   plugins: [
    
  

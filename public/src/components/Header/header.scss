@@ -9,7 +9,7 @@
   height: auto;
   display: flex;
   flex-direction: column;
-  // background: url('../../../dist/images/mac.jpg') 50% 75% no-repeat fixed;
+  background: url('http://d1ibveupycgzu4.cloudfront.net/mac.jpg') 50% 75% no-repeat fixed;
   background-size: cover;
   color: black;
   z-index: -1;
@@ -23,13 +23,11 @@
 }
 .tagline h4 {
   font-family: 'nothingRegular';
-  // font-family: "plume";
-  // color: black;
+
   font-size: 30px;
   display: flex;
   justify-content: center;
   margin-top: 10%;
-  // text-shadow: .5px .5px black;
 }
 .position {
   display: flex;
@@ -38,10 +36,7 @@
   margin-top: 5%;
   margin-bottom: 120px;
   font-family: 'plume';
-  // color: black;
-  // font-family: 'montsRegular';
   font-size: 100px;
-  // font-size: 80px;
   text-shadow: .5px .5px black;
 }
 .name {
@@ -79,7 +74,7 @@
 
 @media only screen and (max-width: 425px) {
   #home {
-    // background: url('../../../dist/images/mac.jpg') 80% 50% no-repeat;
+    background: url('http://d1ibveupycgzu4.cloudfront.net/mac.jpg') 80% 50% no-repeat;
     background-size: cover;
     height: 100vh;
 
@@ -92,7 +87,6 @@
   }
 
   .position {
-    // font-family: 'montsMedium';
     font-display: 'flume';
     padding-top: 20%;
     font-size: 60px;
@@ -107,7 +101,6 @@
     flex-direction: column;
     align-items: center;
     padding: 5%;
-    // justify-content: center;
 
     h4 {
       font-size: 20px;
@@ -117,7 +110,6 @@
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
       width: 60%;
-      // justify-items: center;
     }
   }
   
@@ -125,7 +117,7 @@
 @media only screen and (min-width: 426px) and (max-width: 960px) {
   #home {
     height: 100vh;
-    // background: url('../../../dist/images/mac.jpg') 75% 50% no-repeat;
+    background: url('http://d1ibveupycgzu4.cloudfront.net/mac.jpg') 75% 50% no-repeat;
 
 
     .header-layer {

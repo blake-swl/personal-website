@@ -8,15 +8,15 @@ import {ic_keyboard_arrow_right} from 'react-icons-kit/md/ic_keyboard_arrow_righ
 import {ic_keyboard_arrow_left} from 'react-icons-kit/md/ic_keyboard_arrow_left';
 
 // pictures
-// import typing from '../../../dist/images/typing.jpg';
-// import sf from '../../../dist/images/sftrip.jpg';
-// import dodgers from '../../../dist/images/dodgers.jpg';
-// import grad from '../../../dist/images/grad.jpg';
-// import group2 from '../../../dist/images/group2.jpg';
-// import beach from '../../../dist/images/beach1.jpg';
-// import guitar from '../../../dist/images/guitar.jpg';
-// import family from '../../../dist/images/family.jpg';
-// import friends from '../../../dist/images/friends1.jpg';
+const typing =  'http://d1ibveupycgzu4.cloudfront.net/typing.jpg';
+const sf = 'http://d1ibveupycgzu4.cloudfront.net/sftrip.jpg';
+const dodgers =  'http://d1ibveupycgzu4.cloudfront.net/dodgers.jpg';
+const grad = 'http://d1ibveupycgzu4.cloudfront.net/grad.jpg';
+const group2 = 'http://d1ibveupycgzu4.cloudfront.net/group2.jpg';
+const beach = 'http://d1ibveupycgzu4.cloudfront.net/beach1.jpg';
+const guitar = 'http://d1ibveupycgzu4.cloudfront.net/guitar.jpg';
+const family = 'http://d1ibveupycgzu4.cloudfront.net/family.jpg';
+const friends = 'http://d1ibveupycgzu4.cloudfront.net/friends1.jpg';
 
         {/* <p>My philosophy is to leverage technology 
           to build functional, yet simplistically elegant 
@@ -31,7 +31,7 @@ const About = () => {
       </div>
       <div className="about-top">
         <div className="about-pic">
-          {/* <img src={typing} /> */}
+          <img src={typing} />
         </div>
         <div className="narrative" >
           <h3 data-aos="fade-up">About Me</h3>
@@ -66,14 +66,14 @@ const About = () => {
         <div className="blur">
           <div className="flex">
             <ul className="pictures" data-aos="fade-up">
-              {/* <img src={grad} id="grad" className="card1 tablet1"/>
+              <img src={grad} id="grad" className="card1 tablet1"/>
               <img src={family} id="family" className="card1 tablet1"/>
               <img src={dodgers} id="dodgers" className="card1 tablet1"/>
               <img src={sf} id="sf" className="card1 tablet1"/>
               <img src={friends} id="friends" className="card1 tablet2"/>
               <img src={guitar} id="guitar" className="card1 tablet2"/>
               <img src={group2} id="group2" className="card1 tablet2"/>
-              <img src={beach} id="beach" className="card1 tablet2"/> */}
+              <img src={beach} id="beach" className="card1 tablet2"/>
             </ul>
           </div>
         </div>
