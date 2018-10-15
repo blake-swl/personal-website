@@ -46,7 +46,7 @@ const About = () => {
             <br/>
             <div className="card whatIdo" data-aos="fade-up"> 
               <h4>What I do</h4>
-              <p>Full stack engineer specializing in front-end development, I leverage technologies such as React and Node to build highly responsive yet simplistically elegant applications that blend functionality with traditional design principles. Foundationally strong in JavaScript, RESTful API design, and database schemas, I swiftly adapt to new interfaces and challenges.</p>
+              <p>Full stack engineer specializing in front-end development, I leverage technologies such as React and Node to build highly responsive yet simplistically elegant applications that blend functionality with traditional design principles. Foundationally strong in JavaScript, RESTful API design, and database schemas, I swiftly adapt to new interfaces and challenges. I look forward to bringing my strengths and expertise to any team or culture.</p>
               <div style={{color: '#D05353'}}>
                 <Icon icon={ic_code} className="cues" size={40}/>
               </div>
