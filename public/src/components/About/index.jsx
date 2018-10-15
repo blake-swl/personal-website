@@ -31,7 +31,7 @@ const About = () => {
       </div>
       <div className="about-top">
         <div className="about-pic">
-          <img src={typing} />
+          {/* <img src={typing} /> */}
         </div>
         <div className="narrative" >
           <h3 data-aos="fade-up">About Me</h3>
@@ -66,14 +66,14 @@ const About = () => {
         <div className="blur">
           <div className="flex">
             <ul className="pictures" data-aos="fade-up">
-              <img src={grad} id="grad" className="card1 tablet1"/>
+              {/* <img src={grad} id="grad" className="card1 tablet1"/>
               <img src={family} id="family" className="card1 tablet1"/>
               <img src={dodgers} id="dodgers" className="card1 tablet1"/>
               <img src={sf} id="sf" className="card1 tablet1"/>
               <img src={friends} id="friends" className="card1 tablet2"/>
               <img src={guitar} id="guitar" className="card1 tablet2"/>
               <img src={group2} id="group2" className="card1 tablet2"/>
-              <img src={beach} id="beach" className="card1 tablet2"/>
+              <img src={beach} id="beach" className="card1 tablet2"/> */}
             </ul>
           </div>
         </div>
