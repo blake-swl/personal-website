@@ -53,9 +53,7 @@ module.exports = {
                 optimizationLevel: 3,
               },
               // the webp option will enable WEBP
-              webp: {
-                quality: 75
-              }
+            
       
             },
           },
