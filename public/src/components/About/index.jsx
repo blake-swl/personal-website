@@ -27,14 +27,14 @@ const About = () => {
   return(
     <div id="about">
       <div className="tag" >
-        <p data-aos="fade-up">I'm a full-stack engineer that is passionate about developing real world applications with clean, maintainable code, with an emphasis in front-end development.</p>
+        <p>I'm a full-stack engineer that is passionate about developing real world applications with clean, maintainable code, with an emphasis in front-end development.</p>
       </div>
-      <div className="about-top" data-aos="fade-up">
+      <div className="about-top">
         <div className="about-pic">
-          <img src={typing} alt=""/>
+          <img src={typing} />
         </div>
         <div className="narrative" >
-          <h3>About Me</h3>
+          <h3 data-aos="fade-up">About Me</h3>
           <div className="scroll-x">
             <div className="card objective" data-aos="fade-up">
               <h4>Objective</h4>
