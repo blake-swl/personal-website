@@ -7,6 +7,7 @@
   flex-direction: column;
   align-items: center;
   z-index: -1;
+  font-family: $montserrat;
   
   display: -webkit-box;
   display: -moz-box;
@@ -22,8 +23,6 @@
   height: auto;
   width: 100%;
   .banner-layer {
-    // background: rgba(208,83,83, 0.5);
-    // background-color: rgba(46,80,96, 0.5);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,7 +31,7 @@
     padding-bottom: 10%;
     width: 100%;
     height: auto;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
   }
  
   h3 {
@@ -44,7 +43,6 @@
 }
 .chat {
   font-size: 60px;
-  font-family: $montserrat;
   font-weight: 700;
   color: white;
   margin-top: 5%;
@@ -74,7 +72,6 @@
   color: rgb(46,80,96);
   font-size: 25px;
   font-variant: small-caps;
-  font-family: $montserrat;
   font-weight: 550;
   word-break: keep-all;
 }

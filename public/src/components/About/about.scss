@@ -23,17 +23,16 @@
     line-height: 1.5;
   }
 }
-.passion {
+.about-top {
   height: auto;
   display: flex;
   flex-direction: row;
 }
-.profilePic {
+.about-pic {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-left: 5%;
-  width: 40%;
   background: white;
   img {
     width: 600px;
@@ -43,7 +42,7 @@
 .narrative {
   background: white;
   display: flex;
-  padding: 5%;
+  padding: 5% 5% 5% 2%;
   justify-content: center;
   flex-direction: column;
   width: 60%;
@@ -91,21 +90,6 @@
   padding-bottom: 3%;
   background: rgba(0, 0, 0, 0.3);
 }
-.personal {
-  font-weight: 500;
-  font-size: 20px;
-  color: white;
-  padding: 2% 10% 2% 10%;
-  text-shadow: .5px .5px black;
-
-  h1 {
-    font-weight: 600;
-    display: flex;
-    font-size: 30px;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-}
 
 .flex {
   display: flex;
@@ -147,9 +131,8 @@
       font-size: 20px;
     }
   }
-  .profilePic {
-    padding-top: -5%;
-    width: 110%;
+  .about-pic {
+    // width: 110%;
     padding: 0;
     
     img {
@@ -157,12 +140,11 @@
       height: auto;
     }
   }
-  .passion {
+  .about-top {
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5%;
     
   .narrative {
     display: flex;
@@ -185,11 +167,10 @@
 
       .card {
         scroll-snap-align: center;
-        padding: 5%;
+        padding: 5% 10% 5% 10%;
         flex: 0 0 auto;
         width: 80vw;
         font-size: 16px;
-        // text-align: justify;
       }
       .cues {
         display: block !important;
@@ -244,7 +225,7 @@
       font-size: 20px;
     }
   }
-  .passion {
+  .about-top {
     height: auto;
     width: 100%;
     flex-direction: column;
@@ -279,6 +260,12 @@
       margin-bottom: 0;
       padding-bottom: 1%;
       border-bottom: 2px solid black;
+    }
+    .about-top {
+      padding-left: none;
+      .about-pic {
+        padding-left: none;
+      }
     }
 
     .scroll-x {
