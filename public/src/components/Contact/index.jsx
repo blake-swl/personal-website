@@ -41,7 +41,9 @@ const Contact = () => {
           <br/>
           <EmailModal open="WRITE EMAIL NOW"/>
       </div>
-      <div className="la"></div>
+      <div className="la">
+        {/* <p>Notorious coffee enthusiast, lover of nature, and LeBron James fanatic.</p> */}
+      </div>
       <footer className="footer">
         <a href="https://www.facebook.com/blakeswlee">
           <Icon icon={facebookSquare} size={50} />

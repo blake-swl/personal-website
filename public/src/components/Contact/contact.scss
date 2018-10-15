@@ -1,7 +1,7 @@
 @import '../Global/global.scss';
 
 #contact {
-  background: black;
+  background-color: #1B1D23;   
   background-size: cover;
   height: auto;
   flex-direction: column;
@@ -84,6 +84,17 @@
   background-size: cover;
   height: 20vh;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    color: #D05353;
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 8%;
+    text-shadow: .5px .5px black;
+  }
 }
 .footer {
   display: flex;
