@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { ImageminWebpackPlugin } = require("imagemin-webpack")
 
 module.exports = {
   entry: path.resolve('./public/src'),
@@ -34,7 +35,7 @@ module.exports = {
             loader: 'image-webpack-loader',
             options: {
               bypassOnDebug: true, // webpack@1.x
-              disable: true, // webpack@2.x and newer
+              disable: false, // webpack@2.x and newer
               mozjpeg: {
                 progressive: true,
                 quality: 65
@@ -64,7 +65,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx']
   },
-  mode: 'development',
+  mode: 'production',
   plugins: [
    
  
