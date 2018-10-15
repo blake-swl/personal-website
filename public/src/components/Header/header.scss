@@ -13,6 +13,7 @@
   background-size: cover;
   color: black;
   z-index: -1;
+  color: rgb(46,80,96);
 }
 .header-layer {
   background-color: rgba(0, 0, 0, 0.1);
@@ -54,15 +55,15 @@
 }
 .btn a {
   font-size: 20px;
-  color: black;
+  color: rgb(46,80,96);
   font-family: $montserrat;
-  border: 2px solid black;
+  border: 2px solid rgb(46,80,96);
   text-decoration: none;
   padding: 6px;
   margin: 10px;
 }
 .btn a:hover {
-  background-color: black;
+  background-color: rgb(46,80,96);
   color: rgba(255, 255, 255, 0.9);
   transition: .2s ease-in;
 }
