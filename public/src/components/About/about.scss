@@ -73,9 +73,6 @@
     visibility: hidden;
     display: none !important;
   }
-  .philosophy {
-    display: none;
-  }
 }
 /* Bottom half */
 
@@ -150,6 +147,16 @@
       font-size: 20px;
     }
   }
+  .profilePic {
+    padding-top: -5%;
+    width: 110%;
+    padding: 0;
+    
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
   .passion {
     height: auto;
     display: flex;
@@ -157,22 +164,12 @@
     align-items: center;
     padding: 5%;
     
-    .profilePic {
-      width: 100%;
-      padding-left: 0;
-      
-      img {
-        width: 100%;
-        height: auto;
-      }
-    }
   .narrative {
     display: flex;
     width: 100%;
     height: auto;
 
     h3 {
-      padding-top: 5%;
       align-self: center;
       margin-bottom: 0;
       padding-bottom: 1%;
@@ -272,10 +269,40 @@
   }
 }
 @media only screen and (min-width: 426px) and (max-width: 768px) {
-  .personal {
-    p {
-      padding-left: 5%;
-      padding-right: 5%;
+  .narrative {
+    display: flex;
+    width: 100%;
+    height: auto;
+
+    h3 {
+      align-self: center;
+      margin-bottom: 0;
+      padding-bottom: 1%;
+      border-bottom: 2px solid black;
+    }
+
+    .scroll-x {
+      scroll-snap-type: x mandatory;
+      display: flex;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+
+      .card {
+        scroll-snap-align: center;
+        padding: 5%;
+        flex: 0 0 auto;
+        width: 80vw;
+        font-size: 16px;
+      }
+      .cues {
+        display: block !important;
+        visibility: visible;
+        height: auto;
+      }
+    }
+    .philosophy {
+      display: block;
     }
   }
   .flex {
