@@ -8,15 +8,15 @@ import {ic_keyboard_arrow_right} from 'react-icons-kit/md/ic_keyboard_arrow_righ
 import {ic_keyboard_arrow_left} from 'react-icons-kit/md/ic_keyboard_arrow_left';
 
 // pictures
-const typing =  'http://d2genp9fhbycca.cloudfront.net/typing.jpg';
-const sf = 'http://d2genp9fhbycca.cloudfront.net/sftrip.jpg';
-const dodgers =  'http://d2genp9fhbycca.cloudfront.net/dodgers.jpg';
-const grad = 'http://d2genp9fhbycca.cloudfront.net/grad.jpg';
-const group2 = 'http://d2genp9fhbycca.cloudfront.net/group2.jpg';
-const beach = 'http://d2genp9fhbycca.cloudfront.net/beach1.jpg';
-const guitar = 'http://d2genp9fhbycca.cloudfront.net/guitar.jpg';
-const family = 'http://d2genp9fhbycca.cloudfront.net/family.jpg';
-const friends = 'http://d2genp9fhbycca.cloudfront.net/friends1.jpg';
+const typing =  'https://d2genp9fhbycca.cloudfront.net/typing.jpg';
+const sf = 'https://d2genp9fhbycca.cloudfront.net/sftrip.jpg';
+const dodgers =  'https://d2genp9fhbycca.cloudfront.net/dodgers.jpg';
+const grad = 'https://d2genp9fhbycca.cloudfront.net/grad.jpg';
+const group2 = 'https://d2genp9fhbycca.cloudfront.net/group2.jpg';
+const beach = 'https://d2genp9fhbycca.cloudfront.net/beach1.jpg';
+const guitar = 'https://d2genp9fhbycca.cloudfront.net/guitar.jpg';
+const family = 'https://d2genp9fhbycca.cloudfront.net/family.jpg';
+const friends = 'https://d2genp9fhbycca.cloudfront.net/friends1.jpg';
 
         {/* <p>My philosophy is to leverage technology 
           to build functional, yet simplistically elegant 
