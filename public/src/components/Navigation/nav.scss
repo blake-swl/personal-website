@@ -51,24 +51,35 @@
     align-items: flex-start;
     overflow: auto;
     height: auto;
-    transition: 1s ease-in;
+    -webkit-transition:height 200ms ease-in;
+    -moz-transition:height 200ms ease-in;
+    -o-transition:height 200ms ease-in;
+    transition:height 200ms ease-in;
   }
   .navbar {
     display: none;
   }
   .icon {
-    align-self: flex-end;
+    align-self: flex-start;
     display: initial;
     cursor: pointer;
     padding: 2%;
-    padding-right: 3%;
+    padding-left: 3%;
   }
   .nav-item {
     padding: 8px;
   }
   .navbar_dropdown {
-    transition: 1s ease-in;
     display: flex;
     flex-direction: column;
   }
+  // .navbar_dropdown::before {
+  //   height: 0;
+  // }
+  // .navbar_dropdown::after {
+  //   -webkit-transition: 200ms ease-in;
+  //   -moz-transition:height 200ms ease-in;
+  //   -o-transition:height 200ms ease-in;
+  //   transition: 200ms ease-in;
+  // }
 }
