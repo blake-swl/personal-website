@@ -27,7 +27,7 @@ const About = () => {
   return(
     <div id="about">
       <div className="tag" >
-        <p>I'm a full-stack engineer that is passionate about developing real world applications with clean, maintainable code, with an emphasis in front-end development.</p>
+        <p>Full-stack engineer that is passionate about developing real world applications with clean, maintainable code, with an emphasis in front-end development.</p>
       </div>
       <div className="about-top">
         <div className="about-pic">
