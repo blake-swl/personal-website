@@ -14,7 +14,7 @@ const dodgers =  'http://d2genp9fhbycca.cloudfront.net/dodgers.jpg';
 const grad = 'http://d2genp9fhbycca.cloudfront.net/grad.jpg';
 const group2 = 'http://d2genp9fhbycca.cloudfront.net/group2.jpg';
 const beach = 'http://d2genp9fhbycca.cloudfront.net/beach1.jpg';
-const guitar = 'http://d2genp9fhbycca.cloudfront.nett/guitar.jpg';
+const guitar = 'http://d2genp9fhbycca.cloudfront.net/guitar.jpg';
 const family = 'http://d2genp9fhbycca.cloudfront.net/family.jpg';
 const friends = 'http://d2genp9fhbycca.cloudfront.net/friends1.jpg';
 
