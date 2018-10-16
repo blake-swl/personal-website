@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #eaebed;
+  background: $passiveGrey;
   font-family: $montserrat;
 
   .works-arrow {
@@ -19,7 +19,7 @@
   font-weight: 800;
   font-size: 50px;
   padding-top: 5%;
-  color: #2E5060;
+  color: $yankeesBlue;
 }
 .works {
   padding-top: 3%;
@@ -82,9 +82,9 @@
   align-items: center;
   width: 90%;
   height: auto;
-  background: #D05353;
+  background: $darkTerra;
   opacity: 0.8;
-  color: white;
+  color: $ghostWhite;
   font-size: 20px;
   grid-area: slideUp;
   font-weight: 500;
@@ -98,10 +98,10 @@
   justify-content: center;
   
   .code, .icons {
-    border: 2px solid #D05353;
+    border: 2px solid $darkTerra;
     font-size: 1em;
     padding: 2%;
-    color: #D05353;
+    color: $darkTerra;
     cursor: pointer;
   }
 }

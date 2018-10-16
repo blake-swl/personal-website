@@ -1,7 +1,7 @@
 @import '../Global/global.scss';
 
 #contact {
-  background-color: #1B1D23;   
+  background-color: $eerieBlack;   
   background-size: cover;
   height: auto;
   flex-direction: column;
@@ -35,7 +35,7 @@
   }
  
   h3 {
-    font-family: 'nothingRegular';
+    font-family: $nothing;
     font-size: 30px;
     color: white;
     text-shadow: .5px .5px black;
@@ -44,7 +44,7 @@
 .chat {
   font-size: 60px;
   font-weight: 700;
-  color: white;
+  color: $ghostWhite;
   margin-top: 5%;
   text-shadow: .5px .5px black;
 }
@@ -54,7 +54,7 @@
 .bottom {
   padding-top: 3%;
   padding-bottom: 3%;
-  background: white;
+  background: $ghostWhite;
   width: 100%;
   height: auto;
   display: flex;
@@ -69,7 +69,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: rgb(46,80,96);
+  color: $yankeesBlue;
   font-size: 25px;
   font-variant: small-caps;
   font-weight: 550;
@@ -89,7 +89,7 @@
   align-items: center;
 
   p {
-    color: #D05353;
+    color: $darkTerra;
     font-weight: 600;
     font-size: 20px;
     padding-top: 8%;
@@ -98,7 +98,7 @@
 }
 .footer {
   display: flex;
-  background: black;
+  background: $eerieBlack;
   background-size: cover;
   flex-direction: row;
   justify-content: center;
@@ -107,7 +107,7 @@
   padding: none;
   
   a {
-    color: rgb(218, 204, 204);
+    color: $beigeRed;
     margin: 5%;
   }
 }

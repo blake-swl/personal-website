@@ -23,7 +23,7 @@
 
 }
 .tagline h4 {
-  font-family: 'nothingRegular';
+  font-family: $nothing;
 
   font-size: 30px;
   display: flex;
@@ -45,7 +45,6 @@
   display: flex;
   justify-content: center;
   font-size: 40px;
-  text-shadow: .5px .5px white;
 }
 .btn {
   margin-top: 2%;

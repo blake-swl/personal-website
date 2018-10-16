@@ -8,7 +8,7 @@
   height: 5vh;
   align-items: center;
   justify-content: space-evenly;
-  background: white;
+  background: $ghostWhite;
   border-bottom: 2px double #DDDAD4;
   z-index: 10;
 }
@@ -24,15 +24,15 @@
 }
 .navbar a {
   text-decoration: none;
-  color: black;
+  color: $eerieBlack;
   margin: 6px;
   transition: .2s ease-in;
 }
 .navbar:hover a {
-  color: #B10F2E;
+  color: $crimsom;
 }
 .navbar a:hover {
-  color: black;
+  color: $eerieBlack;
 }
 .sticky {
   position: fixed;

@@ -2,10 +2,10 @@
 
 
 #skills {
-  background-color: #1B1D23;
+  background-color: $eerieBlack;
   size: 100%;
   height: auto;
-  color: white;
+  color: $ghostWhite;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,7 +33,7 @@
 
     div {
       font-size: 16px;
-      color: white;
+      color: $ghostWhite;
     }
 }
 .title2 {
@@ -54,7 +54,7 @@
   div {
     padding: 5%;
     font-size: 16px;
-    color: white;
+    color: $ghostWhite;
     justify-self: stretch;
     display: flex;
     flex-direction: column;

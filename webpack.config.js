@@ -1,7 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { ImageminWebpackPlugin } = require("imagemin-webpack")
 
 module.exports = {
   entry: path.resolve('./public/src'),
@@ -50,11 +49,8 @@ module.exports = {
               },
               gifsicle: {
                 interlaced: true,
-                optimizationLevel: 3,
+                optimizationLevel: 2,
               },
-              // the webp option will enable WEBP
-            
-      
             },
           },
         ],
@@ -64,7 +60,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx']
   },
-  mode: 'development',
+  mode: 'production',
   plugins: [
    
  

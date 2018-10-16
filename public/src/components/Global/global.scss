@@ -1,20 +1,25 @@
 /* Fonts */
 
-
 /* Montserrat */
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-
 $montserrat: 'Montserrat', sans-serif;
 
 /* Cursive font */
 
-@font-face {
-  font-family: 'nothingRegular';
-  src: url('../../../dist/Nothing_You_Could_Do/NothingYouCouldDo.ttf');
-}
+@import url('https://fonts.googleapis.com/css?family=Nothing+You+Could+Do');
+$nothing: 'Nothing You Could Do', cursive;
 
-/* General */
+/* Colors */
+
+$darkTerra: #D05353;
+$yankeesBlue: #2E5060;
+$passiveGrey: #eaebed;
+$ghostWhite: #FAFCFE;
+$eerieBlack: #1B1D23;
+$beigeRed: #DACCCC;
+$crimsom: #B10F2E;
+
 
 /* Tooltip */
 
@@ -95,7 +100,7 @@ html, body {
 /* Responsive */
 
 $breakpoints: (
-  'phone': 320px,
+  'phone': 425px,
   'tablet': 768px,
   'desktop': 1024px,
 ) !default;
