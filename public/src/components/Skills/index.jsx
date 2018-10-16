@@ -6,6 +6,7 @@ import check from '../../../dist/images/redcheck.jpg';
 
 
 
+
 const Skills = () => {
   return(
     <div id="skills" >

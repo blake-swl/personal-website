@@ -188,6 +188,7 @@
   .gallery {
     height: auto;
     display: flex;
+    background: url("https://d2genp9fhbycca.cloudfront.net/hollywood.jpg") 50% 40% no-repeat;
     flex-direction: column;
     width: 100%;
     
@@ -245,7 +246,6 @@
   .gallery {
     width: 100%;
     height: auto;
-    background-size: contain;
 
     .blur {
       height: auto;
