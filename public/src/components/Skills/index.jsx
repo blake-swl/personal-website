@@ -37,22 +37,22 @@ export default class Skills extends Component {
         </div>
         <div className="mainSkills" data-aos="fade-up">
           <div className="javascript" data-aos="fade-up">JavaScript
-            <Progress percent={95} theme={{ active: {trailColor: '#535B63', color: '#D05353'}}}/>
+            <Progress percent={90} theme={{ active: {symbol: 'Advanced', trailColor: '#535B63', color: '#D05353'}}}/>
           </div>
           <div className="react" data-aos="fade-up">React
-            <Progress percent={this.state.react} theme={{ active: {trailColor: '#535B63', color: '#D05353'}}}/>
+            <Progress percent={95} theme={{ active: {symbol: 'Expert', trailColor: '#535B63', color: '#D05353'}}}/>
           </div>
           <div className="node" data-aos="fade-up">Node
-            <Progress percent={85} theme={{ active: {trailColor: '#535B63', color: '#D05353'}}}/>
+            <Progress percent={90} theme={{ active: {symbol: 'Advanced', trailColor: '#535B63', color: '#D05353'}}}/>
           </div>
           <div className="htmlcss" data-aos="fade-up">HTML5/CSS3
-            <Progress percent={92} theme={{ active: {trailColor: '#535B63', color: '#D05353'}}}/>
+            <Progress percent={95} theme={{ active: {symbol: 'Expert', trailColor: '#535B63', color: '#D05353'}}}/>
           </div>
           <div className="sql" data-aos="fade-up">SQL/NoSQL
-            <Progress percent={90} theme={{ active: {trailColor: '#535B63', color: '#D05353'}}}/>
+            <Progress percent={90} theme={{ active: {symbol: 'Advanced', trailColor: '#535B63', color: '#D05353'}}}/>
           </div>
           <div className="graphql" data-aos="fade-up">GraphQL
-            <Progress percent={85} theme={{ active: {trailColor: '#535B63', color: '#D05353'}}}/>
+            <Progress percent={85} theme={{ active: {symbol: 'Intermediate', trailColor: '#535B63', color: '#D05353'}}}/>
           </div>
           <div className="enthusiasm" data-aos="fade-up">Enthusiasm
             <Progress percent={100} status="active" theme={{ active: {symbol: '👍🏻', trailColor: '#535B63', color: '#D05353'}}} />
@@ -70,7 +70,7 @@ export default class Skills extends Component {
           <div className="jquery" data-aos="fade-up">
             <Progress className="check2"
             type="circle" percent={100} status="active" theme={{ active: {symbol: <img src={check} style={{width: "50%"}}/>, trailColor: '#535B63', color: '#D05353'}}} />       
-            jQuery
+            Webpack
           </div>
           <div className="git" data-aos="fade-up">
             <Progress className="check3"
