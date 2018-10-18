@@ -31,6 +31,11 @@
   width: 40%;
   height: auto;
   outline: none;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
 }
 
 .Overlay {
@@ -66,8 +71,7 @@
     height: auto;
 
     img {
-      height: 50%;
-      width: 50%;
+      max-height: 50%;
     }
   }
 }

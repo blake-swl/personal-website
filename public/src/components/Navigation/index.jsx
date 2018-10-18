@@ -42,7 +42,7 @@ export default class Navigation extends Component {
     return (
       <div id="navbar">
         <div className="navigation" >
-          <div className="icon" style={{ color: 'black' }}>
+          <div className="icon" style={{ color: '#2E5060' }}>
             <Icon icon={navicon} size={25}/>
           </div>
           <div className="nav-drop">

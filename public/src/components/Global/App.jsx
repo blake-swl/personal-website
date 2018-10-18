@@ -47,32 +47,32 @@ export default class App extends Component  {
   constructor() {
     super();
 
-    this.scrollFunction = this.scrollFunction.bind(this);
-    this.topFunction = this.topFunction.bind(this);
+    // this.scrollFunction = this.scrollFunction.bind(this);
+    // this.topFunction = this.topFunction.bind(this);
   }
   componentDidMount() {
-    window.onscroll = () => this.scrollFunction();
+    // window.onscroll = () => this.scrollFunction();
   }
 
   // Back to Top
-  scrollFunction = () => {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-  }
-  topFunction = () => {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }
+  // scrollFunction = () => {
+  //   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  //       document.getElementById("myBtn").style.display = "block";
+  //   } else {
+  //       document.getElementById("myBtn").style.display = "none";
+  //   }
+  // }
+  // topFunction = () => {
+  //   document.body.scrollTop = 0; // For Safari
+  //   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  // }
   render() {
     return(
       <div id="wrapper">
         {/* ...Loading */}
-        <button onClick={this.topFunction} id="myBtn" title="Go to top">
+        {/* <button onClick={this.topFunction} id="myBtn" title="Go to top">
           <Icon icon={ic_expand_less} size={30}/>
-        </button>
+        </button> */}
         <Navigation />
         <Header />
         <About />
