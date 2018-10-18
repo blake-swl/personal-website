@@ -27,7 +27,7 @@ const About = () => {
   return(
     <div id="about">
       <div className="tag" >
-        <p>Full-stack engineer that is passionate about developing real world applications with clean, maintainable code, with an emphasis in front-end development.</p>
+        <article>Full-stack engineer that is passionate about developing real world applications with clean, maintainable code, with an emphasis in front-end development.</article>
       </div>
       <div className="about-top">
         <div className="about-pic">
@@ -38,7 +38,7 @@ const About = () => {
           <div className="scroll-x">
             <div className="card objective" data-aos="fade-up">
               <h4>Objective</h4>
-              <p>Creative and agile problem solver, always seeking opportunities to join a group of engineers to develop practical applications on a forefront of technical innovation and user-centric design. Always seeking improvement, I embrace challenges that push me to think outside the box. Currently expanding both breath and depth of web development knowledge by increasing React expertise and learning server side languages such as GoLang. I bring positive energy and sharp communication skills to develop highly scalable React and Node full stack applications.</p>
+              <article>Creative and agile problem solver, always seeking opportunities to join a group of engineers to develop practical applications on a forefront of technical innovation and user-centric design. Always seeking improvement, I embrace challenges that push me to think outside the box. Currently expanding both breath and depth of web development knowledge by increasing React expertise and learning server side languages such as GoLang. I bring positive energy and sharp communication skills to develop highly scalable React and Node full stack applications.</article>
               <div style={{color: '#D05353'}}>
                 <Icon icon={ic_keyboard_arrow_right} className="cues" size={40}/>
               </div>
@@ -46,7 +46,7 @@ const About = () => {
             <br/>
             <div className="card whatIdo" data-aos="fade-up"> 
               <h4>What I do</h4>
-              <p>Full stack engineer specializing in front-end development, I leverage technologies such as React and Node to build highly responsive yet simplistically elegant applications that blend functionality with traditional design principles. Foundationally strong in JavaScript, RESTful API design, and database schemas, I adapt swiftly to new interfaces and workflows. I look forward to bringing my strengths and expertise to any team or culture.</p>
+              <article>Full stack engineer specializing in front-end development, I leverage technologies such as React and Node to build highly responsive yet simplistically elegant applications that blend functionality with traditional design principles. Foundationally strong in JavaScript, RESTful API design, and database schemas, I adapt swiftly to new interfaces and workflows. I look forward to bringing my strengths and expertise to any team or culture.</article>
               <div style={{color: '#D05353'}}>
                 <Icon icon={ic_code} className="cues" size={40}/>
               </div>
@@ -54,7 +54,7 @@ const About = () => {
             <br/>
             <div className="card philosophy" data-aos="fade-up">
               <h4>My Philosophy</h4>
-              <p>Detail oriented, I get excited about brainstorming ideas of user centric UI/UX design that naturally intuit the users. Obsessively disciplined, I get delighted in cracking coding challenges and refactoring for optimization. Always seeking to get better, I look to challenge others by upholding good coding practices and high standards of quality, while also seeking to be challenged in expanding the scope of my own thought processes. Software engineering is a craft of mine that keeps me pushing to innovate and learn new technologies to be the best software engineer I can be.</p>
+              <article>Detail oriented, I get excited about brainstorming ideas of user centric UI/UX design that naturally intuit the users. Obsessively disciplined, I get delighted in cracking coding challenges and refactoring for optimization. Always seeking to get better, I look to challenge others by upholding good coding practices and high standards of quality, while also seeking to be challenged in expanding the scope of my own thought processes. Software engineering is a craft of mine that keeps me pushing to innovate and learn new technologies to be the best software engineer I can be.</article>
               <div style={{color: '#D05353'}}>
                 <Icon icon={ic_keyboard_arrow_left} className="cues" size={40}/>
               </div>
