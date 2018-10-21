@@ -50,9 +50,9 @@ export default class App extends Component  {
     // this.scrollFunction = this.scrollFunction.bind(this);
     // this.topFunction = this.topFunction.bind(this);
   }
-  componentDidMount() {
-    // window.onscroll = () => this.scrollFunction();
-  }
+  // componentDidMount() {
+  //   window.onscroll = () => this.scrollFunction();
+  // }
 
   // Back to Top
   // scrollFunction = () => {
@@ -70,9 +70,7 @@ export default class App extends Component  {
     return(
       <div id="wrapper">
         {/* ...Loading */}
-        {/* <button onClick={this.topFunction} id="myBtn" title="Go to top">
-          <Icon icon={ic_expand_less} size={30}/>
-        </button> */}
+       
         <Navigation />
         <Header />
         <About />

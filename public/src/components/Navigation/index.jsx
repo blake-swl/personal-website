@@ -11,6 +11,8 @@ export default class Navigation extends Component {
   constructor() {
     super();
 
+
+    // this.scrollFunction = this.scrollFunction.bind(this);
     this.handleScroll = this.handleScroll.bind(this);
     this.handleDropDown = this.handleDropDown.bind(this);
   }
@@ -36,6 +38,14 @@ export default class Navigation extends Component {
     const navs = document.querySelectorAll('.navbar');
     navs.forEach(nav => nav.classList.toggle('navbar_dropdown'));
   }
+  // // Back to Top
+  // scrollFunction = () => {
+  //   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  //       document.getElementById("myBtn").style.display = "block";
+  //   } else {
+  //       document.getElementById("myBtn").style.display = "none";
+  //   }
+  // }
 
 
   render() {
