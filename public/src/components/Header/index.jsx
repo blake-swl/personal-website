@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './header.scss';
 import Resume from '../../../dist/Resume/blakeresume.pdf';
-import smoothScroll from 'smoothscroll';
 
 // Icons
 import { Icon } from 'react-icons-kit';
@@ -11,20 +10,20 @@ export default class Header extends Component{
   constructor() {
     super();
     
-    this.scrollFunction = this.scrollFunction.bind(this);
+    // this.scrollFunction = this.scrollFunction.bind(this);
   }
-  componentDidMount() {
+  // componentDidMount() {
     // window.smoothScroll('#');
-    window.onscroll = () => this.scrollFunction();
-  }
+    // window.onscroll = () => this.scrollFunction();
+  // }
   // Back to Top
-  scrollFunction = () => {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-  }
+  // scrollFunction = () => {
+  //   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  //       document.getElementById("myBtn").style.display = "block";
+  //   } else {
+  //       document.getElementById("myBtn").style.display = "none";
+  //   }
+  // }
 
    render() {
      return (
@@ -44,9 +43,9 @@ export default class Header extends Component{
            </div>
           </div>
         </div>
-        <a href="#" id="myBtn" title="Go to top">
+        {/* <a href="#" id="myBtn" title="Go to top">
           <Icon icon={ic_expand_less} size={30}/>
-        </a>
+        </a> */}
       </div>
      )
    }
