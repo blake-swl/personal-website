@@ -33,7 +33,7 @@ export default class Portfolio extends Component {
     </ul>
     const AmStack = <div>STACK: [Node, Postgres, Nginx, AWS]</div>;
     const AirStack = <div>STACK: [React, Node, CSS modules, Mongo]</div>;
-    const HoStack = <div>STACK: [React, Node, SASS, AWS]</div>;
+    const HoStack = <div>STACK: [React, Node, SASS]</div>;
     return (
       <div id="portfolio">
         <h1 className="works-title" data-aos="fade-up">-Portfolio-</h1>
