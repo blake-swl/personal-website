@@ -45,7 +45,7 @@ export default class Portfolio extends Component {
                 buttons={<Icon icon={ic_zoom_in} size={40}/>}
                 components={AmStack}
                 subtitle={AmDesc}/>
-                <a className="code tooltip" href="https://github.com/HRLA23WhiteWalkers/MainPage">
+                <a className="code tooltip" href="https://github.com/Bacon-Icecream/FEC-Danny-L">
                   <span className="tooltiptext">View code</span>
                   <Icon icon={github} size={30}/>
                 </a>
