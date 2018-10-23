@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Modal from 'react-modal';
 import './EmailModal.scss';
+import axios from 'axios';
 
 // Icons
 import { Icon } from 'react-icons-kit';
@@ -24,23 +25,26 @@ export default class EmailModal extends Component {
     this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
     this.onChange = this.onChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   };
 
   openModal() {
     this.setState({ modalIsOpen: true });
   };
-
+  closeModal() {
+    this.setState({ modalIsOpen: false });
+  };
   onChange(e) {
     e.preventDefault();
     this.setState({
       [e.target.name]: e.target.value
     })
-    console.log(this.state.name)
+    console.log(e.target.value)
+  }
+  async handleSubmit() {
+    // const data = await $.post(`/api/email`, {message: this.state.title, body: this.state.body});
   }
 
-  closeModal() {
-    this.setState({ modalIsOpen: false });
-  };
   render() {
     return (
       <div id="modal">
@@ -56,7 +60,7 @@ export default class EmailModal extends Component {
           className="EmailModal"
           overlayClassName="EmailOverlay"
         >
-          <form className="mailbox">
+          <form className="mailbox" onSubmit={this.handleSubmit}>
             <div className="icon-action">
               <div className="close tooltip" onClick={this.closeModal} alt="close">
                 <span className="tooltiptext">Close</span>
