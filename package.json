@@ -52,6 +52,7 @@
     "image-webpack-loader": "^4.3.1",
     "imagemin-webpack": "^3.0.0",
     "node-sass": "^4.9.3",
+    "nodemon": "^1.18.4",
     "sass-loader": "^7.1.0",
     "uglifyjs-webpack-plugin": "^2.0.1"
   },
