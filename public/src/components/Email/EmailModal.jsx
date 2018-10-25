@@ -39,16 +39,16 @@ export default class EmailModal extends Component {
     this.setState({
       [e.target.name]: e.target.value
     })
-    console.log(e.target.name)
   }
   async handleSubmit() {
+
     const payload = {
       name: this.state.name,
       email: this.state.email,
       message: this.state.message
     }
+    console.log(payload, 'this is payload')
     const data = await axios.post(`/api/sendEmail`, payload);
-    console.log(data)
   }
 
   render() {
@@ -66,15 +66,15 @@ export default class EmailModal extends Component {
           className="EmailModal"
           overlayClassName="EmailOverlay"
         >
-          <form className="mailbox" onSubmit={this.handleSubmit}>
+          <form className="mailbox" >
             <div className="icon-action">
               <div className="close tooltip" onClick={this.closeModal} alt="close">
-                <span className="tooltiptext">Close</span>
+                <span className="tooltiptext" >Close</span>
                 <Icon icon={close} size={20}/>
               </div>
               <div className="send tooltip">
                 <span className="tooltiptext">Send</span>
-                <Icon icon={send} size={20} />
+                <Icon icon={send} size={20} onClick={this.handleSubmit}/>
               </div>
             </div>
             <textarea 
