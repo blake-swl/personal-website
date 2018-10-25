@@ -3,9 +3,9 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: path.resolve('./public/src'),
+  entry: path.resolve('./src'),
   output: {
-    path: path.resolve('./build'),
+    path: path.resolve('../build'),
     filename: 'bundle.js'
   },
   module: {
@@ -66,7 +66,7 @@ module.exports = {
  
     new HtmlWebpackPlugin({
       inject: true,
-      template:  path.resolve('./public/dist/index.html'),
+      template:  path.resolve('./dist/index.html'),
     }),
   ],
   optimization: {
