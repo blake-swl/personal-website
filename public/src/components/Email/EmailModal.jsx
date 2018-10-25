@@ -39,6 +39,7 @@ export default class EmailModal extends Component {
     this.setState({
       [e.target.name]: e.target.value
     })
+<<<<<<< HEAD
   }
   async handleSubmit() {
 
@@ -50,6 +51,12 @@ export default class EmailModal extends Component {
     console.log(payload, 'this is payload')
     const data = await axios.post(`/api/sendEmail`, payload);
     alert('message sent!')
+=======
+    console.log(e.target.value)
+  }
+  async handleSubmit() {
+    // const data = await $.post(`/api/email`, {message: this.state.title, body: this.state.body});
+>>>>>>> parent of 0e3f36b... [fix] - smtp route
   }
 
   render() {
@@ -81,19 +88,16 @@ export default class EmailModal extends Component {
             <textarea 
               className="names"
               placeholder="Name"
-              name="name"
               onChange={this.onChange}>
             </textarea>
             <textarea 
               className="email"
               placeholder="Email"
-              name="email"
               onChange={this.onChange}>
             </textarea>
             <textarea 
               className="text"
               placeholder="Write your message here" 
-              name="message"
               onChange={this.onChange}>
             </textarea>
           </form>
