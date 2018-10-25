@@ -57,7 +57,8 @@
     "uglifyjs-webpack-plugin": "^2.0.1"
   },
   "scripts": {
-    "start": "nodemon exec babel-node server.js",
+    "start": "nodemon exec babel-node rest-server/server.js",
+    "smtp": "nodemon exec babel-node public/bin/index.js",
     "build": "webpack -p",
     "webpack": "webpack -w"
   }
