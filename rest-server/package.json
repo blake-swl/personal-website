@@ -10,7 +10,8 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "nodemon": "^1.18.4",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "path-to-regexp": "^2.4.0"
   },
   "scripts": {
     "start": "nodemon exec babel-node server.js"

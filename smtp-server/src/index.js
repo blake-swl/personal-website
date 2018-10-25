@@ -1,18 +1,11 @@
-import { createServer } from 'http';
-import { success } from '../../rest-server/src/lib/log';
+import express from 'express';
+import router from '../routes/index';
 
-import App from './config/express';
 
-const app = App.express;
+const app = express();
 
-const server = createServer( app );
-const PORT = process.env.PORT || 8080;
+const PORT = 8080;
 
-server.listen( PORT, err => {
-  if (err) {
-    throw new Error;
-  }
-  success(`SMTP Server is now listening on PORT: ${PORT}`);
-});
+app.use('/api', router);
 
-export default server;
+app.listen(PORT, () => console.log(`Successfully connected to PORT: ${PORT}`));

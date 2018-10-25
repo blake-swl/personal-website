@@ -42,7 +42,12 @@ export default class EmailModal extends Component {
     console.log(e.target.name)
   }
   async handleSubmit() {
-    const data = await axios.post(`/api/sendEmail`, {name: this.state.name, email: this.state.email, message: this.state.message});
+    const payload = {
+      name: this.state.name,
+      email: this.state.email,
+      message: this.state.message
+    }
+    const data = await axios.post(`/api/sendEmail`, payload);
     console.log(data)
   }
 
