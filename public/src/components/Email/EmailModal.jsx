@@ -49,6 +49,7 @@ export default class EmailModal extends Component {
     }
     console.log(payload, 'this is payload')
     const data = await axios.post(`/api/sendEmail`, payload);
+    alert('message sent!')
   }
 
   render() {

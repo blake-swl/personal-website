@@ -13,7 +13,8 @@
   flex-direction: column;
   justify-content: center;
   height: auto;
-  background: $yankeesBlue;
+  background: $ink;
+  // background: $yankeesBlue;
   color: $ghostWhite;
   padding-left: 15%;
   padding-right: 15%;
@@ -81,6 +82,7 @@
 
 .gallery {
   background: url("https://d2genp9fhbycca.cloudfront.net/hollywood.jpg") 50% 30% no-repeat fixed;
+  // filter: grayscale(20);
   background-size: cover;
   // background: url('../../../dist/images/hollywood.jpg') 50% 30% no-repeat fixed;
   height: auto;
@@ -94,6 +96,7 @@
   height: auto;
   padding-bottom: 3%;
   background: rgba(0, 0, 0, 0.3);
+  // background: rgba(184,38,1, 0.3);
 }
 
 .flex {
