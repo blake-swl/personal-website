@@ -2,7 +2,7 @@ import React from 'react';
 import './contact.scss';
 import 'babel-polyfill';
 import EmailModal from '../Email/EmailModal';
-import Resume from '../../../dist/Resume/blakeresume.pdf';
+import Resume from '../../../dist/Resume/updatedresume.pdf';
 
 
 // Icons

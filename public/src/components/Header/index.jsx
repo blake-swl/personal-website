@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './header.scss';
-import Resume from '../../../dist/Resume/blakeresume.pdf';
+import Resume from '../../../dist/Resume/updatedresume.pdf';
 
 // Icons
 import { Icon } from 'react-icons-kit';
