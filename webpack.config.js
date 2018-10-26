@@ -1,7 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-require('dotenv').config()
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   entry: path.resolve('./public/src'),
@@ -63,6 +63,7 @@ module.exports = {
   },
   mode: 'production',
   plugins: [
+    new Dotenv(),
     // new webpack.DefinePlugin({
     //   DEBUG: process.env.NODE_ENV !== 'production',
     //       'process.env': {
@@ -77,5 +78,8 @@ module.exports = {
   ],
   optimization: {
     minimize: true
-  }
+  },
+  // node: {
+  //   fs: 'empty'
+  // }
 }

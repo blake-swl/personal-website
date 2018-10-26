@@ -4,8 +4,7 @@ import 'babel-polyfill';
 import EmailModal from '../Email/EmailModal';
 import Resume from '../../../dist/Resume/updatedresume.pdf';
 import GoogleMapReact from 'google-map-react';
-// import dotenv from 'dotenv';
-// dotenv.config()
+
 
 // Icons
 import { Icon } from 'react-icons-kit';
@@ -27,6 +26,9 @@ const googleMaps = {
   zoom: 10,
 }
 const KEY = process.env.API_KEY;
+
+// import dotenv from 'dotenv';
+// require('dotenv').config()
 // console.log('hello', KEY)
 const Contact = () => {
   return (
