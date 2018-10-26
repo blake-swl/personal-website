@@ -4,7 +4,8 @@ import 'babel-polyfill';
 import EmailModal from '../Email/EmailModal';
 import Resume from '../../../dist/Resume/updatedresume.pdf';
 import GoogleMapReact from 'google-map-react';
-import key from '../../../../googleMapkey';
+// import dotenv from 'dotenv';
+// dotenv.config()
 
 // Icons
 import { Icon } from 'react-icons-kit';
@@ -25,7 +26,7 @@ const googleMaps = {
   },
   zoom: 10,
 }
-
+const KEY = process.env.API_KEY;
 const Contact = () => {
   return (
     <div id="contact">
@@ -53,7 +54,7 @@ const Contact = () => {
       </div>
       <div style={{height: '25vh', width: '100%', color: "#D05353"}} className="maps">
         <GoogleMapReact
-          bootstrapURLKeys={{ key: key}}
+          bootstrapURLKeys={{ key: KEY}}
           center={googleMaps.center}
           defaultZoom={googleMaps.zoom}
         >

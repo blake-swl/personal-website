@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+require('dotenv').config()
 
 module.exports = {
   entry: path.resolve('./public/src'),
@@ -66,7 +67,7 @@ module.exports = {
       DEBUG: process.env.NODE_ENV !== 'production',
           'process.env': {
               'NODE_ENV': JSON.stringify(process.env.NODE_ENV || "development"),
-              'REACT_APP_API_KEY': JSON.stringify(process.env.REACT_APP_API_KEY)}}),
+              'API_KEY': JSON.stringify(process.env.API_KEY)}}),
     new HtmlWebpackPlugin({
       // injects bundle.js to our new index.html
       inject: true,
