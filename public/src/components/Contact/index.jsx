@@ -29,7 +29,7 @@ const KEY = process.env.API_KEY;
 
 // import dotenv from 'dotenv';
 // require('dotenv').config()
-// console.log('hello', KEY)
+console.log('hello', KEY)
 const Contact = () => {
   return (
     <div id="contact">

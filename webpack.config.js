@@ -63,7 +63,9 @@ module.exports = {
   },
   mode: 'production',
   plugins: [
-    new Dotenv(),
+    new Dotenv({
+      path: './.env'
+    }),
     // new webpack.DefinePlugin({
     //   DEBUG: process.env.NODE_ENV !== 'production',
     //       'process.env': {
