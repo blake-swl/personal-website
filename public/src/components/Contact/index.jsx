@@ -27,6 +27,7 @@ const googleMaps = {
   zoom: 10,
 }
 const KEY = process.env.API_KEY;
+// console.log('hello', KEY)
 const Contact = () => {
   return (
     <div id="contact">
