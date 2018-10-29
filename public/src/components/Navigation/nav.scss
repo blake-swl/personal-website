@@ -6,14 +6,14 @@
       text-decoration: none;
     }
     justify-content: flex-start;
-    padding-left: 2%;
+    align-items: center;
+    padding: 5%;
   }
   .navbar {
     font-family: $montserrat;
     *zoom:1;
     list-style:none;
     margin:0;
-    padding-left: 5%;
     background: $white;
     font-size: 20px;
     height: auto;
@@ -41,7 +41,7 @@
     align-items: flex-start;
     position:absolute;
     left:0;
-    top:36px;
+    // top:5vh;
     z-index:1;
   }
   .nav-item {
