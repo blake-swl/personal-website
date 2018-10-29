@@ -7220,6 +7220,10 @@ react-dom@^16.5.1:
     prop-types "^15.6.2"
     schedule "^0.4.0"
 
+react-hamburger-menu@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/react-hamburger-menu/-/react-hamburger-menu-1.1.1.tgz#36fb5d38b55f3babb472f94f8cc3640345bfa9ae"
+
 react-icons-kit@^1.1.12:
   version "1.1.12"
   resolved "https://registry.yarnpkg.com/react-icons-kit/-/react-icons-kit-1.1.12.tgz#1018285d25cf122277dff5e3fcf94a4240e85faa"

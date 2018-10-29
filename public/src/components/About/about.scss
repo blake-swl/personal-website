@@ -121,16 +121,6 @@
     justify-self: stretch;
   }
 }
-.quib {
-  display: flex;
-  justify-content: center;
-  padding-top: 2%;
-  p {
-    font-weight: 600;
-    font-size: 16px;
-    color: white;
-  }
-}
 
 /* Mobile 425px */
 
@@ -232,11 +222,6 @@
         height: 300px;
         scroll-snap-align: center;
       }
-    }
-  }
-  .quib {
-    p {
-      font-size: 10px;
     }
   }
 }
@@ -341,3 +326,21 @@
     }
   }
 }
+// Large Screen (maximizes width to 80vw)
+// @media only screen and (min-width: 1600px) {
+//   .tag {
+//     padding: none;
+
+//     article {
+//      width: 80vw;
+//     }
+//   }
+//   .about-top {
+//     width: 80vw;
+//     align-items: center;
+//     justify-content: center;
+//   }
+//   .about-pic img {
+//     transform: scale(0.8);
+//   }
+// }

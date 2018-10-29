@@ -2,21 +2,25 @@
 
 @media only screen and (max-width: 768px) {
   #nav {
-    * {
-      text-decoration: none;
+    display: flex;
+
+    .nav-left {
+      justify-content: flex-start;
+      width: 50%;
+      padding-right: none;
+      padding-left: 4%;
     }
-    justify-content: flex-start;
-    align-items: center;
-    padding: 2.5%;
+    .navbar {
+      display: flex;
+      justify-content: flex-end;
+      width: 50%;
+      padding-left: none;
+      padding-right: 4%;
+    }
   }
-  .navbar {
-    font-family: $montserrat;
-    *zoom:1;
-    list-style:none;
-    margin:0;
-    background: $white;
-    font-size: 20px;
-    height: auto;
+  .icon {
+    display: flex !important;
+    cursor: pointer;
   }
   .nav div:before,.nav div:after {
     content:"";
@@ -26,11 +30,11 @@
     clear:both;
   }
   .nav ol > li {
-    float:left;
+    float:right;
     position:relative;
   }
   .nav a {
-    padding:10px 20px;
+    padding: 5px;
     line-height:1.2em;
     color: white;
   }
@@ -38,11 +42,12 @@
     background:$white;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
     position:absolute;
-    left:0;
-    // top:5vh;
+    right:0;
+    top:7vh;
     z-index:1;
+    border-bottom: 2px double #DDDAD4;
   }
   .nav-item {
     width: 100vw;
@@ -61,45 +66,54 @@
   .nav div > div:hover ol li {
     height:36px;
   }
-  .icon {
-    display: flex !important;
-    justify-content: flex-start;
-    cursor: pointer;
-    padding-left: 10%;
-  }
 }
 
-.navigation {
-  margin: none;
+// Desktop
+
+.nav {
+  background: $white;
+  border-bottom: 2px double #DDDAD4;
   width: 100%;
-  height: 5vh;
+  height: 7vh;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
-  background: $white;
-  border-bottom: 2px double #DDDAD4;
+  justify-content: center;
   z-index: 10;
 }
-.icon {
-  display: none;
+// .icon {
+//   display: none;
+// }
+.logo a {
+  font-family: 'plume';
+  font-size: 60px;
+  color: $ink;
+  text-align: center;
+  text-decoration: none;
 }
-
+.nav-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15%;
+}
+.navbar {
+  padding-left: 15%;
+}
 ol {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.navbar {
-  font-family: $montserrat;
-  font-weight: 550;
-  font-size: 20px;
 }
 .nav-con a {
+  font-family: $montserrat;
+  font-weight: 600;
+  font-size: 20px;
   text-decoration: none;
   color: $eerieBlack;
   margin: 6px;
@@ -117,4 +131,8 @@ ol {
   top: 0;
   width: 100%;
 }
+
+// Burger
+
+
 
