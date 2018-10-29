@@ -121,6 +121,16 @@
     justify-self: stretch;
   }
 }
+.quib {
+  display: flex;
+  justify-content: center;
+  padding-top: 2%;
+  p {
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+  }
+}
 
 /* Mobile 425px */
 
@@ -222,6 +232,11 @@
         height: 300px;
         scroll-snap-align: center;
       }
+    }
+  }
+  .quib {
+    p {
+      font-size: 10px;
     }
   }
 }

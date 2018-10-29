@@ -27,8 +27,6 @@ const googleMaps = {
 }
 const KEY = process.env.API_KEY;
 
-// import dotenv from 'dotenv';
-// require('dotenv').config()
 const Contact = () => {
   return (
     <div id="contact">
