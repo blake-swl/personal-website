@@ -6,15 +6,17 @@
       text-decoration: none;
     }
     justify-content: flex-start;
+    padding-left: 2%;
   }
   .navbar {
     font-family: $montserrat;
     *zoom:1;
     list-style:none;
     margin:0;
-    padding: 2%;
+    padding-left: 5%;
     background: $white;
     font-size: 20px;
+    height: auto;
   }
   .nav div:before,.nav div:after {
     content:"";
@@ -23,7 +25,7 @@
   .nav div:after {
     clear:both;
   }
-  .nav ul > li {
+  .nav ol > li {
     float:left;
     position:relative;
   }
@@ -43,7 +45,7 @@
     z-index:1;
   }
   .nav-item {
-    width: 100%;
+    width: 100vw;
   }
   .nav-item a {
     border:none;
@@ -56,7 +58,7 @@
     -o-transition:height 200ms ease-in;
     transition:height 200ms ease-in;
   }
-  .nav div > div:hover ul li {
+  .nav div > div:hover ol li {
     height:36px;
   }
   .icon {
@@ -83,7 +85,7 @@
   display: none;
 }
 
-ul {
+ol {
   list-style: none;
   margin: 0;
   padding: 0;
