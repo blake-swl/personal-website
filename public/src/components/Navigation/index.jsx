@@ -14,16 +14,12 @@ export default class Navigation extends Component {
 
     this.state = { open: false,  }
 
-    // this.scrollFunction = this.scrollFunction.bind(this);
     this.handleScroll = this.handleScroll.bind(this);
     this.handleDropDown = this.handleDropDown.bind(this);
-    // this.handleUnclick = this.handleUnclick.bind(this);
   }
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
     document.querySelector('.icon').addEventListener('click', this.handleDropDown);
-    // window.setTimeout(this.handleClick(), 1000);
-    this.handleUnclick();
   }
   
   // Sticky Nav
@@ -41,7 +37,7 @@ export default class Navigation extends Component {
   // DropDown
   handleDropDown = () => {
     const navs = document.querySelectorAll('.navbar');
-    navs.forEach(nav => nav.classList.toggle('dropdown'));
+    navs.forEach(nav => nav.classList.toggle(window.setTimeout(this.setState({open: this.state.open}), 1000)));
   }
   // Hamburger
   handleClick() {
@@ -49,22 +45,6 @@ export default class Navigation extends Component {
         open: !this.state.open
     });
   }
-  handleUnclick() {
-    if (this.state.open === true ) {
-      // window.setTimeout( this.handleClick(), 1000)
-      console.log('true')
-    } else {
-      console.log('false')
-    }
-
-  }
-  // setTimeout() {
-  //   this.handleClick(
-  //     this.setState({
-  //       open: false
-  //     })
-  //   ), 1000
-  // }
   // // Back to Top
   // scrollFunction = () => {
   //   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -84,11 +64,9 @@ export default class Navigation extends Component {
         <div className="navbar">
           <div>
             <div className="icon">
-              {/* <Icon icon={navicon} size={25}/> */}
               <HamburgerMenu
                 isOpen={this.state.open}
                 menuClicked={this.handleClick.bind(this)}
-                menuUnclicked={this.handleUnclick.bind(this)}
                 width={18}
                 height={15}
                 strokeWidth={3}
