@@ -8,8 +8,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(to top right, rgba(184,38,1, 0.08), rgba(6,47,79, 0.3));
-  // background: $passiveGrey;
+  // background: linear-gradient(to top right, rgba(184,38,1, 0.08), rgba(6,47,79, 0.3));
+  background: $passiveGrey;
   font-family: $montserrat;
 
   .works-arrow {

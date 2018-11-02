@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import './global.scss';
 import AOS from 'aos';
@@ -81,4 +82,3 @@ export default class App extends Component  {
     )
   }
 };
-

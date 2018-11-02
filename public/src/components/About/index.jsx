@@ -1,3 +1,4 @@
+
 import React from 'react';
 import './about.scss';
 
@@ -76,6 +77,9 @@ const About = () => {
               <img src={beach} id="beach" className="card1 tablet2"/>
             </ul>
           </div>
+          {/* <div className="quib">
+            <p>Notorious coffee enthusiast, lover of nature, and LeBron James fanatic.</p>
+          </div> */}
         </div>
       </div>
     </div>

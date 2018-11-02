@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   entry: path.resolve('./public/src'),
@@ -15,7 +16,7 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel-loader',
         options: {
-          presets: ['es2015', 'env', 'stage-0', 'react']
+          presets: ['env', 'stage-0', 'react']
         }
       },
       {
@@ -62,8 +63,14 @@ module.exports = {
   },
   mode: 'production',
   plugins: [
-   
- 
+    new Dotenv({
+      path: './.env'
+    }),
+    // new webpack.DefinePlugin({
+    //   DEBUG: process.env.NODE_ENV !== 'production',
+    //       'process.env': {
+    //           'NODE_ENV': JSON.stringify(process.env.NODE_ENV || "development"),
+    //           'API_KEY': JSON.stringify(process.env.API_KEY)}}),
     new HtmlWebpackPlugin({
       // injects bundle.js to our new index.html
       inject: true,
@@ -73,5 +80,5 @@ module.exports = {
   ],
   optimization: {
     minimize: true
-  }
+  },
 }

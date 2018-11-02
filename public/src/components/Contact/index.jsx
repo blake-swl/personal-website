@@ -3,6 +3,7 @@ import './contact.scss';
 import 'babel-polyfill';
 import EmailModal from '../Email/EmailModal';
 import Resume from '../../../dist/Resume/blakeresume.pdf';
+import GoogleMapReact from 'google-map-react';
 
 
 // Icons
@@ -15,6 +16,16 @@ import {linkedinSquare} from 'react-icons-kit/fa/linkedinSquare';
 import {rebel} from 'react-icons-kit/fa/rebel';
 import {github} from 'react-icons-kit/icomoon/github';
 import {instagram} from 'react-icons-kit/fa/instagram';
+import {heart} from 'react-icons-kit/fa/heart';
+
+const googleMaps = {
+  center: {
+    lat: 34.052235,
+    lng: -118.243683
+  },
+  zoom: 10,
+}
+const KEY = process.env.API_KEY;
 
 const Contact = () => {
   return (
@@ -22,7 +33,7 @@ const Contact = () => {
       <div className="banner">
         <div className="banner-layer" >
           <h3 data-aos="fade-up">Let's have a chat over coffee.</h3>
-          <div className="chat" data-aos="fade-up">GET IN CONTACT.</div>
+          <div className="chat" data-aos="fade-up">GET IN TOUCH.</div>
         </div>
       </div>
       <div className="bottom">
@@ -41,8 +52,14 @@ const Contact = () => {
           <br/>
           <EmailModal open="WRITE EMAIL NOW"/>
       </div>
-      <div className="la">
-        {/* <p>Notorious coffee enthusiast, lover of nature, and LeBron James fanatic.</p> */}
+      <div style={{height: '25vh', width: '100%', color: "#D05353"}} className="maps">
+        <GoogleMapReact
+         // bootstrapURLKeys={{ key: KEY}}
+          center={googleMaps.center}
+          defaultZoom={googleMaps.zoom}
+        >
+          {/* <Icon icon={heart} size={30} /> */}
+        </GoogleMapReact>
       </div>
       <footer className="footer">
         <a href="https://www.facebook.com/blakeswlee">
@@ -66,4 +83,3 @@ const Contact = () => {
   )
 };
 export default Contact;
-

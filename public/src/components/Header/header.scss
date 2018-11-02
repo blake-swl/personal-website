@@ -1,17 +1,11 @@
 @import '../Global/global.scss';
 
-@font-face {
-  font-family: 'plume';
-  src: url('../../../dist/Plume/Plume-free-brush-font.otf');
-}
-
 #home {
   height: auto;
   display: flex;
   flex-direction: column;
-  background: url('https://d2genp9fhbycca.cloudfront.net/mac.jpg') 50% 75% no-repeat fixed;
-  background-size: cover;
   color: black;
+  background: rgb(255, 255, 255);
   z-index: -1;
   color: $ink;
   // color: $ember;
@@ -20,9 +14,10 @@
 }
 .header-layer {
   // background: rgba(184,38,1, 0.1);
+  background: url('https://d2genp9fhbycca.cloudfront.net/mac.jpg') 50% 75% no-repeat fixed;
+  background-size: cover;
   // background-color: rgba(0, 0, 0, 0.1);
-  // background: rgba(255, 255, 255, 0.2);
-  background-image: linear-gradient(to bottom right, rgba(184,38,1, 0.08), rgba(6,47,79, 0.4));
+  // background-image: linear-gradient(to bottom right, rgba(184,38,1, 0.08), rgba(6,47,79, 0.4));
   height: auto;
   width: 100%;
   padding-bottom: 5%;
@@ -101,11 +96,11 @@
 
 @media only screen and (max-width: 425px) {
   #home {
-    background: url('https://d2genp9fhbycca.cloudfront.net/mac.jpg') 80% 50% no-repeat scroll;
-    background-size: cover;
     height: 100vh;
-
+    
     .header-layer {
+      background: url('https://d2genp9fhbycca.cloudfront.net/mac.jpg') 80% 50% no-repeat scroll;
+      background-size: cover;
       height: 100vh;
     }
   }
@@ -144,7 +139,7 @@
 @media only screen and (min-width: 426px) and (max-width: 960px) {
   #home {
     height: 100vh;
-    background: url('https://d2genp9fhbycca.cloudfront.net/mac.jpg') 75% 50% no-repeat;
+    // background: url('https://d2genp9fhbycca.cloudfront.net/mac.jpg') 75% 50% no-repeat;
 
 
     .header-layer {

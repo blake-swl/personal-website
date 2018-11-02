@@ -28,7 +28,7 @@ export default class Portfolio extends Component {
     const pwDesc =  <ul className="description">
       <li>- Designed this current website from ground up using modular components.</li>
       <li>- Dynamically responsive to different viewing formats.</li>
-      <li>- Designed UI that is user friendly and highly intuitive, desktop or mobile.</li>
+      <li>- Integrated Google Maps API to dynamically display current location.</li>
       <li>- Leveraged SMTP server to send emails directly from React component.</li>
     </ul>
     const AmStack = <div>STACK: [Node, Postgres, Nginx, AWS]</div>;
