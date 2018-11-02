@@ -35,14 +35,22 @@ export default class Navigation extends Component {
     }
   }
   // DropDown
+  // handleDropDown = () => {
+  //   const navs = document.querySelectorAll('.nav-item');
+  //   navs.forEach(nav => nav.classList.toggle(this.state.open));
+  // }
   handleDropDown = () => {
-    const navs = document.querySelectorAll('.navbar');
-    navs.forEach(nav => nav.classList.toggle(window.setTimeout(this.setState({open: this.state.open}), 1000)));
+    const navs = document.getElementById('navbar');
+    if (!this.state.open) {
+      navs.classList.add("nav-list");
+    } else if (this.state.open) {
+      navs.classList.remove("nav-con");
+    }
   }
   // Hamburger
   handleClick() {
     this.setState({
-        open: !this.state.open
+      open: !this.state.open
     });
   }
   // // Back to Top
@@ -76,7 +84,7 @@ export default class Navigation extends Component {
                 animationDuration={0.5}
               />
             </div>
-            <ol className="nav-con">
+            <ol className="nav-con" id="navbar">
               <li className="nav-item"><a className="animated pulse" href="#home">home</a></li>
               <li className="nav-item"><a href="#about">about</a></li>
               <li className="nav-item"><a href="#portfolio">portfolio</a></li>

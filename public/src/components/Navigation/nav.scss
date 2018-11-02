@@ -34,13 +34,13 @@
     display: flex !important;
     cursor: pointer;
   }
-  .nav div:before,.nav div:after {
-    content:"";
-    display:flex;
-  }
-  .nav div:after {
-    clear:both;
-  }
+  // .nav div:before,.nav div:after {
+  //   content:"";
+  //   display:flex;
+  // }
+  // .nav div:after, .icon {
+  //   clear:both;
+  // }
   .nav ol > li {
     float:right;
     position:relative;
@@ -50,9 +50,20 @@
     line-height:1.2em;
     color: white;
   }
+  // .nav-list {
+  //   background:$white;
+  //   display: flex ;
+  //   flex-direction: column;
+  //   align-items: flex-end;
+  //   position:absolute;
+  //   right:0;
+  //   top:7vh;
+  //   z-index:1;
+  //   border-bottom: 2px double #DDDAD4;
+  // }
   .nav-con {
     background:$white;
-    display: flex;
+    display: flex ;
     flex-direction: column;
     align-items: flex-end;
     position:absolute;

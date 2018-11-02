@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const parser = require('body-parser');
+const db = require('../db/');
 // const router = require('../smtp-server/routes/index.js');
 
 const app = express();
