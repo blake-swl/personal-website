@@ -87,9 +87,12 @@
     -o-transition:height 200ms ease-in;
     transition:height 200ms ease-in;
   }
-  .nav div > div:active ol li {
+  .nav div > div:hover ol li {
     height:36px;
   }
+  // .icon-btn:hover ol li {
+  //   height: 36px;
+  // }
 }
 
 // Desktop

@@ -70,7 +70,7 @@ export default class Navigation extends Component {
           <div className="logo"><a href="#">BL</a></div>
         </div>
         <div className="navbar">
-          <div>
+          <div className="nav-container">
             <div className="icon">
               <HamburgerMenu
                 isOpen={this.state.open}
@@ -82,6 +82,7 @@ export default class Navigation extends Component {
                 color='#062F4f'
                 borderRadius={0}
                 animationDuration={0.5}
+                className="icon-btn"
               />
             </div>
             <ol className="nav-con" id="navbar">
