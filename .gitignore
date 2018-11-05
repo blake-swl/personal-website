@@ -1,8 +1,6 @@
 node_modules
 .eslintrc.js
 .babelrc
-package-lock.json
 yarn-error.log
-yarn.lock
 google.config.js
 .env
