@@ -35,10 +35,10 @@
     display: flex !important;
     cursor: pointer;
   }
-  // .nav div:before,.nav div:after {
-  //   content:"";
-  //   display:flex;
-  // }
+  .nav div:before,.nav div:after {
+    content:"";
+    display:flex;
+  }
   // .nav div:after, .icon {
   //   clear:both;
   // }

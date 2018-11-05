@@ -42,8 +42,10 @@ export default class Navigation extends Component {
   // handleDropDown = () => {
   //   const navs = document.getElementById('navbar');
   //   if (!this.state.open) {
+  //     console.log('closed')
   //     navs.classList.add("nav-list");
   //   } else if (this.state.open) {
+  //     console.log('open')
   //     navs.classList.remove("nav-con");
   //   }
   // }
@@ -52,6 +54,14 @@ export default class Navigation extends Component {
     this.setState({
       open: !this.state.open
     });
+    // const open = document.getElementById('navbar');
+    // if (!this.state.open) {
+    //   console.log('open')
+    //   open.style.display = "none";
+    // } else {
+    //   console.log('closed')
+    //   open.style.display = "flex"
+    // }
   }
   // // Back to Top
   // scrollFunction = () => {
