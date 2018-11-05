@@ -15,11 +15,11 @@ export default class Navigation extends Component {
     this.state = { open: false,  }
 
     this.handleScroll = this.handleScroll.bind(this);
-    this.handleDropDown = this.handleDropDown.bind(this);
+    // this.handleDropDown = this.handleDropDown.bind(this);
   }
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
-    document.querySelector('.icon').addEventListener('click', this.handleDropDown);
+    // document.querySelector('.icon').addEventListener('click', this.handleDropDown);
   }
   
   // Sticky Nav
@@ -39,14 +39,14 @@ export default class Navigation extends Component {
   //   const navs = document.querySelectorAll('.nav-item');
   //   navs.forEach(nav => nav.classList.toggle(this.state.open));
   // }
-  handleDropDown = () => {
-    const navs = document.getElementById('navbar');
-    if (!this.state.open) {
-      navs.classList.add("nav-list");
-    } else if (this.state.open) {
-      navs.classList.remove("nav-con");
-    }
-  }
+  // handleDropDown = () => {
+  //   const navs = document.getElementById('navbar');
+  //   if (!this.state.open) {
+  //     navs.classList.add("nav-list");
+  //   } else if (this.state.open) {
+  //     navs.classList.remove("nav-con");
+  //   }
+  // }
   // Hamburger
   handleClick() {
     this.setState({

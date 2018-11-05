@@ -87,7 +87,7 @@
     -o-transition:height 200ms ease-in;
     transition:height 200ms ease-in;
   }
-  .nav div > div:hover ol li {
+  .nav div > div:active ol li {
     height:36px;
   }
 }
