@@ -79,6 +79,8 @@ const Contact = () => {
           <Icon icon={instagram} size={50} />
         </a>
       </footer>
+      <p className="closing-tag">Designed and developed by Blake Lee</p>
+
     </div>
   )
 };
