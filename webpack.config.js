@@ -61,7 +61,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx']
   },
-  mode: 'production',
+  mode: 'development',
   plugins: [
     new Dotenv({
       path: './.env'
