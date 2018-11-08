@@ -61,24 +61,27 @@ const Contact = () => {
           {/* <Icon icon={heart} size={30} /> */}
         </GoogleMapReact>
       </div>
-      <footer className="footer">
-        <a href="https://www.facebook.com/blakeswlee">
-          <Icon icon={facebookSquare} size={50} />
-        </a>
-        <a href="https://github.com/blake-swl">
-          <Icon icon={github} size={50} />
-        </a>
-        <a href={Resume} className="tooltip">
-          <span className="tooltiptext">View resume</span>
-          <Icon icon={rebel} size={50} />
-        </a>
-        <a href="https://www.linkedin.com/in/blake-lee-4bb35b121/">
-          <Icon icon={linkedinSquare} size={50} />
-        </a>
-        <a href="https://www.instagram.com/blake.swl/">
-          <Icon icon={instagram} size={50} />
-        </a>
-      </footer>
+      {/* <div classNam="footer-con"> */}
+        <footer className="footer">
+          {/* <a href="https://www.facebook.com/blakeswlee">
+            <Icon icon={facebookSquare} size={50} />
+          </a> */}
+          <a href="https://github.com/blake-swl">
+            <Icon icon={github} size={50} />
+          </a>
+          <a href={Resume} className="tooltip">
+            <span className="tooltiptext">View resume</span>
+            <Icon icon={rebel} size={50} />
+          </a>
+          <a href="https://www.linkedin.com/in/blake-lee-4bb35b121/">
+            <Icon icon={linkedinSquare} size={50} />
+          </a>
+          {/* <a href="https://www.instagram.com/blake.swl/">
+            <Icon icon={instagram} size={50} />
+          </a> */}
+        </footer>
+        <p className="closing-tag">Designed and developed by Blake Lee</p>
+      {/* </div> */}
     </div>
   )
 };
