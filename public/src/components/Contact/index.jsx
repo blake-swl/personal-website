@@ -65,14 +65,14 @@ const Contact = () => {
         {/* <a href="https://www.facebook.com/blakeswlee">
           <Icon icon={facebookSquare} size={50} />
         </a> */}
-        <a href="https://github.com/blake-swl">
+        <a href="https://github.com/blake-swl" target="_blank">
           <Icon icon={github} size={50} />
         </a>
-        <a href={Resume} className="tooltip">
+        <a href={Resume} className="tooltip" target="_blank">
           <span className="tooltiptext">View resume</span>
           <Icon icon={rebel} size={50} />
         </a>
-        <a href="https://www.linkedin.com/in/blake-lee-4bb35b121/">
+        <a href="https://www.linkedin.com/in/blake-lee-4bb35b121/" target="_blank">
           <Icon icon={linkedinSquare} size={50} />
         </a>
         {/* <a href="https://www.instagram.com/blake.swl/">

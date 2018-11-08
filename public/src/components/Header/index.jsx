@@ -38,8 +38,8 @@ export default class Header extends Component{
            <div className="btn">
              <a href="#contact" className="contact">contact</a>
              <a href={Resume} target="_blank" className="resume">resume</a>
-             <a href="https://github.com/blake-swl" className="github">github</a>       {/* <button className={style.linkedin}>linkedin</button> */}
-             <a href="https://www.linkedin.com/in/blake-lee-4bb35b121/" className="linkedin">linkedin</a>
+             <a href="https://github.com/blake-swl" target="_blank" className="github">github</a>       {/* <button className={style.linkedin}>linkedin</button> */}
+             <a href="https://www.linkedin.com/in/blake-lee-4bb35b121/" target="_blank" className="linkedin">linkedin</a>
            </div>
           </div>
         </div>

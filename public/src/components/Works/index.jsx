@@ -38,6 +38,24 @@ export default class Portfolio extends Component {
       <div id="portfolio">
         <h1 className="works-title" data-aos="fade-up">-Portfolio-</h1>
         <div className="works" data-aos="fade-up">
+        <div className="work-item homepage" data-aos="fade-up">
+            <div className="fade">
+              <div className="btns">
+                <ZoomModal subtitle={pwDesc} className="icons"
+                images={homepage}
+                components={HoStack}
+                buttons={<Icon icon={ic_zoom_in} size={40}/>}
+                />
+                <a className="code tooltip" target="_blank" href="https://github.com/blake-swl/personal-website">
+                  <span className="tooltiptext">View code</span>
+                 <Icon icon={github} size={30}/>
+                </a>
+              </div>
+              <div className="slideUp">
+                <h3>CURRENTLY VIEWING</h3>
+              </div>
+            </div>
+          </div>
           <div className="work-item amazon" data-aos="fade-up">
             <div className="fade">
               <div className="btns">
@@ -45,7 +63,7 @@ export default class Portfolio extends Component {
                 buttons={<Icon icon={ic_zoom_in} size={40}/>}
                 components={AmStack}
                 subtitle={AmDesc}/>
-                <a className="code tooltip" href="https://github.com/Bacon-Icecream/FEC-Danny-L">
+                <a className="code tooltip" target="_blank" href="https://github.com/Bacon-Icecream/FEC-Danny-L">
                   <span className="tooltiptext">View code</span>
                   <Icon icon={github} size={30}/>
                 </a>
@@ -62,31 +80,13 @@ export default class Portfolio extends Component {
                 buttons={<Icon icon={ic_zoom_in} size={40}/>}
                 components={AirStack}
                 subtitle={AirDesc}/>
-                <a className="code tooltip" href="https://github.com/HRLA23WhiteWalkers/MainPage">
+                <a className="code tooltip" target="_blank" href="https://github.com/HRLA23WhiteWalkers/MainPage">
                   <span className="tooltiptext">View code</span>
                   <Icon icon={github} size={30}/>
                 </a>
               </div>
               <div className="slideUp">
                 <h3>AIRBNB LISTING PAGE</h3>
-              </div>
-            </div>
-          </div>
-          <div className="work-item homepage" data-aos="fade-up">
-            <div className="fade">
-              <div className="btns">
-                <ZoomModal subtitle={pwDesc} className="icons"
-                images={homepage}
-                components={HoStack}
-                buttons={<Icon icon={ic_zoom_in} size={40}/>}
-                />
-                <a className="code tooltip" href="https://github.com/blake-swl/personal-website">
-                  <span className="tooltiptext">View code</span>
-                 <Icon icon={github} size={30}/>
-                </a>
-              </div>
-              <div className="slideUp">
-                <h3>CURRENTLY VIEWING</h3>
               </div>
             </div>
           </div>
