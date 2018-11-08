@@ -61,7 +61,6 @@ const Contact = () => {
           {/* <Icon icon={heart} size={30} /> */}
         </GoogleMapReact>
       </div>
-      {/* <div classNam="footer-con"> */}
         <footer className="footer">
           {/* <a href="https://www.facebook.com/blakeswlee">
             <Icon icon={facebookSquare} size={50} />
@@ -81,7 +80,6 @@ const Contact = () => {
           </a> */}
         </footer>
         <p className="closing-tag">Designed and developed by Blake Lee</p>
-      {/* </div> */}
     </div>
   )
 };
