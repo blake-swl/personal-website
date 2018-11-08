@@ -26,30 +26,30 @@
     //   padding-left: none;
     //   padding-right: 4%;
     // }
-  }
-  .logo a {
-    font-size: 50px !important;
-    padding-top: 1%;
-  }
-  .icon {
-    display: flex !important;
-    cursor: pointer;
-  }
-  .nav div:before,.nav div:after {
-    content:"";
-    display:flex;
-  }
-  // .nav div:after, .icon {
-  //   clear:both;
-  // }
-  .nav ol > li {
-    float:right;
-    position:relative;
-  }
-  .nav a {
-    padding: 5px;
-    line-height:1.2em;
-    color: white;
+    .logo a {
+      font-size: 50px !important;
+      padding-top: 1%;
+    }
+    .icon {
+      display: flex !important;
+      cursor: pointer;
+    }
+    .nav div:before,.nav div:after {
+      content:"";
+      display:flex;
+    }
+    // .nav div:after, .icon {
+    //   clear:both;
+    // }
+    .nav ol > li {
+      float:right;
+      position:relative;
+    }
+    .nav a {
+      padding: 5px;
+      line-height:1.2em;
+      color: white;
+    }
   }
   // .nav-list {
   //   background:$white;
