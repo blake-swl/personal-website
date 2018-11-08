@@ -62,9 +62,9 @@ const Contact = () => {
         </GoogleMapReact>
       </div>
       <footer className="footer">
-        <a href="https://www.facebook.com/blakeswlee">
+        {/* <a href="https://www.facebook.com/blakeswlee">
           <Icon icon={facebookSquare} size={50} />
-        </a>
+        </a> */}
         <a href="https://github.com/blake-swl">
           <Icon icon={github} size={50} />
         </a>
@@ -75,9 +75,9 @@ const Contact = () => {
         <a href="https://www.linkedin.com/in/blake-lee-4bb35b121/">
           <Icon icon={linkedinSquare} size={50} />
         </a>
-        <a href="https://www.instagram.com/blake.swl/">
+        {/* <a href="https://www.instagram.com/blake.swl/">
           <Icon icon={instagram} size={50} />
-        </a>
+        </a> */}
       </footer>
       <p className="closing-tag">Designed and developed by Blake Lee</p>
 
