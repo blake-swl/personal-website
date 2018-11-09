@@ -84,9 +84,10 @@
   align-items: center;
   width: 90%;
   height: auto;
+  // background: $ink;
   background: $darkTerra;
   opacity: 0.8;
-  color: $ghostWhite;
+  color: $white;
   font-size: 20px;
   grid-area: slideUp;
   font-weight: 500;
@@ -101,8 +102,10 @@
   
   .code, .icons {
     border: 2px solid $darkTerra;
+    // border: 2px solid $ember;
     font-size: 1em;
     padding: 2%;
+    // color: $ember;
     color: $darkTerra;
     cursor: pointer;
   }

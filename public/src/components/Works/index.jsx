@@ -91,7 +91,7 @@ export default class Portfolio extends Component {
             </div>
           </div>
         </div>
-        <div style={{color: "#D05353"}}>
+        <div style={{color: "#062F4f"}}>
           <Icon icon={ic_code} size={40} className="works-arrow"/>
         </div>
       </div>
