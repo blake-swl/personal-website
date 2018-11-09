@@ -55,7 +55,7 @@ const About = () => {
             <div className="card philosophy" data-aos="fade-up">
               <h4>My Philosophy</h4>
               <article>Detail oriented, I get excited about brainstorming ideas of user centric UI/UX design that naturally intuit the users. Obsessively disciplined, I get delighted in cracking coding challenges and refactoring for optimization. Always seeking to get better, I look to challenge others by upholding good coding practices and high standards of quality, while also seeking to be challenged in expanding the scope of my own thought processes. Software engineering is a craft of mine that keeps me pushing to innovate and learn new technologies to be the best software engineer I can be.</article>
-              <div style={{color: '#D05353'}}>
+              <div style={{color: '#062F4f'}}>
                 <Icon icon={ic_keyboard_arrow_left} className="cues" size={40}/>
               </div>
             </div>
