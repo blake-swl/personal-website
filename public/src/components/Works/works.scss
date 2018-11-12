@@ -37,28 +37,31 @@
 }
 .amazon {
   width: 300px;
-  height: 300px;
-  background: url('https://d2genp9fhbycca.cloudfront.net/amazon.jpg') no-repeat;
+  height: auto;
+  // background: url('https://d2genp9fhbycca.cloudfront.net/amazon.jpg') no-repeat;
+  background: url('../../../dist/images/Amazon-Logo_Feature.jpg') no-repeat;
   background-size: cover;
   grid-area: amazon;
 }
 .airbnb {
   width: 300px;
-  height: 300px;
-  background: url('https://d2genp9fhbycca.cloudfront.net/airbnb.jpg') no-repeat;
+  height: auto;
+  background: url('../../../dist/images/45581_airbnb-logo.jpg') 50% 50% no-repeat;
+  // background: url('https://d2genp9fhbycca.cloudfront.net/airbnb.jpg') no-repeat;
   background-size: cover;
   grid-area: airbnb;
 }
 .homepage {
   width: 300px;
-  height: 300px;
-  background: url('https://d2genp9fhbycca.cloudfront.net/homepage.jpg') no-repeat;
+  height: auto;
+  background: url('../../../dist/images/new.jpg') 50% 50% no-repeat;
+  // background: url('https://d2genp9fhbycca.cloudfront.net/homepage.jpg') no-repeat;
   background-size: cover;
   grid-area: homepage;
 }
 .fade {
   width: 300px;
-  height: 300px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,6 +74,7 @@
 .fade:hover {
   visibility: visible;
   background-size: cover;
+  // background: rgba(255, 255, 255, 0.5);
   background: rgba(0,0,0,0.8);
   
   h3, .btns, .slideUp {
@@ -87,13 +91,13 @@
   // background: $ink;
   background: $darkTerra;
   opacity: 0.8;
-  color: $white;
-  font-size: 20px;
+  color: white;
+  font-size: 16px;
   grid-area: slideUp;
   font-weight: 500;
 }
 .btns {
-  padding-bottom: 30%;
+  padding: 18% 0 12% 0;
   width: 100%;
   height: auto;
   display: flex;
@@ -102,10 +106,10 @@
   
   .code, .icons {
     border: 2px solid $darkTerra;
-    // border: 2px solid $ember;
+    // border: 2px solid $ink;
     font-size: 1em;
     padding: 2%;
-    // color: $ember;
+    // color: $ink;
     color: $darkTerra;
     cursor: pointer;
   }
