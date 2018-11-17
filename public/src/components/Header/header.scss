@@ -8,16 +8,10 @@
   background: rgb(255, 255, 255);
   z-index: -1;
   color: $ink;
-  // color: $ember;
-  // color: white;
-  // color: rgb(46,80,96);
 }
 .header-layer {
-  // background: rgba(184,38,1, 0.1);
   background: url('https://d2genp9fhbycca.cloudfront.net/mac.jpg') 50% 75% no-repeat fixed;
   background-size: cover;
-  // background-color: rgba(0, 0, 0, 0.1);
-  // background-image: linear-gradient(to bottom right, rgba(184,38,1, 0.08), rgba(6,47,79, 0.4));
   height: auto;
   width: 100%;
   padding-bottom: 5%;
@@ -25,7 +19,6 @@
 }
 .tagline h4 {
   font-family: $nothing;
-
   font-size: 30px;
   display: flex;
   justify-content: center;
@@ -55,17 +48,14 @@
 }
 .btn a {
   font-size: 20px;
-  // color: rgb(46,80,96);
   color: $ink;
   font-family: $montserrat;
-  // border: 2px solid rgb(46,80,96);
   border: 2px solid $ink;
   text-decoration: none;
   padding: 6px;
   margin: 10px;
 }
 .btn a:hover {
-  // background-color: rgb(46,80,96);
   background: $ink;
   color: rgba(255, 255, 255, 0.9);
   transition: .2s ease-in;
@@ -139,8 +129,6 @@
 @media only screen and (min-width: 426px) and (max-width: 960px) {
   #home {
     height: 100vh;
-    // background: url('https://d2genp9fhbycca.cloudfront.net/mac.jpg') 75% 50% no-repeat;
-
 
     .header-layer {
       height: 100vh;

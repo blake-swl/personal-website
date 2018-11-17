@@ -50,13 +50,16 @@
   background: white;
   border-radius: 3%;
 
-  textarea {
+  textarea, input {
     font-size: 14px;
     font-family: $montserrat;
     width: 90%;
     border: none;
     border-bottom: 1px solid #E5E4E2;
     outline: none;
+  }
+  input {
+    line-height: 1.4;
   }
 }
 .text {

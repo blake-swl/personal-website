@@ -87,16 +87,16 @@ export default class EmailModal extends Component {
                 <Icon icon={send} size={20} onClick={this.handleSubmit}/>
               </div>
             </div>
-            <textarea 
+            <input 
               className="names"
               placeholder="Name"
               onChange={this.onChange}>
-            </textarea>
-            <textarea 
+            </input>
+            <input 
               className="email"
               placeholder="Email"
               onChange={this.onChange}>
-            </textarea>
+            </input>
             <textarea 
               className="text"
               placeholder="Write your message here" 
