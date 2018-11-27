@@ -27,25 +27,24 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding: 6% 0;
     width: 100%;
     height: auto;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
   }
  
   h3 {
     font-family: $nothing;
-    font-size: 30px;
+    font-size: 20px;
     color: white;
     text-shadow: .5px .5px black;
   }
 }
 .chat {
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 700;
-  color: $ghostWhite;
-  margin-top: 5%;
+  color: white;
+  margin-top: 2%;
   text-shadow: .5px .5px black;
 }
 
@@ -101,25 +100,12 @@
 //   filter: grayscale(10)
 // }
 .footer {
-  display: flex;
-  background: $eerieBlack;
-  background-size: cover;
-  flex-direction: row;
-  justify-content: center;
-  height: auto;
-  align-items: center;
-  padding: none;
-  
-  a {
-    color: $beigeRed;
-    margin: 5%;
-  }
-}
-.closing-tag {
-  color: $beigeRed;
+  text-align: center;
+  margin: 1% 0;
+  color: $ghostWhite;
   font-size: 12px;
-  margin-bottom: 1%;
 }
+
 
 
 
