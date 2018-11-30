@@ -113,27 +113,28 @@
   .banner {
     background-size: contain;    
     background: url('https://s3-us-west-1.amazonaws.com/blakeswlwebsite/rawpixel_652547_unsplash.jpg') 50% 35% no-repeat;
+    .banner-layer {
+      padding: 15% 0;
+    }
   }
   .contact-info {
     font-size: 15px;
   }
   .footer {
-    a {
-      width: 90%;
-    }
+    margin: 5% 0;
   }
 }
-@media only screen and (min-width: 426px) and (max-width: 1024px) {
-  #contact {
-    height: auto;
-  }
-  .bottom {
-    height: auto;
-  }
-}
-@media only screen and (min-width: 426px) and (max-width: 768px) {
-  .banner {
-    background-size: contain;    
-    background: url('https://s3-us-west-1.amazonaws.com/blakeswlwebsite/rawpixel_652547_unsplash.jpg') 50% 35% no-repeat;
-  }
-}
+// @media only screen and (min-width: 426px) and (max-width: 1024px) {
+//   #contact {
+//     height: auto;
+//   }
+//   .bottom {
+//     height: auto;
+//   }
+// }
+// @media only screen and (min-width: 426px) and (max-width: 768px) {
+//   .banner {
+//     background-size: contain;    
+//     background: url('https://s3-us-west-1.amazonaws.com/blakeswlwebsite/rawpixel_652547_unsplash.jpg') 50% 35% no-repeat;
+//   }
+// }
