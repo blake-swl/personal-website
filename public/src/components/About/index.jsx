@@ -48,17 +48,17 @@ const About = () => {
               <h4>What I do</h4>
               <article>Full stack engineer specializing in front-end development, I leverage technologies such as React and Node to build highly responsive yet simplistically elegant applications that blend functionality with traditional design principles. Currently expanding both breath and depth of web development knowledge by increasing React expertise and learning server side languages such as GoLang. I bring positive energy and sharp communication skills to develop highly scalable React and Node full stack applications.</article>
               <div style={{color: '#062F4f'}}>
-                <Icon icon={ic_code} className="cues" size={40}/>
+                <Icon icon={ic_keyboard_arrow_left} className="cues" size={40}/>
+                {/* <Icon icon={ic_code} className="cues" size={40}/> */}
               </div>
             </div>
             <br/>
-            <div className="card philosophy" data-aos="fade-up">
+            {/* <div className="card philosophy" data-aos="fade-up">
               <h4>My Philosophy</h4>
               <article>Detail oriented, I get excited about brainstorming ideas of user centric UI/UX design that naturally intuit the users. Obsessively disciplined, I get delighted in cracking coding challenges and refactoring for optimization. Always seeking to get better, I look to challenge others by upholding good coding practices and high standards of quality, while also seeking to be challenged in expanding the scope of my own thought processes. Software engineering is a craft of mine that keeps me pushing to innovate and learn new technologies to be the best software engineer I can be.</article>
               <div style={{color: '#062F4f'}}>
-                <Icon icon={ic_keyboard_arrow_left} className="cues" size={40}/>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
