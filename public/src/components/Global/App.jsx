@@ -68,15 +68,15 @@ export default class App extends Component  {
   // }
   render() {
     return(
-      <div id="wrapper">
+      <div id="outer-container">
         {/* ...Loading */}
        
         <Navigation />
-        <Header />
-        <About />
-        <Portfolio />
-        <Skills />
-        <Contact />
+        <Header id="page-wrap"/>
+        <About id="page-wrap"/>
+        <Portfolio id="page-wrap"/>
+        <Skills id="page-wrap"/>
+        <Contact id="page-wrap"/>
       </div>
     )
   }

@@ -17,8 +17,8 @@
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
   background: $ink;
-  // box-shadow: 0 0 3px rgba(0,0,0,.4);
-  box-shadow: 1px 1px 5px black;
+  box-shadow: 0 0 3px rgba(0,0,0,.4);
+  // box-shadow: 1px 1px 5px black;
 }
 
 /* Position and sizing of clickable cross button */
@@ -39,21 +39,22 @@
   padding-top: 10%;
   font-size: 18px;
   outline: none;
+  overflow: hidden;
 }
 
 /* Wrapper for item list */
 .bm-item-list {
   height: auto;
   text-decoration: none;
-  color: #484848;
+  color: $white;
+  font-size: 20px;
   padding-top: 1em;
   padding-left: 1em;
   font-family: $montserrat;
+  transition: .2s ease-in;
+  font-weight: 600;
+}
 
-}
-.bm-item-list:hover {
-  color: #B5D24B;
-}
 /* Individual item */
 .bm-item {
   line-height: 2;
@@ -65,9 +66,66 @@
   width: 100%;
   background: rgba(0, 0, 0, 0.3);
 }
-.nav-item a {
-  color: $white;
-  font-size: 20px;
-  text-decoration: none;
-  font-family: $montserrat;
+
+#navbar-desktop {
+  display: none;
+  visibility: hidden;
+}
+
+@media only screen and (min-width: 770px) {
+  #burger, .bm-burger-button {
+    display: none;
+    visibility: hidden;
+  }
+  #navbar-desktop {
+    display: flex;
+    visibility: visible;
+    width: 100%;
+    position: fixed;
+    height: 7vh;
+    background: white;
+    z-index: 999;
+    box-shadow: 0 0 3px rgba(0,0,0,.15);
+  }
+  .navbar, .navbar-item {
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  .navbar-item {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .logo a {
+    font-family: 'plume';
+    font-size: 60px;
+    color: $ink;
+    left: 0;
+    text-decoration: none;
+    // top: 0;
+  }
+  .navbar-item a {
+    color: $eerieBlack;
+  }
+  .navbar-item:hover a {
+    color: $crimsom;
+  }
+  .navbar-item a:hover {
+    color: $eerieBlack;
+  }
+  // .bm-item-list {
+  //   color: $eerieBlack;
+  // }
+  // .bm-item-list:hover {
+  //   color: $eerieBlack;
+  // }
+  // .navbar-item:hover li a {
+  //   color: $crimsom;
+  // }
 }

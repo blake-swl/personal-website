@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './header.scss';
 import Resume from '../../../dist/Resume/resume.pdf';
 

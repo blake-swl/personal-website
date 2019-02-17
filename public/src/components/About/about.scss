@@ -14,7 +14,6 @@
   justify-content: center;
   height: auto;
   background: $ink;
-  // background: $yankeesBlue;
   color: $ghostWhite;
   padding-left: 15%;
   padding-right: 15%;
@@ -31,6 +30,8 @@
   height: auto;
   display: flex;
   flex-direction: row;
+  width: 90%;
+  margin: 0 auto;
 }
 .about-pic {
   display: flex;
