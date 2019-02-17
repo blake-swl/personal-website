@@ -37,7 +37,7 @@ const Portfolio = () => (
     <h1 className="works-title" data-aos="fade-up">-Portfolio-</h1>
     <div className="works" data-aos="fade-up">
     <div className="work-item homepage" data-aos="fade-up">
-        <div className="fade" onClick={}>
+        <div className="fade" onClick={''}>
           <div className="btns">
             <ZoomModal subtitle={pwDesc} className="icons"
             images={homepage}
