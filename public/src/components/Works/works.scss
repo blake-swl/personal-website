@@ -32,67 +32,98 @@
 }
 .work-item {
   margin: 1%;
+  width: 300px;
+  height: 182px;
+  position: relative;
 }
 .amazon {
-  width: 300px;
-  height: auto;
   // background: url('https://d2genp9fhbycca.cloudfront.net/amazon.jpg') no-repeat;
   background: url('../../../dist/images/Amazon.jpg') no-repeat;
   background-size: cover;
-  grid-area: amazon;
 }
 .airbnb {
-  width: 300px;
-  height: auto;
   background: url('../../../dist/images/airbnb.jpg') 50% 50% no-repeat;
   // background: url('https://d2genp9fhbycca.cloudfront.net/airbnb.jpg') no-repeat;
   background-size: cover;
-  grid-area: airbnb;
 }
 .homepage {
-  width: 300px;
-  height: auto;
   background: url('../../../dist/images/new.jpg') 50% 50% no-repeat;
   // background: url('https://d2genp9fhbycca.cloudfront.net/homepage.jpg') no-repeat;
   background-size: cover;
-  grid-area: homepage;
 }
 .fade {
-  width: 300px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  
-  h3, .btns, .slideUp {
-    visibility: hidden;
-  }
-}
-.fade:hover {
-  visibility: visible;
-  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background: rgba(0,0,0,0.8);
-  
-  h3, .btns, .slideUp {
-    visibility: visible;
-  }
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+.work-item:hover .fade {
+  height: 100%;
 }
 .slideUp {
-  display: flex;
+  height: 20px;
   padding: 5%;
-  justify-content: center;
-  align-items: center;
   width: 90%;
-  height: auto;
+  // height: 40px;
   background: $lime;
   // background: $darkTerra;
-  opacity: 0.8;
   color: white;
   font-size: 16px;
-  grid-area: slideUp;
   font-weight: 500;
+  text-align: center;
 }
+// .fade:hover {
+//   background: rgba(0,0,0,0.8);
+// }
+// .slideUp {
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   // background: rgba(0,0,0,0.8);
+//   overflow: hidden;
+//   width: 100%;
+//   height: 0;
+//   transition: .5s ease;
+// }
+// .fade:hover .slideUp {
+//   height: 20px;
+//   padding: 5%;
+//   width: 90%;
+//   // height: 40px;
+//   background: $lime;
+//   // background: $darkTerra;
+//   color: white;
+//   font-size: 16px;
+//   font-weight: 500;
+//   text-align: center;
+// }
+// .btns {
+//   outline: 1px solid red;
+//   position: absolute;
+//   bottom: 100%;
+//   top: 0;
+//   left: 0;
+//   overflow: hidden;
+//   width: 100%;
+//   height:50%;
+//   transition: .5s ease;
+//   padding: 12% 0;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: center;
+// }
+// .fade:hover .btns {
+//   bottom: 0;
+//   top: 30%;
+//   height: 100%;
+// }
+
 .btns {
   padding: 18% 0 12% 0;
   width: 100%;
