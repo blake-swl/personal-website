@@ -16,7 +16,7 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel-loader',
         options: {
-          presets: ['env', 'stage-0', 'react']
+          presets: ['@babel/env', '@babel/react']
         }
       },
       {
@@ -61,7 +61,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx']
   },
-  mode: 'production',
+  mode: 'development',
   plugins: [
     new Dotenv({
       path: './.env'

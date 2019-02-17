@@ -1,0 +1,73 @@
+@import '../Global/global.scss';
+
+#nav {
+  * {
+    outline: none;
+  }
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 18px;
+  top: 18px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: $ink;
+  // box-shadow: 0 0 3px rgba(0,0,0,.4);
+  box-shadow: 1px 1px 5px black;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  // background: white;
+  background: $ink;
+  padding-top: 10%;
+  font-size: 18px;
+  outline: none;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  height: auto;
+  text-decoration: none;
+  color: #484848;
+  padding-top: 1em;
+  padding-left: 1em;
+  font-family: $montserrat;
+
+}
+.bm-item-list:hover {
+  color: #B5D24B;
+}
+/* Individual item */
+.bm-item {
+  line-height: 2;
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+.nav-item a {
+  color: $white;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: $montserrat;
+}
