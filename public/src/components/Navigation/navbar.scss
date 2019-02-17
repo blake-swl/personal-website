@@ -54,6 +54,9 @@
   transition: .2s ease-in;
   font-weight: 600;
 }
+.bm-item-list:hover {
+  color: $lime;
+}
 
 /* Individual item */
 .bm-item {
