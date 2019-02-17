@@ -62,7 +62,7 @@
   height: 0;
   transition: .5s ease;
 }
-.work-item:hover .fade {
+.work-item:hover .fade, .work-item:active .fade {
   height: 100%;
 }
 .slideUp {
@@ -161,9 +161,9 @@
     height: auto;
     margin: 5%;
   }
-  .work-item * {
-    cursor: pointer;
-  }
+  // .work-item * {
+  //   cursor: pointer;
+  // }
 }
 @media only screen and (min-width: 426px) and (max-width: 1024px) {
   #portfolio {
