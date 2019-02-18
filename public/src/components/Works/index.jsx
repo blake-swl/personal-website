@@ -2,9 +2,11 @@ import React from 'react';
 import './works.scss';
 import ZoomModal from '../Modals';
 import amazon from '../../../dist/images/amazon.gif';
-import amazonimg from '../../../dist/images/Amazon.jpg';
+import amazonImg from '../../../dist/images/Amazon.jpg';
 import airbnb from '../../../dist/images/airbnb.gif';
+import airbnbImg from '../../../dist/images/airbnb.jpg';
 import homepage from '../../../dist/images/homepage.gif';
+import homepageImg from '../../../dist/images/new.jpg';
 
 // Icons
 import { Icon } from 'react-icons-kit';
@@ -38,58 +40,60 @@ const Portfolio = () => (
     <h1 className="works-title" data-aos="fade-up">-Portfolio-</h1>
     <div className="works" data-aos="fade-up">
     <div className="work-item homepage" data-aos="fade-up">
-        <div className="fade" onClick={''}>
-          <div className="btns">
-            <ZoomModal subtitle={pwDesc} className="icons"
-            images={homepage}
-            components={HoStack}
-            buttons={<Icon icon={ic_zoom_in} size={40}/>}
-            />
-            <a className="code tooltip" target="_blank" href="https://github.com/blake-swl/personal-website">
-              <span className="tooltiptext">View code</span>
-              <Icon icon={github} size={30}/>
-            </a>
-          </div>
-          <div className="slideUp">
-            <h3>CURRENTLY VIEWING</h3>
-          </div>
+      <img src={homepageImg} alt=""/>
+      <div className="fade" onClick={''}>
+        <div className="btns">
+          <ZoomModal subtitle={pwDesc} className="icons"
+          images={homepage}
+          components={HoStack}
+          buttons={<Icon icon={ic_zoom_in} size={40}/>}
+          />
+          <a className="code tooltip" target="_blank" href="https://github.com/blake-swl/personal-website">
+            <span className="tooltiptext">View code</span>
+            <Icon icon={github} size={30}/>
+          </a>
+        </div>
+        <div className="slideUp">
+          <h3>CURRENTLY VIEWING</h3>
         </div>
       </div>
-      <div className="work-item amazon" data-aos="fade-up">
-        <img src={amazonimg} alt=""/>
-        <div className="fade">
-          <div className="btns">
-            <ZoomModal images={amazon} className="icons"
-            buttons={<Icon icon={ic_zoom_in} size={40}/>}
-            components={AmStack}
-            subtitle={AmDesc}/>
-            <a className="code tooltip" target="_blank" href="https://github.com/Bacon-Icecream/FEC-Danny-L">
-              <span className="tooltiptext">View code</span>
-              <Icon icon={github} size={30}/>
-            </a>
-          </div>
-          <div className="slideUp">
-            <h3>AMAZON SYSTEM DESIGN</h3>
-          </div>
+    </div>
+    <div className="work-item amazon" data-aos="fade-up">
+      <img src={amazonImg} alt=""/>
+      <div className="fade">
+        <div className="btns">
+          <ZoomModal images={amazon} className="icons"
+          buttons={<Icon icon={ic_zoom_in} size={40}/>}
+          components={AmStack}
+          subtitle={AmDesc}/>
+          <a className="code tooltip" target="_blank" href="https://github.com/Bacon-Icecream/FEC-Danny-L">
+            <span className="tooltiptext">View code</span>
+            <Icon icon={github} size={30}/>
+          </a>
+        </div>
+        <div className="slideUp">
+          <h3>AMAZON SYSTEM DESIGN</h3>
         </div>
       </div>
-      <div className="work-item airbnb" data-aos="fade-up">
-        <div className="fade">
-          <div className="btns">
-            <ZoomModal images={airbnb} className="icons"
-            buttons={<Icon icon={ic_zoom_in} size={40}/>}
-            components={AirStack}
-            subtitle={AirDesc}/>
-            <a className="code tooltip" target="_blank" href="https://github.com/HRLA23WhiteWalkers/MainPage">
-              <span className="tooltiptext">View code</span>
-              <Icon icon={github} size={30}/>
-            </a>
-          </div>
-          <div className="slideUp">
-            <h3>AIRBNB LISTING PAGE</h3>
-          </div>
+    </div>
+    <div className="work-item airbnb" data-aos="fade-up">
+      <img src={airbnbImg} alt=""/>
+      <div className="fade">
+        <div className="btns">
+          <ZoomModal images={airbnb} className="icons"
+          buttons={<Icon icon={ic_zoom_in} size={40}/>}
+          components={AirStack}
+          subtitle={AirDesc}/>
+          <a className="code tooltip" target="_blank" href="https://github.com/HRLA23WhiteWalkers/MainPage">
+            <span className="tooltiptext">View code</span>
+            <Icon icon={github} size={30}/>
+          </a>
+        </div>
+        <div className="slideUp">
+          <h3>AIRBNB LISTING PAGE</h3>
         </div>
       </div>
+    </div>
     </div>
     <div style={{color: "#062F4f"}}>
       <Icon icon={ic_code} size={40} className="works-arrow"/>
