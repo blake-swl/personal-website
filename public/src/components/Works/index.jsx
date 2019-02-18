@@ -2,6 +2,7 @@ import React from 'react';
 import './works.scss';
 import ZoomModal from '../Modals';
 import amazon from '../../../dist/images/amazon.gif';
+import amazonimg from '../../../dist/images/Amazon.jpg';
 import airbnb from '../../../dist/images/airbnb.gif';
 import homepage from '../../../dist/images/homepage.gif';
 
@@ -55,6 +56,7 @@ const Portfolio = () => (
         </div>
       </div>
       <div className="work-item amazon" data-aos="fade-up">
+        <img src={amazonimg} alt=""/>
         <div className="fade">
           <div className="btns">
             <ZoomModal images={amazon} className="icons"

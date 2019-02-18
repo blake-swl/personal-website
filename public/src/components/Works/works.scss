@@ -35,11 +35,16 @@
   width: 300px;
   height: 182px;
   position: relative;
+
+  img {
+    width: 300px;
+    height: 182px;
+  }
 }
 .amazon {
   // background: url('https://d2genp9fhbycca.cloudfront.net/amazon.jpg') no-repeat;
-  background: url('../../../dist/images/Amazon.jpg') no-repeat;
-  background-size: cover;
+  // background: url('../../../dist/images/Amazon.jpg') no-repeat;
+  // background-size: cover;
 }
 .airbnb {
   background: url('../../../dist/images/airbnb.jpg') 50% 50% no-repeat;
