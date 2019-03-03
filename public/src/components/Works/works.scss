@@ -41,17 +41,6 @@
     height: 182px;
   }
 }
-
-// .airbnb {
-//   background: url('../../../dist/images/airbnb.jpg') 50% 50% no-repeat;
-//   // background: url('https://d2genp9fhbycca.cloudfront.net/airbnb.jpg') no-repeat;
-//   background-size: cover;
-// }
-// .homepage {
-//   background: url('../../../dist/images/new.jpg') 50% 50% no-repeat;
-//   // background: url('https://d2genp9fhbycca.cloudfront.net/homepage.jpg') no-repeat;
-//   background-size: cover;
-// }
 .fade {
   position: absolute;
   bottom: 0;
@@ -70,7 +59,6 @@
   height: 20px;
   padding: 5%;
   width: 90%;
-  // height: 40px;
   background: $lime;
   // background: $darkTerra;
   color: white;
@@ -162,9 +150,6 @@
     height: auto;
     margin: 5%;
   }
-  // .work-item * {
-  //   cursor: pointer;
-  // }
 }
 @media only screen and (min-width: 426px) and (max-width: 1024px) {
   #portfolio {
