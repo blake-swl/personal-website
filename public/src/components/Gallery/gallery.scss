@@ -1,0 +1,115 @@
+@import '../Global/global.scss';
+
+.gallery {
+  background: url("https://d2genp9fhbycca.cloudfront.net/hollywood.jpg") 50% 30% no-repeat fixed;
+  // filter: grayscale(20);
+  background-size: cover;
+  // background: url('../../../dist/images/hollywood.jpg') 50% 30% no-repeat fixed;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blur {
+  padding-top: 3%;
+  width: 100%;
+  height: auto;
+  padding-bottom: 3%;
+  background: rgba(0, 0, 0, 0.3);
+  // background: rgba(184,38,1, 0.3);
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.pictures {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+
+  li {
+    display: none;
+  }
+
+  img {
+    height: 200px;
+    width: auto;
+    justify-self: stretch;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+.gallery {
+  height: auto;
+  display: flex;
+  background: url("https://d2genp9fhbycca.cloudfront.net/hollywood.jpg") 50% 40% no-repeat;
+  flex-direction: column;
+  width: 100%;
+
+  .blur {
+    padding-top:5%;
+    height: auto;
+    width: 100%;
+  }
+
+  .personal {
+    display: none;
+  }
+  .pictures {
+    scroll-snap-type: x mandatory;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    height: auto;
+  
+    .card1 {
+      flex: 0 0 auto;
+      margin: 5%;
+      width: auto;
+      height: 300px;
+      scroll-snap-align: center;
+    }
+  }
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 1080px) {
+  .gallery {
+    width: 100%;
+    height: auto;
+
+    .blur {
+      height: auto;
+    }
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .flex {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-left: 25%;
+    
+    .pictures {
+      overflow-x: scroll;
+      overflow-y: hidden;
+      width: 50%;
+      display: grid;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      padding-left: 10px;
+      padding-right: 10px;
+
+      .card1 {
+        height: 200px;
+        width: auto;
+        scroll-snap-align: center;
+      }
+    }
+  }
+}

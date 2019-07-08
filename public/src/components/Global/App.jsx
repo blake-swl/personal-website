@@ -11,6 +11,7 @@ import {ic_expand_less} from 'react-icons-kit/md/ic_expand_less';
 import Header from '../Header/index';
 import Navigation from '../Navigation';
 import About from '../About';
+import Gallery from '../Gallery';
 import Skills from '../Skills';
 import Portfolio from '../Works';
 import Contact from '../Contact';
@@ -74,8 +75,9 @@ export default class App extends Component  {
         <Navigation />
         <Header id="page-wrap"/>
         <About id="page-wrap"/>
+        <Gallery />
         <Portfolio id="page-wrap"/>
-        <Skills id="page-wrap"/>
+        {/* <Skills id="page-wrap"/> */}
         <Contact id="page-wrap"/>
       </div>
     )

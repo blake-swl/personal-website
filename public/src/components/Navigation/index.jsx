@@ -33,7 +33,7 @@ export default class Navigation extends Component {
               <li><a className="bm-item-list" href="#home">home</a></li>
               <li><a className="bm-item-list" href="#about">about</a></li>
               <li><a className="bm-item-list" href="#portfolio">portfolio</a></li>
-              <li><a className="bm-item-list" href="#skills">skills</a></li>
+              {/* <li><a className="bm-item-list" href="#skills">skills</a></li> */}
               <li><a className="bm-item-list" href="#contact">contact</a></li>
             </ol>
           </nav>
@@ -47,7 +47,7 @@ export default class Navigation extends Component {
               <li><a className="bm-item-list" href="#home">home</a></li>
               <li><a className="bm-item-list" href="#about">about</a></li>
               <li><a className="bm-item-list" href="#portfolio">portfolio</a></li>
-              <li><a className="bm-item-list" href="#skills">skills</a></li>
+              {/* <li><a className="bm-item-list" href="#skills">skills</a></li> */}
               <li><a className="bm-item-list" href="#contact">contact</a></li>
             </ol>
           </nav>

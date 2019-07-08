@@ -7,16 +7,16 @@ import {ic_code} from 'react-icons-kit/md/ic_code';
 import {ic_keyboard_arrow_right} from 'react-icons-kit/md/ic_keyboard_arrow_right';
 import {ic_keyboard_arrow_left} from 'react-icons-kit/md/ic_keyboard_arrow_left';
 
-// pictures
+// // pictures
 const typing =  'https://d2genp9fhbycca.cloudfront.net/typing.jpg';
-const sf = 'https://d2genp9fhbycca.cloudfront.net/sftrip.jpg';
-const dodgers =  'https://d2genp9fhbycca.cloudfront.net/dodgers.jpg';
-const grad = 'https://d2genp9fhbycca.cloudfront.net/grad.jpg';
-const group2 = 'https://d2genp9fhbycca.cloudfront.net/group2.jpg';
-const beach = 'https://d2genp9fhbycca.cloudfront.net/beach1.jpg';
-const guitar = 'https://d2genp9fhbycca.cloudfront.net/guitar.jpg';
-const family = 'https://d2genp9fhbycca.cloudfront.net/family.jpg';
-const friends = 'https://d2genp9fhbycca.cloudfront.net/friends1.jpg';
+// const sf = 'https://d2genp9fhbycca.cloudfront.net/sftrip.jpg';
+// const dodgers =  'https://d2genp9fhbycca.cloudfront.net/dodgers.jpg';
+// const grad = 'https://d2genp9fhbycca.cloudfront.net/grad.jpg';
+// const group2 = 'https://d2genp9fhbycca.cloudfront.net/group2.jpg';
+// const beach = 'https://d2genp9fhbycca.cloudfront.net/beach1.jpg';
+// const guitar = 'https://d2genp9fhbycca.cloudfront.net/guitar.jpg';
+// const family = 'https://d2genp9fhbycca.cloudfront.net/family.jpg';
+// const friends = 'https://d2genp9fhbycca.cloudfront.net/friends1.jpg';
 
         {/* <p>My philosophy is to leverage technology 
           to build functional, yet simplistically elegant 
@@ -62,7 +62,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="gallery">
+      {/* <div className="gallery">
         <div className="blur">
           <div className="flex">
             <ul className="pictures" data-aos="fade-up">
@@ -77,7 +77,7 @@ const About = () => {
             </ul>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 };

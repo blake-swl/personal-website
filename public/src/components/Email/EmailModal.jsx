@@ -76,29 +76,34 @@ export default class EmailModal extends Component {
           className="EmailModal"
           overlayClassName="EmailOverlay"
         >
-          <form className="mailbox" >
+          <form className="mailbox"  name="email" method="POST" data-netlify="true">
             <div className="icon-action">
               <div className="close tooltip" onClick={this.closeModal} alt="close">
                 <span className="tooltiptext" >Close</span>
                 <Icon icon={close} size={20}/>
               </div>
               <div className="send tooltip">
-                <span className="tooltiptext">Send</span>
-                <Icon icon={send} size={20} onClick={this.handleSubmit}/>
+                <button type="submit" style={{border: 'none', background: 'none'}}>
+                  <span className="tooltiptext">Send</span>
+                  <Icon icon={send} size={20} onClick={this.handleSubmit}/>
+                </button>
               </div>
             </div>
             <input 
               className="names"
+              name="fullName"
               placeholder="Name"
               onChange={this.onChange}>
             </input>
             <input 
               className="email"
+              name="email"
               placeholder="Email"
               onChange={this.onChange}>
             </input>
             <textarea 
               className="text"
+              name="content"
               placeholder="Write your message here" 
               onChange={this.onChange}>
             </textarea>
