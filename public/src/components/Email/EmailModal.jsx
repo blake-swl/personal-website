@@ -18,7 +18,7 @@ export default class EmailModal extends Component {
     this.state = {
       modalIsOpen: false,
       message: '',
-      name: '',
+      fullName: '',
       email: '',
     }
 
@@ -38,28 +38,36 @@ export default class EmailModal extends Component {
     e.preventDefault();
     this.setState({
       [e.target.name]: e.target.value
-    })
+    }, console.log(e.target.name, ":", e.target.value))
 
   }
-  async handleSubmit() {
+  // async handleSubmit() {
 
+  //   const payload = {
+  //     name: this.state.name,
+  //     email: this.state.email,
+  //     message: this.state.message
+  //   }
+  //   console.log(payload, 'this is payload')
+  //   const data = await axios.post(`/api/sendEmail`, payload);
+  //   alert('message sent!')
+  //   console.log(e.target.value)
+  // }
+  async handleSubmit(e) {
+    e.preventDefault();
     const payload = {
-      name: this.state.name,
+      name: this.state.fullName,
       email: this.state.email,
       message: this.state.message
-    }
-    console.log(payload, 'this is payload')
-    const data = await axios.post(`/api/sendEmail`, payload);
-    alert('message sent!')
-    console.log(e.target.value)
-  }
-  async handleSubmit() {
+    };
+    // const data = await axios.post()
+    alert('Message sent!')
     // const data = await $.post(`/api/email`, {message: this.state.title, body: this.state.body});
     console.log(e.target.value)
   }
-  async handleSubmit() {
-    // const data = await $.post(`/api/email`, {message: this.state.title, body: this.state.body});
-  }
+  // async handleSubmit() {
+  //   // const data = await $.post(`/api/email`, {message: this.state.title, body: this.state.body});
+  // }
 
   render() {
     return (
@@ -83,9 +91,10 @@ export default class EmailModal extends Component {
                 <Icon icon={close} size={20}/>
               </div>
               <div className="send tooltip">
-                <button type="submit" style={{border: 'none', background: 'none'}}>
+                <button type="submit" style={{border: 'none', background: 'none'}}
+                onClick={e => this.handleSubmit(e)}>
                   <span className="tooltiptext">Send</span>
-                  <Icon icon={send} size={20} onClick={this.handleSubmit}/>
+                  <Icon icon={send} size={20}/>
                 </button>
               </div>
             </div>
@@ -93,18 +102,21 @@ export default class EmailModal extends Component {
               className="names"
               name="fullName"
               placeholder="Name"
+              value={this.state.fullName}
               onChange={this.onChange}>
             </input>
             <input 
               className="email"
               name="email"
               placeholder="Email"
+              value={this.state.email}
               onChange={this.onChange}>
             </input>
             <textarea 
               className="text"
-              name="content"
+              name="message"
               placeholder="Write your message here" 
+              value={this.state.message}
               onChange={this.onChange}>
             </textarea>
           </form>

@@ -23,14 +23,18 @@
 }
 .works {
   padding-top: 3%;
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
   height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: center;
+  // align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 .work-item {
+  justify-self: center;
   margin: 1%;
   width: 300px;
   height: 182px;
@@ -60,58 +64,12 @@
   padding: 5%;
   width: 90%;
   background: $lime;
-  // background: $darkTerra;
   color: white;
   font-size: 16px;
   font-weight: 500;
   text-align: center;
 }
-// .fade:hover {
-//   background: rgba(0,0,0,0.8);
-// }
-// .slideUp {
-//   position: absolute;
-//   bottom: 0;
-//   left: 0;
-//   right: 0;
-//   // background: rgba(0,0,0,0.8);
-//   overflow: hidden;
-//   width: 100%;
-//   height: 0;
-//   transition: .5s ease;
-// }
-// .fade:hover .slideUp {
-//   height: 20px;
-//   padding: 5%;
-//   width: 90%;
-//   // height: 40px;
-//   background: $lime;
-//   // background: $darkTerra;
-//   color: white;
-//   font-size: 16px;
-//   font-weight: 500;
-//   text-align: center;
-// }
-// .btns {
-//   outline: 1px solid red;
-//   position: absolute;
-//   bottom: 100%;
-//   top: 0;
-//   left: 0;
-//   overflow: hidden;
-//   width: 100%;
-//   height:50%;
-//   transition: .5s ease;
-//   padding: 12% 0;
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: center;
-// }
-// .fade:hover .btns {
-//   bottom: 0;
-//   top: 30%;
-//   height: 100%;
-// }
+
 
 .btns {
   padding: 18% 0 12% 0;
