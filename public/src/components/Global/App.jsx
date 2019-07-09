@@ -3,6 +3,8 @@ import './global.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 'smoothscroll';
+import LazyLoad from 'react-lazyload';
+
 
 // Icons
 import { Icon } from 'react-icons-kit';
@@ -43,44 +45,21 @@ AOS.init({
 
 });
 
+const App = () => (
+  <div id="outer-container">
+    {/* ...Loading */}
+    
+    <Navigation />
+    <Header id="page-wrap"/>
+    <About id="page-wrap"/>
+    <LazyLoad offset={500}>
+      <Gallery />
+    </LazyLoad>
+    <Portfolio id="page-wrap"/>
+    {/* <Skills id="page-wrap"/> */}
+    <Contact id="page-wrap"/>
+  </div>
+);
 
-export default class App extends Component  {
-  constructor() {
-    super();
-
-    // this.scrollFunction = this.scrollFunction.bind(this);
-    // this.topFunction = this.topFunction.bind(this);
-  }
-  // componentDidMount() {
-  //   window.onscroll = () => this.scrollFunction();
-  // }
-
-  // Back to Top
-  // scrollFunction = () => {
-  //   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-  //       document.getElementById("myBtn").style.display = "block";
-  //   } else {
-  //       document.getElementById("myBtn").style.display = "none";
-  //   }
-  // }
-  // topFunction = () => {
-  //   document.body.scrollTop = 0; // For Safari
-  //   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  // }
-  render() {
-    return(
-      <div id="outer-container">
-        {/* ...Loading */}
-       
-        <Navigation />
-        <Header id="page-wrap"/>
-        <About id="page-wrap"/>
-        <Gallery />
-        <Portfolio id="page-wrap"/>
-        {/* <Skills id="page-wrap"/> */}
-        <Contact id="page-wrap"/>
-      </div>
-    )
-  }
-};
+export default App;
 
