@@ -48,7 +48,6 @@ const Contact = () => {
       </div>
       <div style={{height: '25vh', width: '100%', color: "#D05353"}} className="maps">
         <GoogleMapReact
-         // bootstrapURLKeys={{ key: KEY}}
           center={googleMaps.center}
           defaultZoom={googleMaps.zoom}
         >

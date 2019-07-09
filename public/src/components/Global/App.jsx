@@ -55,7 +55,9 @@ const App = () => (
     <LazyLoad offset={500}>
       <Gallery />
     </LazyLoad>
-    <Portfolio id="page-wrap"/>
+    <LazyLoad offset={1000}>
+      <Portfolio id="page-wrap"/>
+    </LazyLoad>
     {/* <Skills id="page-wrap"/> */}
     <Contact id="page-wrap"/>
   </div>
