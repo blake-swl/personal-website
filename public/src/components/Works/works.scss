@@ -82,12 +82,18 @@
   
   .code, .icons {
     // border: 2px solid $darkTerra;
-    border: 2px solid $lime;
+    border: 1px solid $lime;
     font-size: 1em;
     padding: 2%;
     color: $lime;
     // color: $darkTerra;
     cursor: pointer;
+    transition: .25s linear;
+  }
+  .code:hover, .icons:hover {
+    color: white;
+    // size: 50px;
+    background: $lime;
   }
 }
 

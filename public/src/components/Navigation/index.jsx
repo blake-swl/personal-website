@@ -14,11 +14,11 @@ export default class Navigation extends Component {
     this.listenScrollEvent = this.listenScrollEvent.bind(this);
   }
   listenScrollEvent(e) {
-    if (window.scrollY > 800) {
-      this.setState({header: {background:'white', boxShadow: "0 0 3px rgba(0,0,0,.15)", transition: ".1s ease-in"}
+    if (window.scrollY > 600) {
+      this.setState({header: {background:'white', boxShadow: "0 0 3px rgba(0,0,0,.15)", transition: ".3s ease-in"}
     })
     } else {
-      this.setState({header: {background: 'none', boxShadow: "none", transition: ".1s ease-in"}})
+      this.setState({header: {background: 'none', boxShadow: "none", transition: ".3s ease-in"}})
     }
   }
   componentDidMount() {
