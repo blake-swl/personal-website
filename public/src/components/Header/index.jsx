@@ -1,6 +1,6 @@
 import React from 'react';
 import './header.scss';
-import Resume from '../../../dist/Resume/resume.pdf';
+import Resume from '../../../dist/Resume/resumeupdated.pdf';
 
 const Header = () => (
   <div id="home" className="header">
