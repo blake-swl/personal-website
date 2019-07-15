@@ -44,7 +44,6 @@ const Contact = () => {
           <div>Los Angeles, CA</div>
         </div>
           <br/>
-          <EmailModal open="WRITE EMAIL NOW"/>
       </div>
       <div style={{height: '25vh', width: '100%', color: "#D05353"}} className="maps">
         <GoogleMapReact
