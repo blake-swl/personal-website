@@ -16,7 +16,7 @@
     "express-validation": "^1.0.2",
     "helmet": "^3.14.0",
     "joi": "^14.0.1",
-    "nodemailer": "^4.6.8",
+    "nodemailer": "^6.4.16",
     "nodemon": "^1.18.4",
     "path": "^0.12.7",
     "path-to-regexp": "^2.4.0"
